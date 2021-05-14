@@ -1,0 +1,73 @@
+//FUENTES
+@font-face {
+    font-family: "Roboto-Black";
+    src: url("../fonts/Roboto-Black.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("../fonts/Roboto-Light.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto-Light";
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.alerta {
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+    margin: 100px auto;
+    // border-radius: 5px;
+    // box-shadow: 0 10px 20px rgb(150, 150, 150);
+    &-header {
+        text-align: center;
+        background-color: gray;
+        // border-radius: 5px 5px 0 0;
+        .logotipo {
+            width: 100%;
+            height: auto;
+            max-width: 200px;
+            margin: 0 auto;
+        }
+    }
+    &-body {
+        padding: 50px 20px;
+        p {
+            color: gray;
+            font-size: 1.5em;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+    &-footer {
+        padding: 10px 20px;
+        .btn-regresar {
+            background-color: gray;
+            color: white;
+            outline: none;
+            width: 200px;
+            height: 35px;
+            line-height: 30px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            display: block;
+            margin: 0 auto;
+            cursor: pointer;
+            transition: ease-in-out 0.3s all;
+            &:hover {
+                background-color: white;
+                color: gray;
+            }
+        }
+    }
+}

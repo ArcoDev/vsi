@@ -1,0 +1,145 @@
+@media (max-width: 768px) {
+  header nav .menu {
+    display: none;
+  }
+  header nav .menu .enlaces {
+    padding: 5px 10px;
+    background: white;
+    border-radius: 2px;
+  }
+  header nav .menu .enlaces li a {
+    color: gray;
+  }
+  header .titulo {
+    top: 20%;
+  }
+  header .titulo h1 {
+    font-size: 35px;
+  }
+  main nav {
+    padding: 30px 7vh;
+  }
+  .columna-2 {
+    width: 100%;
+  }
+  main .cuerpo .nosotros {
+    display: block;
+    justify-content: center;
+  }
+  main .cuerpo .nosotros .nosotros-col-1 {
+    width: 100%;
+    text-align: center;
+  }
+  main .cuerpo .nosotros .nosotros-col-2 {
+    width: 100%;
+  }
+  main .cuerpo .contacto {
+    display: block;
+    justify-content: center;
+  }
+  main .cuerpo .contacto .titulo-cuerpo .fila {
+    display: block;
+  }
+  main .cuerpo .contacto .titulo-cuerpo .fila .columna-2 #contacto_vsi {
+    padding-right: 0;
+  }
+  main .cuerpo .titulo-cuerpo .fila .columna-2 .contacto_red {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 595px) {
+  header nav .menu {
+    top: 25px;
+    left: 30px;
+  }
+  header nav .idioma {
+    top: 25px;
+    right: 30px;
+  }
+  .contenedor-slider .slider-controles {
+    bottom: 20px;
+    left: 30px;
+  }
+  header .correo {
+    bottom: 30px;
+    right: 30px;
+  }
+  .menu-icono {
+    width: 25px;
+  }
+  main nav {
+    padding: 30px 5vh;
+  }
+  main .cuerpo .fila {
+    display: block;
+  }
+  main .cuerpo .fila .div-vert {
+    border-right: 0;
+    margin-bottom: 50px;
+  }
+  main .cuerpo .desarrollo {
+    display: block;
+  }
+  main .cuerpo .desarrollo .titulo-desarrollo .fila .columna-2 .img-des-1 {
+    padding-right: 0px;
+  }
+  main .cuerpo .desarrollo .titulo-desarrollo .fila .columna-2 .img-des-1 {
+    padding-left: 0px;
+  }
+  main .cuerpo .capital {
+    display: block;
+  }
+  main .cuerpo .capital .titulo-capital .columna-3 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  header .idioma .es-en {
+    display: none;
+  }
+  header .correo a .header-correo {
+    display: none;
+  }
+  header .titulo h1 {
+    font-size: 25px;
+  }
+  header .titulo img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 425px) {
+  header nav .menu .header-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  header .titulo {
+    top: 20%;
+  }
+  header .titulo h1 {
+    display: none;
+  }
+  header .titulo img {
+    width: 200px;
+  }
+  .contenedor-slider .slider-controles {
+    bottom: 10px;
+  }
+  header .correo {
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  header .titulo {
+    top: 15%;
+  }
+  main nav .correo .mail {
+    display: none;
+  }
+}
+/*# sourceMappingURL=media_query.css.map */

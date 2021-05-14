@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="A W Software">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Correo enviado!</title>
+    <link rel="stylesheet" href="../assets/scss/alerta.css">
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '358553948843919');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" 
+        src="https://www.facebook.com/tr?id=358553948843919&ev=PageView
+        &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+</head>
+
+<body>
+
+    <div class="alerta">
+        <div class="alerta-header">
+            <img src="../assets/img/vsi_logo.png" alt="Logotipo" class="logotipo">
+        </div>
+        <div class="alerta-body">
+            <p class="mensaje gracias">Thank you for your message.</p>
+            <p class="mensaje texto">WE WILL CONTACT YOU SOON.</p>
+        </div>
+        <div class="alerta-footer">
+            <button class="btn-regresar">
+                REGRESAR
+            </button>
+        </div>
+    </div>
+
+
+    <script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="sentmail.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178026606-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-178026606-2');
+    </script>
+</body>
+
+</html>

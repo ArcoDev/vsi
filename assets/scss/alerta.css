@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("../fonts/Roboto-Black.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../fonts/Roboto-Light.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto-Light";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.alerta {
+  width: 100%;
+  height: auto;
+  max-width: 700px;
+  margin: 100px auto;
+}
+
+.alerta-header {
+  text-align: center;
+  background-color: gray;
+}
+
+.alerta-header .logotipo {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.alerta-body {
+  padding: 50px 20px;
+}
+
+.alerta-body p {
+  color: gray;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.alerta-footer {
+  padding: 10px 20px;
+}
+
+.alerta-footer .btn-regresar {
+  background-color: gray;
+  color: white;
+  outline: none;
+  width: 200px;
+  height: 35px;
+  line-height: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: ease-in-out 0.3s all;
+}
+
+.alerta-footer .btn-regresar:hover {
+  background-color: white;
+  color: gray;
+}
+/*# sourceMappingURL=alerta.css.map */

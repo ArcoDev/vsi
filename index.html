@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="A W Software">
+    <!--LINKEDIN DE AUTOR-->
+    <!--www.linkedin.com/in/miguel-angel-gonzález-de-la-rosa-4171bb15a-->
+    <!--LINKEDIN DE AUTOR-->
+    <link rel="shortcut icon" href="assets/icons/favicon.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="assets/scss/estilos.css">
+    <link rel="stylesheet" href="assets/scss/media_query.css">
+
+    <title>VSI</title>
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178026606-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-178026606-2');
+    </script>
+
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '358553948843919');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=358553948843919&ev=PageView
+&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+
+</head>
+
+<body>
+    <header id="contenedor-slider" class="contenedor-slider">
+        <div id="slider" class="slider">
+            <div class="slider_section">
+                <img class="slider_img" src="assets/img/banner_1.jpg" alt="Banner 1">
+                <!--h1 class="slider_img"><b>CREAMOS ASOMBROSOS</b><br>PROYECTOS INMOBILIARIOS</h1-->
+            </div>
+            <div class="slider_section">
+                <img class="slider_img" src="assets/img/banner_2.jpg" alt="Banner 2">
+                <!--h2 class="slider_img">CREAMOS ASOMBROSOS<br>PROYECTOS INMOBILIARIOS</h2-->
+            </div>
+            <div class="slider_section">
+                <img class="slider_img" src="assets/img/banner_3.jpg" alt="Banner 3">
+                <!--h2 class="slider_img">CREAMOS ASOMBROSOS<br>PROYECTOS INMOBILIARIOS</h2-->
+            </div>
+        </div>
+        <nav class="contenedor1">
+            <div class="menu">
+                <button id="menu1">
+                    <img class="menu-icono" src="assets/icons/menu_blanco.png" alt="Menu">
+                    <span class="header-menu">MENÚ</span>
+                </button>
+                <ul class="enlaces">
+                    <li>
+                        <a href="#inicio"><span class="menu_inicio">INICIO</span></a>
+                    </li>
+                    <li>
+                        <a href="#nosotros"><span class="menu_nosotros">NOSOTROS</span></a>
+                    </li>
+                    <li>
+                        <a href="#desarrollo"><span class="menu_desarrollo">DESARROLLO</span></a>
+                    </li>
+                    <li>
+                        <a href="#capital"><span class="menu_capital">CAPITAL</span></a>
+                    </li>
+                    <li>
+                        <a href="#contacto"><span class="menu_contacto">CONTACTO</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="idioma">
+                <button id="btn_idioma">
+                    <img class="redes-icono" src="assets/icons/idioma_icono.png" alt="Idioma">
+                </button>
+                <div class="es-en">
+                    <button class="es idioma-activo" href="#">ESP</button> /
+                    <button class="en" href="#">ENG</button>
+                </div>
+            </div>
+        </nav>
+        <div class="titulo">
+            <img src="assets/img/vsi_logo.png" alt="VSI">
+            <h1 class="header_titulo"><b>CREAMOS ASOMBROSOS</b><br>PROYECTOS INMOBILIARIOS</h1>
+        </div>
+        <div class="slider-controles">
+            <button id="prev">
+                <img class="img-100" src="assets/icons/flecha_izq.png" alt="prev">
+            </button>
+            <label><span id="no-img"></span>/3</label>
+            <button id="sig">
+                <img class="img-100" src="assets/icons/flecha-der.png" alt="sig">
+            </button>
+        </div>
+        <!--
+        <div class="correo">
+            <a href="mailto:contacto@vsidesarrollos.com">
+                <img class="redes-icono" src="assets/icons/mail_icono.png" alt="Correo">
+                <span class="header-correo">contacto@vsidesarrollos.com</span>
+            </a>
+        </div>
+    -->
+    </header>
+    <main>
+        <nav>
+            <div class="menu">
+                <button id="menu2">
+                    <img class="menu-icono" src="assets/icons/menu_gris.png" alt="Menu">
+                    MENÚ
+                </button>
+                <ul class="enlaces">
+                    <li>
+                        <a href="#inicio"><span class="menu_inicio">INICIO</span></a>
+                    </li>
+                    <li>
+                        <a href="#nosotros"><span class="menu_nosotros">NOSOTROS</span></a>
+                    </li>
+                    <li>
+                        <a href="#desarrollo"><span class="menu_desarrollo">DESARROLLO</span></a>
+                    </li>
+                    <li>
+                        <a href="#capital"><span class="menu_capital">CAPITAL</span></a>
+                    </li>
+                    <li>
+                        <a href="#contacto"><span class="menu_contacto">CONTACTO</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="correo">
+                <a href="mailto:contacto@vsidesarrollos.com" class="correo">
+                    <img class="redes-icono" src="assets/icons/mail_icono_2.png" alt="Correo">
+                    <span class="mail">contacto@vsidesarrollos.com</span>
+                </a>
+            </div>
+        </nav>
+        <div class="cuerpo">
+            <div class="contenedor2">
+                <section class="nosotros">
+                    <h2>Sobre <span>Nosotros</span></h2>
+                    <div class="info-nosotros">
+                        <div class="img-nosotros">
+                            <img src="assets/img/nosotros.jpg" alt="Nosotros">
+                            <div class="col-nosotros">
+                                <div class="villasi">
+                                    <img src="assets/img/villasi_logo.png" alt="">
+                                    <a href="#">LEER MÁS</a>
+                                </div>
+                                <div class="pv">
+                                    <img src="assets/img/pauvillarreal_logo.png" alt="">
+                                    <a href="#">LEER MÁS</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="texto-nosotros">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum itaque ut corrupti omnis mollitia unde consequatur, esse assumenda necessitatibus odio magnam est animi temporibus non! Odit pariatur nisi odio quia.
+                            Aspernatur officia provident expedita minima omnis iure laborum, ut tempore dolorum error id excepturi iusto, dignissimos natus facere, tempora ratione autem rem eaque soluta? Officia, accusamus itaque. Animi, reprehenderit veniam.
+                            Quidem, reiciendis est, nulla itaque iure aperiam eos pariatur sint nihil quisquam impedit accusamus. Deserunt nihil sit dolore, mollitia magnam velit accusamus? Repellendus omnis ullam ducimus commodi quos, cum blanditiis.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum itaque ut corrupti omnis mollitia unde consequatur, esse assumenda necessitatibus odio magnam est animi temporibus non! Odit pariatur nisi odio quia.
+                                Aspernatur officia provident expedita minima omnis iure laborum, ut tempore dolorum error id excepturi iusto, dignissimos natus facere, tempora ratione autem rem eaque soluta? Officia, accusamus itaque. Animi, reprehenderit veniam.
+                                Quidem, reiciendis est, nulla itaque iure aperiam eos pariatur sint nihil quisquam impedit accusamus. Deserunt nihil sit dolore, mollitia magnam velit accusamus? Repellendus omnis ullam ducimus commodi quos, cum blanditiis.</p>
+                            <a href="#">Conócenos más...</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="caja-numeros">
+                    <div class="col col-1">
+                        <img src="assets/img/icono_desarrollo.png" alt="">
+                        <h2>7</h2>
+                        <p>Años de <br>expreiencia</p>
+                    </div>
+                    <div class="col col-2">
+                        <img src="assets/img/icono_desarrollo.png" alt="">
+                        <h2>20</h2>
+                        <p>Proyectos <br>realizados</p>
+                    </div>
+                    <div class="col col-3">
+                        <img src="assets/img/icono_desarrollo.png" alt="">
+                        <h2>+15</h2>
+                        <p>Clientes y <br>colaboradores</p>
+                    </div>
+                    <div class="col col-4">
+                        <img src="assets/img/icono_desarrollo.png" alt="">
+                        <h2>$200 M</h2>
+                        <p>Invertidos y <br>gestionados</p>
+                    </div>
+                </section>
+                <!--<section id="nosotros" class="nosotros">
+                    <div class="nosotros-col-1">
+                        <img class="img-logo" src="assets/img/icono_nosotros.png" alt="Nosotros">
+                        <h2 class="main_nosotros"><b>SOBRE</b> NOSOTROS</h2>
+                    </div>
+                    <div class="nosotros-col-2">
+                        <p class="main_nosotros_p1">
+                            VSI es una plataforma financiera y comercial, de inteligencia y consultoría, que junto a su
+                            unidad operativa de negocio, VillaSi Construcciones, se encargan del desarrollo de proyectos
+                            inmobiliarios de alto impacto para sus clientes y socios.
+                        </p>
+                        <p class="main_nosotros_p2">
+
+                            Después de años de trabajo en México, VSI está entrando en el mercado de Estados Unidos con
+                            altas expectativas, y con la experiencia de VillaSi, tiene la garantía de tener una
+                            operación y resultados óptimos. La atención está puesta particularmente en
+                            los proyectos residenciales y comerciales tanto en Texas como en México.
+                        </p>
+                        <p class="main_nosotros_p3">
+                            El Grupo VSI incluye un despacho de arquitectura, una constructora, gerencia de obra y por
+                            otra parte, el desarrollo inmobiliario y la plataforma financiera en VSI.
+                        </p>
+                    </div>
+                </section>
+                <div class="fila">
+                    <div class="columna-2 div-vert">
+                        <div class="img-cont">
+                            <img src="assets/img/villasi_logo.png" alt="Villasi">
+                            <a class="btn" href="https://www.villasi.com/" target="_blank">
+                                <span class="main_nosotros_leer main_nosotros_leermas">
+                                    LEER MÁS
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="columna-2">
+                        <div class="img-cont">
+                            <img src="assets/img/pauvillarreal_logo.png" alt="Pauvillarreal">
+                            <a class="btn" href="http://pauvillarrealarq.com/" target="_blank">
+                                <span class="main_nosotros_leer main_nosotros_leermas">
+                                    LEER MÁS
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>-->
+                <section id="desarrollo" class="desarrollo">
+                    <div class="titulo-desarrollo">
+                        <img class="img-logo" src="assets/img/icono_desarrollo.png" alt="Desarrollo">
+                        <h2 class="main_desarrollo">DESARROLLADORA INMOBILIARIA</h2>
+
+                        <p class="main_desarrollo_p1">
+
+                            VSI Desarrollos/VSI Development es la desarrolladora inmobiliaria de Grupo VSI, encargada
+                            del desarrollo de proyectos inmobiliarios con el fin de implementarlos en México y Estados
+                            Unidos, ofreciendo soluciones inmobiliarias de vanguardia, inteligentes,
+                            socialmente involucradas, y de importante impacto económico.
+                        </p>
+                        <p class="main_desarrollo_p2">
+                            Actualmente contamos con grandes desarrollos inmobiliarios en Querétaro, Torreón, San Miguel
+                            de Allende y al rededor. Para lograr esto, nuestro equipo está formado por arquitectos,
+                            ingenieros, expertos financieros, y asesores comerciales para cubrir todas
+                            las áreas y garantizar el éxito para los involucrados.
+                        </p>
+                        <p class="main_desarrollo_p3">
+                            Nos encargamos de: <br> Administración Comercial, Planeación Financiera, Estrategias de
+                            Comunicación, Plan de Administración, Cartera de Ventas Y más.
+                        </p>
+
+                        <div class="fila">
+                            <div class="columna-2">
+                                <img class="img-100 img-des-1" src="assets/img/desarrollo_paloblanco.jpg"
+                                    alt="Desarrollo Paloblanco">
+                                <a class="btn leer_mas" href="https://www.villasi.com/paloblanco/" target="_blank">
+                                    <span class="main_nosotros_leer">
+                                        PALO BLANCO
+                                    </span>
+                                </a>
+                                <!--h6>PALO BLANCO</h6-->
+                            </div>
+                            <div class="columna-2">
+                                <img class="img-100 img-des-2" src="assets/img/desarrollo_plaza.jpg"
+                                    alt="Desarrollo Plaza">
+                                <a class="btn leer_mas" href="https://www.villasi.com" target="_blank">
+                                    <span class="main_nosotros_leer">
+                                        PLAZA SALTILLO 400
+                                    </span>
+                                </a>
+                                <!--h6>PLAZA SALTILLO 400</h6-->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="capital" class="capital">
+                    <div class="titulo-capital">
+                        <img class="img-logo" src="assets/img/icono_capital.png" alt="Capital">
+                        <h2 class="main_capital">CAPITAL</h2>
+
+                        <p class="main_capital_p1">
+
+
+                            VSI Capital es la plataforma para inversión en los proyectos inmobiliarios de VSI
+                            Desarrollos.
+
+
+
+
+                        </p>
+                        <p class="main_capital_p2">
+
+                            Se invita a inversionistas para participar con nosotros en los proyectos bajo diversas
+                            estructuras, ofreciendo rendimientos agresivos, tanto en pesos como en dólares.
+
+                        </p>
+
+                        <div class="fila">
+                            <div class="columna-3">
+                                <img src="assets/img/capital_noma.jpg" alt="Capital Noma" class="img-100 img-cap-1">
+                                <a class="btn leer_mas" href="https://www.orangemultifamily.mx/invierte.html"
+                                    target="_blank">
+                                    <span class="main_nosotros_leer">
+                                        NOMA
+                                    </span>
+                                </a>
+                                <!--h6>NOMA</h6-->
+                            </div>
+                            <div class="columna-3">
+                                <img src="assets/img/capital_postal.jpg" alt="Capital Postal" class="img-100 img-cap-2">
+                                <a class="btn leer_mas" href="http://postal.mx" target="_blank">
+                                    <span class="main_nosotros_leer">
+                                        POSTAL
+                                    </span>
+                                </a>
+                                <!--h6>POSTAL</h6-->
+                            </div>
+                            <div class="columna-3">
+                                <img src="assets/img/capital_paloblanco.jpg" alt="Capital Paloblanco"
+                                    class="img-100 img-cap-3">
+                                <a class="btn leer_mas" href="https://www.villasi.com/paloblanco/" target="_blank">
+                                    <span class="main_nosotros_leer">
+                                        PALO BLANCO
+                                    </span>
+                                </a>
+                                <!--h6>PALO BLANCO</h6-->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="contacto" class="contacto">
+                    <div class="titulo-cuerpo">
+                        <h2 class="main_contacto"><b>PONTE EN</b> CONTACTO</h2>
+
+                        <div class="fila">
+                            <div class="columna-2">
+                                <form id="contacto_vsi" method="POST" action="php/contacto.php">
+                                    <div class="grupo-input">
+                                        <label class="main_contacto_nombre" for="nombre">Nombre Completo *</label>
+                                        <input type="text" name="nombre" id="nombre">
+                                    </div>
+                                    <div class="grupo-input">
+                                        <label class="main_contacto_telefono" for="telefono">Teléfono *</label>
+                                        <input type="tel" name="telefono" id="telefono">
+                                    </div>
+                                    <div class="grupo-input">
+                                        <label class="main_contacto_correo" for="correo">Correo Electrónico *</label>
+                                        <input type="email" name="correo" id="correo">
+                                    </div>
+                                    <div class="grupo-input">
+                                        <label class="main_contacto_mensaje" for="mensaje">Mensaje</label>
+                                        <textarea name="mensaje" id="mensaje" rows="1"></textarea>
+                                    </div>
+                                    <div class="grupo-input captcha" style="margin: 0 auto">
+                                        <div class="g-recaptcha"
+                                            data-sitekey="6Le75LIUAAAAABYHgij-x95msLSUQvm_sn0lyxyL"></div>
+                                    </div>
+                                    <div class="grupo-input">
+                                        <button class="main_contacto_enviar" name="enviar" id="enviar">ENVIAR</button>
+                                    </div>
+                                    <div class="grupo-input">
+                                        <div class="respuesta">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="columna-2">
+                                <div class="contenedor-2 contacto_red">
+                                    <a href="#" target="_blank">
+                                        <img src="assets/icons/ubicacion_icono.png" alt="Ubicación" class="redes-icono">
+                                        Calzada Saltillo 400, #685 sur, interior 16 colonia Ex Hacienda los Ángeles, CP.
+                                        27260
+                                    </a>
+                                    <a href="tel:8712033381">
+                                        <img src="assets/icons/telefono_icono.png" alt="Teléfono" class="redes-icono">
+                                        +52 1 871 203 3381
+                                    </a>
+                                    <a href="mailto:contacto@vsidesarrollos.com">
+                                        <img src="assets/icons/mail_icono_2.png" alt="Correo" class="redes-icono">
+                                        contacto@vsidesarrollos.com
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="container-2">
+        <h5 class="footer_desarrollador"><b>DESARROLLADOR POR</b> A W SOFTWARE</h5>
+    </footer>
+
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js?hl=es' async defer></script>
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
