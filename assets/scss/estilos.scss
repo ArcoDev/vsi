@@ -504,7 +504,7 @@ main nav .correo {
 
 //NUMEROS 
 .caja-numeros {
-    width: 130%;
+    width: 100%;
     height: 500px;
     background: olive;
     padding: 0;
@@ -512,25 +512,25 @@ main nav .correo {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: -10rem;
+    //margin-left: -10rem;
     display: flex;
     align-items: center;
     justify-content: center;
 
     @media(max-width: 767px) {
         & {
-            width: 130%;
+            width: 100%;
             height: auto;
-            margin-left: -3rem;
+            //margin-left: -3rem;
             flex-wrap: wrap;
         }
     }
 
     @media screen and (min-width: 768px) and (max-width: 1024px) {
         & {
-            width: 130%;
+            width: 100%;
             height: 500px;
-            margin-left: -7rem;
+            //margin-left: -7rem;
             flex-wrap: wrap;
         }
     }
@@ -538,7 +538,7 @@ main nav .correo {
     &::before {
         content: '';
         position: absolute;
-        width: 103.8%;
+        width: 80%;
         height: 500px;
         background: rgb(42, 60, 150);
         background: linear-gradient(90deg, rgba(42, 60, 150, 0.8382703423166141) 0%, rgba(28, 137, 95, 0.8634804263502276) 100%);
@@ -552,7 +552,7 @@ main nav .correo {
 
     .col {
         position: relative;
-        width: 20%;
+        width: 25%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -591,7 +591,7 @@ main nav .correo {
         h2 {
             width: 100%;
             background: #fff;
-            font-size: 5rem;
+            font-size: 4rem;
             color: rgb(21, 95, 63);
             text-align: center;
             padding: 2rem 0;
@@ -601,7 +601,7 @@ main nav .correo {
             @media screen and (max-width: 767px) {
                 & {
                     background: none;
-                    font-size: 2.5rem;
+                    font-size: 2rem;
                     color: #fff;
                 }
             }
@@ -620,7 +620,7 @@ main nav .correo {
 
             @media screen and(max-width: 767px) {
                 & {
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                 }
             }
 
@@ -641,12 +641,21 @@ main nav .correo {
     gap: 10px;
     text-align: center;
     margin-top: 3rem;
+
     @media screen and(max-width: 767px) {
         & {
             gap: 5px;
             flex-wrap: wrap;
         }
     }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        & {
+            gap: 0;
+            flex-wrap: wrap;
+        }
+    }
+
     .proyectos {
         width: 25%;
         display: flex;
@@ -654,11 +663,19 @@ main nav .correo {
         flex-direction: column;
         gap: 20px;
         padding: 1rem 0;
+
         @media screen and(max-width: 767px) {
             & {
                 width: 100%;
             }
         }
+
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            & {
+                width: 50%;
+            }
+        }
+
         img {
             width: 100%;
             height: 300px;
@@ -675,13 +692,58 @@ main nav .correo {
             transition: all .5s ease-in;
             font-size: 1rem;
             font-weight: bold;
+
             &:hover {
                 background: gray;
                 color: #fff;
-                transform: translate3d(1,0,0);
+                transform: translate3d(1, 0, 0);
             }
         }
     }
+}
+@mixin desarrollos {
+    width: 100%;
+    height: 465px;
+    background-image: url('../img/desarrollo_paloblanco.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin-top: 2rem;
+    
+    .txt-info {
+        width: 90%;
+        height: 400px;
+        background: rgb(29, 122, 82);
+        clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0;
+    
+        h2 {
+            color: #fff;
+            font-size: 3rem;
+            padding-left: 5rem;
+            font-family: 'Roboto-Light';
+            text-transform: uppercase;
+            span {
+                font-family: 'Roboto-Black';
+            }
+        }
+    
+        p {
+            color: #fff;
+            text-align: justify;
+            width: 70%;
+            font-size: 2rem;
+            padding-left: 5rem;
+        }
+    }
+
+}
+//Desarrollos 
+.inmobiliaria {
+    @include desarrollos;
 }
 
 /*main .cuerpo .nosotros{
