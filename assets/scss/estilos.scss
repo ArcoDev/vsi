@@ -526,7 +526,7 @@ main nav .correo {
         }
     }
 
-    @media screen and (min-width:  768px) and (max-width: 1024px) {
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
         & {
             width: 130%;
             height: 500px;
@@ -557,6 +557,7 @@ main nav .correo {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
         @media(max-width: 767px) {
             & {
                 background: rgb(42, 60, 150);
@@ -567,12 +568,13 @@ main nav .correo {
 
             }
         }
-        @media screen and (min-width:  768px) and (max-width: 1024px){
-            &{
+
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            & {
                 width: 25%;
-               padding: 0;
-               background: none;
-               border: none;
+                padding: 0;
+                background: none;
+                border: none;
             }
         }
 
@@ -593,6 +595,8 @@ main nav .correo {
             color: rgb(21, 95, 63);
             text-align: center;
             padding: 2rem 0;
+            //padding-right: 2.5rem;
+            transition: all 1s;
 
             @media screen and (max-width: 767px) {
                 & {
@@ -601,8 +605,9 @@ main nav .correo {
                     color: #fff;
                 }
             }
-            @media screen and (min-width:  768px) and (max-width: 1024px){
-                &{
+
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                & {
                     font-size: 2.3rem;
                 }
             }
@@ -618,10 +623,62 @@ main nav .correo {
                     font-size: 1.2rem;
                 }
             }
-            @media screen and (min-width:  768px) and (max-width: 1024px){
-                &{
+
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                & {
                     font-size: 1.2rem;
                 }
+            }
+        }
+    }
+}
+
+//Proyectos 
+.caja-proyectos {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    margin-top: 3rem;
+    @media screen and(max-width: 767px) {
+        & {
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+    }
+    .proyectos {
+        width: 25%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        padding: 1rem 0;
+        @media screen and(max-width: 767px) {
+            & {
+                width: 100%;
+            }
+        }
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        a {
+            width: 60%;
+            padding: 10px;
+            text-align: center;
+            border: 2px solid gray;
+            color: gray;
+            text-transform: uppercase;
+            transition: all .5s ease-in;
+            font-size: 1rem;
+            font-weight: bold;
+            &:hover {
+                background: gray;
+                color: #fff;
+                transform: translate3d(1,0,0);
             }
         }
     }
