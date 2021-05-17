@@ -13,8 +13,8 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Productos de Amora
-      <small>llena el formulario para crear el producto</small>
+      Proyectos VSI
+      <small>llena el formulario para crear el proyecto</small>
     </h1>
   </section>
 
@@ -25,37 +25,23 @@
         <!-- Default box -->
         <div class="box">
           <div class="box-header with-border">
-            <h3 class="box-title">Guardar Productos</h3>
+            <h3 class="box-title">Guardar proyecto</h3>
           </div>
           <div class="box-body">
             <!-- form start -->
-            <form role="form" name="guardar-producto" id="guardar-producto-archivo" method="post" action="modelo-productos.php" enctype="multipart/form-data">
+            <form role="form" name="guardar-proyecto" id="guardar-proyecto-archivo" method="post"
+              action="modelo-proyectos.php" enctype="multipart/form-data">
               <div class="box-body">
                 <div class="form-group">
                   <label for="nombre">Nombre</label>
                   <input autocomplete="off" type="text" class="form-control" id="nombre" name="nombre"
-                    placeholder="Ingresa el nombre del producto" >
+                    placeholder="Ingresa el nombre del proyecto">
                 </div>
                 <div class="form-group">
-                  <label for="precio">Precio</label>
-                  <input autocomplete="off" type="text" class="form-control" id="precio" name="precio"
-                    placeholder="Ingresa el precio del producto" >
-                </div>
-                <!-- select -->
-                <div class="form-group">
-                <label for="precio">Categoría</label>
-                  <select name="categoria" class="form-control">
-                  <option value="">Selecciona una categoría</option>
-                    <option value="anillos">1.- Anillos</option>
-                    <option value="aretes">2.- Aretes</option>
-                    <option value="collares">3.- Collares</option>
-                    <option value="pulseras">4.- Pulseras</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="imagen-producto">Foto</label>
-                  <input type="file" id="imagen-producto" name="archivo_imagen">
-                  <div style="display: flex; flex-wrap: wrap; justify-content: space-between: text-align: center; margin-top: 10px;">
+                  <label for="imagen-proyecto">Foto</label>
+                  <input type="file" id="imagen-proyecto" name="archivo_imagen">
+                  <div
+                    style="display: flex; flex-wrap: wrap; justify-content: space-between: text-align: center; margin-top: 10px;">
                     <p style="width: 50%;" class="help-block">• Medida recomendada de la imagen: <strong>1500 x
                         1500</strong> </p>
                     <p style="width: 50%;" class="help-block">• Peso ideal de la imagen, menos de <strong>1
@@ -65,6 +51,11 @@
                         svg</strong>
                     </p>
                   </div>
+                </div>
+                <div class="form-group">
+                  <label for="enlace">Enlace</label>
+                  <input autocomplete="off" type="text" class="form-control" id="enlace" name="enlace"
+                    placeholder="Ingresa el enlace del proyecto">
                 </div>
                 <div id="loader" class="form-group" style="display: none;">
                   <img src="../../assets/img/preloader.gif" alt="Cargando" style="margin: 10px 0 10px 20px;">

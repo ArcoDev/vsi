@@ -40,7 +40,7 @@
       </li>-->
       <li class="treeview">
         <a href="#">
-        <i class="fas fa-users"></i>
+          <i class="fas fa-users"></i>
           <span> Usuarios</span>
           <span class="pull-right-container">
             <i class="fas fa-angle-down"></i>
@@ -53,21 +53,21 @@
       </li>
       <li class="treeview">
         <a href="#">
-          <i class="fas fa-camera-retro"></i>
-          <span> Productos</span>
+          <i class="fas fa-hotel"></i>
+          <span> Proyectos</span>
           <span class="pull-right-container">
             <i class="fas fa-angle-down"></i>
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="listar-productos.php"><i class="fas fa-th-list" style="margin-right: 8px"></i>Ver Todos</a></li>
-          <li><a href="crear-productos.php"><i class="fas fa-plus-circle" style="margin-right: 8px"></i>Agregar</a></li>
+          <li><a href="listar-proyectos.php"><i class="fas fa-th-list" style="margin-right: 8px"></i>Ver Todos</a></li>
+          <li><a href="crear-proyectos.php"><i class="fas fa-plus-circle" style="margin-right: 8px"></i>Agregar</a></li>
         </ul>
       </li>
       <li class="treeview">
         <a href="#">
-          <i class="fas fa-book"></i>
-          <span> Categorías</span>
+          <i class="fas fa-camera-retro"></i>
+          <span> Galeria Proyectos</span>
           <span class="pull-right-container">
             <i class="fas fa-angle-down"></i>
           </span>

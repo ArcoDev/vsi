@@ -17,7 +17,7 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Productos Amora
+      Proyectos VSI
     </h1>
   </section>
 
@@ -28,46 +28,30 @@
         <!-- Default box -->
         <div class="box">
           <div class="box-header with-border">
-            <h3 class="box-title">Editar Producto</h3>
+            <h3 class="box-title">Editar Proyecto</h3>
           </div>
           <div class="box-body">
             <?php
-                $sql ="SELECT * FROM `productos` WHERE `id_pro` = $id";
+                $sql ="SELECT * FROM `proyectos` WHERE `id` = $id";
                 $resultado = $con->query($sql);
-                $producto = $resultado->fetch_assoc(); 
-
+                $proyecto = $resultado->fetch_assoc(); 
              ?>
             <!-- form start -->
-            <form role="form" name="guardar-producto" id="guardar-producto-archivo" method="post" action="modelo-productos.php" enctype="multipart/form-data">
+            <form role="form" name="guardar-proyecto" id="guardar-proyecto-archivo" method="post" action="modelo-proyectos.php" enctype="multipart/form-data">
               <div class="box-body">
                 <div class="form-group">
                   <label for="nombre">Nombre</label>
                   <input autocomplete="off" type="text" class="form-control" id="nombre" name="nombre"
-                  placeholder="Ingresa el nombre del producto" value="<?php echo $producto['nombre'] ?>">
-                </div>
-                <div class="form-group">
-                  <label for="precio">Precio</label>
-                  <input autocomplete="off" type="text" class="form-control" id="precio" name="precio"
-                  placeholder="Ingresa el precio del producto" value="<?php echo $producto['precio'] ?>">
-                </div>
-                <!-- select -->
-                <div class="form-group">
-                  <select name="categoria" class="form-control">
-                  <option value="">Selecciona una categoria</option>
-                    <option value="anillos">1.- Anillos</option>
-                    <option value="aretes">2.- Aretes</option>
-                    <option value="collares">3.- Collares</option>
-                    <option value="pulseras">4.- Pulseras</option>
-                  </select>
+                  placeholder="Ingresa el nombre del proyecto" value="<?php echo $proyecto['nombre'] ?>">
                 </div>
                 <div class="form-group">
                   <label for="imagen_actual">Imagen Actual: </label>
                   <br>
-                  <img src="../../assets/images/<?php echo $producto['url_foto']; ?>" alt="Productos del catalo de amora" width="200" height ="200">
+                  <img src="../../assets/proyectos/<?php echo $proyecto['foto']; ?>" alt="Proyectos de VSI" width="200" height ="200">
                 </div>
                 <div class="form-group">
-                  <label for="imagen-producto">Foto</label>
-                  <input type="file" id="imagen-producto" name="archivo_imagen">
+                  <label for="imagen-proyecto">Foto</label>
+                  <input type="file" id="imagen-proyecto" name="archivo_imagen">
                   <div style="display: flex; flex-wrap: wrap; justify-content: space-between: text-align: center; margin-top: 10px;">
                     <p style="width: 50%;" class="help-block">• Medida recomendada de la imagen: <strong>1500 x
                         1500</strong> </p>
@@ -79,9 +63,14 @@
                     </p>
                   </div>
                 </div> 
+                <div class="form-group">
+                  <label for="enlace">Enlace</label>
+                  <input autocomplete="off" type="text" class="form-control" id="enlace" name="enlace"
+                    placeholder="Ingresa el enlace del proyecto" value="<?php echo $proyecto['enlace']; ?>">
+                </div>
                 <div class="box-footer">
                   <input type="hidden" name="registro" value="actualizar">
-                  <input type="hidden" name="id_registro"  value="<?php echo $producto['id_pro']; ?>">
+                  <input type="hidden" name="id_registro"  value="<?php echo $proyecto['id']; ?>">
                   <button type="submit" class="btn btn-primary">Actualizar</button>
                 </div>
             </form>

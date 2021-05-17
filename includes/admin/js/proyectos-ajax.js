@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(document).ready(function () {
     /* Crear un usuario y mandar info a la BD */
-    $('#guardar-producto-archivo').on('submit', function(e) {
+    $('#guardar-proyecto-archivo').on('submit', function (e) {
         e.preventDefault();
 
         var datos = new FormData(this);
@@ -14,20 +14,20 @@ $(document).ready(function() {
             processData: false,
             async: true,
             cache: false,
-            beforeSend: function() {
+            beforeSend: function () {
                 $('#loader').show();
             },
-            success: function(data) {
-                console.log(data);
+            success: function (data) {
+                //console.log(data);
                 var resultado = data;
                 if (resultado.respuesta === 'exito') {
                     swal(
-                        'El producto!',
+                        'El proyecto!',
                         'Se agrego correctamente.',
                         'success'
                     );
                     $('#loader').hide();
-                    $('#guardar-productos-archivo')[0].reset();
+                    $('#guardar-proyecto-archivo')[0].reset();
                 } else {
                     swal(
                         'Ooops!',
@@ -37,7 +37,7 @@ $(document).ready(function() {
                 }
                 if (resultado.respuesta === 'actualizar') {
                     swal(
-                        'El producto!',
+                        'El Proyecto!',
                         'Se edito correctamente.',
                         'success'
                     );
@@ -46,10 +46,10 @@ $(document).ready(function() {
         });
     });
     /* Eliminar registro */
-    $('.borrar_registro').on('click', function(e) {
+    $('.borrar_registro').on('click', function (e) {
         e.preventDefault();
         var id = $(this).attr('data-id');
-        var producto = $(this).attr('data-tipo');
+        var proyecto = $(this).attr('data-tipo');
         swal({
             title: 'Estas seguro?',
             text: "Esta acción no se puede revertir!",
@@ -60,8 +60,8 @@ $(document).ready(function() {
             confirmButtonText: 'Si! Eliminar',
             cancelButtonText: 'Cancelar'
 
-        }).then(function(result) {
-            console.log(result);
+        }).then(function (result) {
+            //console.log(result);
             if (result.value) {
                 //console.log("ID:" + id);
 
@@ -72,8 +72,8 @@ $(document).ready(function() {
                         'registro': 'eliminar'
                     },
 
-                    url: 'modelo-' + producto + '.php',
-                    success: function(data) {
+                    url: 'modelo-' + proyecto + '.php',
+                    success: function (data) {
                         //  console.log(data);
                         var resultado = JSON.parse(data);
                         console.log(resultado);

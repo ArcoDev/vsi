@@ -13,8 +13,8 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Lista de productos
-      <small>registrados en la base de datos de amora</small>
+      Lista de proyectos
+      <small>registrados en la base de datos de VSI</small>
     </h1>
   </section>
 
@@ -32,33 +32,31 @@
               <thead>
                 <tr>
                   <th>Nombre</th>
-                  <th>Precio</th>
-                  <th>Categoria</th>
-                  <th>Foto</th>
+                  <th>Imagen</th>
+                  <th>Enlace</th>
                   <th>Acciones</th>
                 </tr>
               </thead>
               <tbody>
                 <?php
                     try {
-                      $sql = "SELECT id_pro, nombre, precio, nombre_cat, url_foto FROM productos";
+                      $sql = "SELECT id, nombre, foto, enlace FROM proyectos";
                       $resultado = $con->query($sql);
                     } catch (Exception $e) {
                       $error = $e->getMessage();
                       echo $error;
                     }
-                    while ($producto = $resultado->fetch_assoc()) {?>
+                    while ($proyecto = $resultado->fetch_assoc()) {?>
                 <tr>
-                  <td><?php echo $producto['nombre'] ?></td>
-                  <td><?php echo $producto['precio'] ?></td>
-                  <td><?php echo $producto['nombre_cat'] ?></td>
-                  <td><center><img loading = "lazy" src="../../assets/images/<?php echo $producto['url_foto']; ?>" alt="Productos del catalo de amora" width="200" height ="100"></center></td>
+                  <td><?php echo $proyecto['nombre'] ?></td>
+                  <td><center><img loading = "lazy" src="../../assets/proyectos/<?php echo $proyecto['foto']; ?>" alt="Proyectos de VSI" width="200" height ="100"></center></td>
+                  <td><?php echo $proyecto['enlace'] ?></td>
                   <td>
-                    <a href="editar-productos.php?id=<?php echo $producto['id_pro']?>"
+                    <a href="editar-proyecto.php?id=<?php echo $proyecto['id']?>"
                       class="btn btn-warning btn-flat margin" title="Editar">
                       <i class="fas fa-pencil-alt"></i>
                     </a>
-                    <a href="#" data-id="<?php echo $producto['id_pro']?>" data-tipo="productos"
+                    <a href="#" data-id="<?php echo $proyecto['id']?>" data-tipo="proyectos"
                       class="btn btn-danger btn-flat margin borrar_registro" title="Eliminar">
                       <i class="fas fa-trash"></i>
                     </a>
@@ -68,10 +66,9 @@
               </tbody>
               <tfoot>
                 <tr>
-                  <th>Nombre</th>
-                  <th>Precio</th>
-                  <th>Categoria</th>
-                  <th>Foto</th>
+                <th>Nombre</th>
+                  <th>Imagen</th>
+                  <th>Enlace</th>
                   <th>Acciones</th>
                 </tr>
               </tfoot>

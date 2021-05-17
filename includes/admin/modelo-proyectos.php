@@ -1,11 +1,10 @@
 <?php
 error_reporting(E_ALL ^ E_NOTICE);
-/* Crear productos y mandar ifo a la BD */
+/* Crear proyecto y mandar ifo a la BD */
 include_once "functions/funciones.php";
 $nombre = $_POST['nombre'];
-$precio = $_POST['precio'];
-$categoria = $_POST['categoria'];
-$url_foto = $_POST['url_foto'];
+$url_foto = $_POST['foto'];
+$enlace = $_POST['enlace'];
 $id_registroEditar = $_POST["id_registro"];
 
 if($_POST['registro'] == 'nuevo') {
@@ -16,9 +15,8 @@ if($_POST['registro'] == 'nuevo') {
         'file' => $_FILES
     );
     die(json_encode($respuesta));
-    CHECAR VIDEO 777
     */
-    $directorio = "../../assets/images/";
+    $directorio = "../../assets/proyectos/";
     if(!is_dir($directorio)) {
         mkdir($directorio, 0755, true);
     }
@@ -32,14 +30,14 @@ if($_POST['registro'] == 'nuevo') {
     }
     try {
         include_once "functions/funciones.php";
-        $stmt = $con->prepare("INSERT INTO productos (nombre, precio, nombre_cat, url_foto) VALUES (?, ?, ?, ?)");
-        $stmt->bind_param("ssss", $nombre, $precio, $categoria, $imagen_url);
+        $stmt = $con->prepare("INSERT INTO proyectos (nombre, foto, enlace) VALUES (?, ?, ?)");
+        $stmt->bind_param("sss", $nombre, $imagen_url, $enlace);
         $stmt->execute();
         $id_insertado = $stmt->insert_id;
         if ($stmt->affected_rows){
             $respuesta=array(
                 'respuesta'=>'exito',
-                'id_producto'=>$id_insertado,
+                'id_proyecto'=>$id_insertado,
                 'resultado_imagen' => $imagen_resultado
             );
         }else{
@@ -54,12 +52,10 @@ if($_POST['registro'] == 'nuevo') {
     }
     die(json_encode($respuesta));
 }
-
-
-/*Actualizar Registro de usuario */
+/*Actualizar Registro de proyecto */
 if($_POST['registro'] == 'actualizar') {
     
-    $directorio = "../../assets/images/";
+    $directorio = "../../assets/proyectos/";
     if(!is_dir($directorio)) {
         mkdir($directorio, 0755, true);
     }
@@ -74,12 +70,12 @@ if($_POST['registro'] == 'actualizar') {
     try {
         if($_FILES['archivo_imagen']['size'] > 0) {
             //con imagen
-            $stmt = $con->prepare("UPDATE productos SET nombre = ?, precio = ?, url_foto = ?, nombre_cat = ? WHERE id_pro = ?");
-            $stmt->bind_param("ssssi", $nombre, $precio, $imagen_url, $categoria, $id_registroEditar);
+            $stmt = $con->prepare("UPDATE proyectos SET nombre = ?, foto = ?, enlace = ? WHERE id = ?");
+            $stmt->bind_param("sssi", $nombre, $imagen_url, $enlace, $id_registroEditar);
         } else {
             //sin imagen
-            $stmt = $con->prepare("UPDATE productos SET nombre = ?, precio = ?, nombre_cat = ? WHERE id_pro = ?");
-            $stmt->bind_param("sssi", $nombre, $precio, $categoria, $id_registroEditar);
+            $stmt = $con->prepare("UPDATE proyectos SET nombre = ?, enlace = ? WHERE id = ?");
+            $stmt->bind_param("ssi", $nombre, $enlace, $id_registroEditar);
         }
         $estado = $stmt->execute();
         if($estado == true) {
@@ -101,12 +97,11 @@ if($_POST['registro'] == 'actualizar') {
     }
     die(json_encode($respuesta));
 }
-
-/*Eliminar usuario */
+/* Eliminar Proyecto */
 if($_POST['registro'] == 'eliminar') { 
     $id_borrar = $_POST['id'];
     try {
-        $stmt = $con->prepare("DELETE FROM productos WHERE id_pro = ?");
+        $stmt = $con->prepare("DELETE FROM proyectos WHERE id = ?");
         $stmt->bind_param('i', $id_borrar);
         $stmt->execute();
         if($stmt->affected_rows) {
