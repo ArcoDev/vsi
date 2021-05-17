@@ -701,16 +701,23 @@ main nav .correo {
         }
     }
 }
+
 @mixin desarrollos {
     width: 100%;
-    height: 465px;
+    height: 400px;
     background-image: url('../img/desarrollo_paloblanco.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 0;
     margin-top: 2rem;
-    
+
+    @media screen and(max-width: 767px) {
+        & {
+            height: 400px;
+        }
+    }
+
     .txt-info {
         width: 90%;
         height: 400px;
@@ -718,32 +725,108 @@ main nav .correo {
         clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
         display: flex;
         flex-direction: column;
-        padding: 2rem 0;
-    
+        justify-content: center;
+        @media screen and(max-width: 767px) {
+            & {
+                width: 100%;
+                height: 335px;
+                clip-path: none;
+                background: rgba(29, 122, 82, 0.5);
+                align-items: center;
+            }
+        }
+
         h2 {
             color: #fff;
             font-size: 3rem;
             padding-left: 5rem;
             font-family: 'Roboto-Light';
             text-transform: uppercase;
+
+            @media screen and(max-width: 767px) {
+                & {
+                    font-size: 1.5rem;
+                    padding: 0;
+                    text-align: center;
+
+                }
+            }
+
             span {
                 font-family: 'Roboto-Black';
             }
         }
-    
+
         p {
             color: #fff;
             text-align: justify;
             width: 70%;
             font-size: 2rem;
             padding-left: 5rem;
+
+            @media screen and(max-width: 767px) {
+                & {
+                    padding: 0;
+                    width: 90%;
+                    font-size: 1.3rem;
+                }
+            }
         }
     }
 
 }
+
 //Desarrollos 
-.inmobiliaria {
+.desarrollosInm {
     @include desarrollos;
+}
+
+.desarrollosCap {
+    @include desarrollos;
+
+    .txt-info {
+        width: 100%;
+        height: 401px;
+        background: gray;
+        clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 23% 100%, 0 0, 0 0);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        @media screen and(max-width: 767px) {
+            & {
+                clip-path: none;
+                height: 335px;
+                align-items: center;
+                background: rgba(128, 128, 128, 0.534);
+
+            }
+        }
+
+        h2 {
+            padding-left: 0;
+            padding-right: 3rem;
+            text-align: right;
+
+            @media screen and(max-width: 767px) {
+                & {
+                    text-align: center;
+                    padding: 0;
+                }
+            }
+        }
+
+        p {
+            padding-left: 0;
+            padding-right: 2rem;
+
+            @media screen and(max-width: 767px) {
+                & {
+                    padding: 0;
+                }
+            }
+        }
+    }
 }
 
 /*main .cuerpo .nosotros{

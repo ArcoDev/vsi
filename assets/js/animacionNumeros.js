@@ -6,9 +6,9 @@ const cont3 = document.getElementById('contador3');
 const cont4 = document.getElementById('contador4');
 
 window.onscroll = function () {
-    const scroll = window.scrollY;
-    console.log(scroll);
-    if(scroll === 1200) {
+    const y = window.scrollY;
+    console.log(y);
+    if(scrollY === 1200) {
         animaNumeros();
         console.log('llegue');
     } else {
@@ -58,5 +58,5 @@ function animaNumeros() {
         if (cantidad4 === 200) {
             clearInterval(tiempo4)
         }
-    }, 50);
+    }, 30);
 }

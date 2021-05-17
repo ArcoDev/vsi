@@ -655,9 +655,9 @@ main nav .correo {
   transform: translate3d(1, 0, 0);
 }
 
-.inmobiliaria {
+.desarrollosInm {
   width: 100%;
-  height: 465px;
+  height: 400px;
   background-image: url("../img/desarrollo_paloblanco.jpg");
   background-position: center;
   background-size: cover;
@@ -666,17 +666,33 @@ main nav .correo {
   margin-top: 2rem;
 }
 
-.inmobiliaria .txt-info {
+@media screen and (max-width: 767px) {
+  .desarrollosInm {
+    height: 400px;
+  }
+}
+
+.desarrollosInm .txt-info {
   width: 90%;
   height: 400px;
   background: #1d7a52;
   clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
   display: flex;
   flex-direction: column;
-  padding: 2rem 0;
+  justify-content: center;
 }
 
-.inmobiliaria .txt-info h2 {
+@media screen and (max-width: 767px) {
+  .desarrollosInm .txt-info {
+    width: 100%;
+    height: 335px;
+    clip-path: none;
+    background: rgba(29, 122, 82, 0.5);
+    align-items: center;
+  }
+}
+
+.desarrollosInm .txt-info h2 {
   color: #fff;
   font-size: 3rem;
   padding-left: 5rem;
@@ -684,16 +700,148 @@ main nav .correo {
   text-transform: uppercase;
 }
 
-.inmobiliaria .txt-info h2 span {
+@media screen and (max-width: 767px) {
+  .desarrollosInm .txt-info h2 {
+    font-size: 1.5rem;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.desarrollosInm .txt-info h2 span {
   font-family: 'Roboto-Black';
 }
 
-.inmobiliaria .txt-info p {
+.desarrollosInm .txt-info p {
   color: #fff;
   text-align: justify;
   width: 70%;
   font-size: 2rem;
   padding-left: 5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .desarrollosInm .txt-info p {
+    padding: 0;
+    width: 90%;
+    font-size: 1.3rem;
+  }
+}
+
+.desarrollosCap {
+  width: 100%;
+  height: 400px;
+  background-image: url("../img/desarrollo_paloblanco.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .desarrollosCap {
+    height: 400px;
+  }
+}
+
+.desarrollosCap .txt-info {
+  width: 90%;
+  height: 400px;
+  background: #1d7a52;
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .desarrollosCap .txt-info {
+    width: 100%;
+    height: 335px;
+    clip-path: none;
+    background: rgba(29, 122, 82, 0.5);
+    align-items: center;
+  }
+}
+
+.desarrollosCap .txt-info h2 {
+  color: #fff;
+  font-size: 3rem;
+  padding-left: 5rem;
+  font-family: 'Roboto-Light';
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .desarrollosCap .txt-info h2 {
+    font-size: 1.5rem;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.desarrollosCap .txt-info h2 span {
+  font-family: 'Roboto-Black';
+}
+
+.desarrollosCap .txt-info p {
+  color: #fff;
+  text-align: justify;
+  width: 70%;
+  font-size: 2rem;
+  padding-left: 5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .desarrollosCap .txt-info p {
+    padding: 0;
+    width: 90%;
+    font-size: 1.3rem;
+  }
+}
+
+.desarrollosCap .txt-info {
+  width: 100%;
+  height: 401px;
+  background: gray;
+  clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 23% 100%, 0 0, 0 0);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 767px) {
+  .desarrollosCap .txt-info {
+    clip-path: none;
+    height: 335px;
+    align-items: center;
+    background: rgba(128, 128, 128, 0.534);
+  }
+}
+
+.desarrollosCap .txt-info h2 {
+  padding-left: 0;
+  padding-right: 3rem;
+  text-align: right;
+}
+
+@media screen and (max-width: 767px) {
+  .desarrollosCap .txt-info h2 {
+    text-align: center;
+    padding: 0;
+  }
+}
+
+.desarrollosCap .txt-info p {
+  padding-left: 0;
+  padding-right: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .desarrollosCap .txt-info p {
+    padding: 0;
+  }
 }
 
 /*main .cuerpo .nosotros{
