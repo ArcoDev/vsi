@@ -92,6 +92,21 @@ section {
 .fila {
   display: flex;
   justify-content: space-between;
+  margin-top: 8rem;
+}
+
+@media screen and (max-width: 767px) {
+  .fila iframe {
+    width: 300px;
+    margin-left: -1rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .fila {
+    width: 400px;
+    margin-left: -1rem;
+  }
 }
 
 .columna-1 {
@@ -708,6 +723,13 @@ main nav .correo {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .desarrollosInm .txt-info h2 {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+}
+
 .desarrollosInm .txt-info h2 span {
   font-family: 'Roboto-Black';
 }
@@ -725,6 +747,13 @@ main nav .correo {
     padding: 0;
     width: 90%;
     font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .desarrollosInm .txt-info p {
+    font-size: 1rem;
+    padding: 1rem;
   }
 }
 
@@ -781,6 +810,13 @@ main nav .correo {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .desarrollosCap .txt-info h2 {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+}
+
 .desarrollosCap .txt-info h2 span {
   font-family: 'Roboto-Black';
 }
@@ -798,6 +834,13 @@ main nav .correo {
     padding: 0;
     width: 90%;
     font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .desarrollosCap .txt-info p {
+    font-size: 1rem;
+    padding: 1rem;
   }
 }
 
