@@ -1,4 +1,3 @@
-
 //Variables
 const cont1 = document.getElementById('contador1');
 const cont2 = document.getElementById('contador2');
@@ -7,7 +6,7 @@ const cont4 = document.getElementById('contador4');
 
 window.onscroll = function () {
     const y = window.scrollY;
-    console.log(y);
+    //console.log(y);
     if(scrollY === 1200) {
         animaNumeros();
         console.log('llegue');

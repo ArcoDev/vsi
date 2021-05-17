@@ -694,6 +694,11 @@ main nav .correo {
             width: 100%;
             height: 300px;
             object-fit: cover;
+            cursor: pointer;
+            transition: all .4s ease-in;
+            &:hover {
+                transform: scale(1.04);
+            }
         }
 
         a {
@@ -715,7 +720,59 @@ main nav .correo {
         }
     }
 }
-
+/*Imagenes proyectos*/
+.caja-img {
+    width: 100%;
+    transition: all 1s;
+    display: none;
+    .info {
+        width: 100%;
+        padding: 1rem 0;
+        text-align: center;
+        span {
+            cursor: pointer;
+            position: absolute;
+            margin-top: -6.5rem;
+            right: 11%;
+            color: #000;
+            font-weight: bold;
+            @media screen and(max-width: 767px){
+                & {
+                    margin-top: -12rem;
+                }
+            }
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                & {
+                    margin-top: -8rem;
+                }
+            }
+        }
+        @media screen and(max-width: 767px){
+            p {
+                font-size: .9rem;
+            }
+        }
+    }
+    .galeria {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        img {
+            width: 33%;
+            @media screen and(max-width: 767px){
+                & {
+                    width: 100%;
+                }
+            }
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                & {
+                   width: 48%;
+                }
+            }
+        }
+    }
+}
 @mixin desarrollos {
     width: 100%;
     height: 400px;

@@ -650,6 +650,12 @@ main nav .correo {
   width: 100%;
   height: 300px;
   object-fit: cover;
+  cursor: pointer;
+  transition: all .4s ease-in;
+}
+
+.caja-proyectos .proyectos img:hover {
+  transform: scale(1.04);
 }
 
 .caja-proyectos .proyectos a {
@@ -668,6 +674,69 @@ main nav .correo {
   background: gray;
   color: #fff;
   transform: translate3d(1, 0, 0);
+}
+
+/*Imagenes proyectos*/
+.caja-img {
+  width: 100%;
+  transition: all 1s;
+  display: none;
+}
+
+.caja-img .info {
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.caja-img .info span {
+  cursor: pointer;
+  position: absolute;
+  margin-top: -6.5rem;
+  right: 11%;
+  color: #000;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .caja-img .info span {
+    margin-top: -12rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .caja-img .info span {
+    margin-top: -8rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .caja-img .info p {
+    font-size: .9rem;
+  }
+}
+
+.caja-img .galeria {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.caja-img .galeria img {
+  width: 33%;
+}
+
+@media screen and (max-width: 767px) {
+  .caja-img .galeria img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .caja-img .galeria img {
+    width: 48%;
+  }
 }
 
 .desarrollosInm {
