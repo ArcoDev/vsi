@@ -12,32 +12,8 @@
         <a href="#"><i class="fas fa-circle text-success"></i> Online</a>
       </div>
     </div>
-    <!-- search form 
-    <form action="#" method="get" class="sidebar-form">
-      <div class="input-group">
-        <input type="text" name="q" class="form-control" placeholder="Buscar...">
-        <span class="input-group-btn">
-          <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fas fa-search"></i>
-          </button>
-        </span>
-      </div>
-    </form>-->
-    <!-- /.search form -->
-    <!-- sidebar menu: : style can be found in sidebar.less -->
     <ul class="sidebar-menu" data-widget="tree">
       <li class="header">Menú de Administración</li>
-      <!-- <li class="treeview">
-        <a href="#">
-        <i class="fas fa-th"></i><span>Dashboard</span>
-          <span class="pull-right-container">
-            <i class="fas fa-angle-down"></i>
-
-          </span>
-        </a>
-        <ul class="treeview-menu">
-          <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Informacion</a></li>
-        </ul>
-      </li>-->
       <li class="treeview">
         <a href="#">
           <i class="fas fa-users"></i>
@@ -73,12 +49,10 @@
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="listar-categorias.php"><i class="fas fa-th-list" style="margin-right: 8px"></i>Ver Todas</a></li>
-          <li><a href="crear-categorias.php"><i class="fas fa-plus-circle" style="margin-right: 8px"></i>Agregar</a></li>
+          <li><a href="listar-galeria.php"><i class="fas fa-th-list" style="margin-right: 8px"></i>Ver Todas</a></li>
+          <li><a href="crear-galeria.php"><i class="fas fa-plus-circle" style="margin-right: 8px"></i>Agregar</a></li>
         </ul>
       </li>
   </section>
   <!-- /.sidebar -->
 </aside>
-
-<!-- =============================================== -->

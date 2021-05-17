@@ -1,46 +1,55 @@
-$(document).ready(function() {
+$(document).ready(function () {
     /* Crear un usuario y mandar info a la BD */
-    $('#guardar-categoria').on('submit', function(e) {
+    $('#guardar-galeria').on('submit', function (e) {
         e.preventDefault();
-        //lo que hace serializeArray() es iterar en todo los campos y nos crea unos objetos con los datos
-        var datos = $(this).serializeArray();
+
+        var datos = new FormData(this);
+
         $.ajax({
             type: $(this).attr('method'),
             data: datos,
             url: $(this).attr('action'),
             dataType: 'json',
-            success: function(data) {
-                console.log(data);
+            contentType: false,
+            processData: false,
+            async: true,
+            cache: false,
+            beforeSend: function () {
+                $('#loader').show();
+            },
+            success: function (data) {
+                //console.log(data);
                 var resultado = data;
                 if (resultado.respuesta === 'exito') {
                     swal(
-                        'La categoria!',
+                        'El proyecto!',
                         'Se agrego correctamente.',
                         'success'
                     );
+                    $('#loader').hide();
+                    $('#guardar-proyecto-archivo')[0].reset();
                 } else {
                     swal(
                         'Ooops!',
-                        'No se puede cargar correctamnte el producto',
+                        'No se puede cargar el producto',
                         'error'
                     );
                 }
                 if (resultado.respuesta === 'actualizar') {
                     swal(
-                        'El producto!',
+                        'El Proyecto!',
                         'Se edito correctamente.',
                         'success'
                     );
-
                 }
             }
         });
     });
     /* Eliminar registro */
-    $('.borrar_registro').on('click', function(e) {
+    $('.borrar_registro').on('click', function (e) {
         e.preventDefault();
         var id = $(this).attr('data-id');
-        var categoria = $(this).attr('data-tipo');
+        var proyecto = $(this).attr('data-tipo');
         swal({
             title: 'Estas seguro?',
             text: "Esta acción no se puede revertir!",
@@ -51,8 +60,8 @@ $(document).ready(function() {
             confirmButtonText: 'Si! Eliminar',
             cancelButtonText: 'Cancelar'
 
-        }).then(function(result) {
-            console.log(result);
+        }).then(function (result) {
+            //console.log(result);
             if (result.value) {
                 //console.log("ID:" + id);
 
@@ -63,8 +72,8 @@ $(document).ready(function() {
                         'registro': 'eliminar'
                     },
 
-                    url: 'modelo-' + categoria + '.php',
-                    success: function(data) {
+                    url: 'modelo-' + proyecto + '.php',
+                    success: function (data) {
                         //  console.log(data);
                         var resultado = JSON.parse(data);
                         console.log(resultado);
