@@ -19,7 +19,7 @@
   </section>
 
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-10">
       <!-- Main content -->
       <section class="content">
         <!-- Default box -->
@@ -41,9 +41,20 @@
                   <input autocomplete="off" type="text" class="form-control" id="desc" name="desc"
                     placeholder="Ingresa la descripcion de la galeria">
                 </div>
+                <!-- select -->
+                <div class="form-group">
+                <label for="precio">Proyecto</label>
+                  <select name="categoria" class="form-control">
+                  <option>Selecciona el proyecto al que pertenecera la galeria</option>
+                    <option value="anillos">Palo Blanco</option>
+                    <option value="brasaletes">Postal</option>
+                    <option value="collares">Noma</option>
+                    <option value="collares">Plaza Saltillo 400</option>
+                  </select>
+                </div>
                 <div class="form-group">
                   <label for="imagen-proyecto">Imagenes</label>
-                  <input type="file" id="imagen-proyecto[]" name="archivo[]" multiple="">
+                  <input type="file" id="archivo[]" name="archivo[]" multiple="" accept="image/*">
                   <div
                     style="display: flex; flex-wrap: wrap; justify-content: space-between: text-align: center; margin-top: 10px;">
                     <p style="width: 50%;" class="help-block">• Medida recomendada de la imagen: <strong>1500 x
@@ -52,7 +63,7 @@
                         MB</strong>
                     </p>
                     <p style="width: 100%;" class="help-block">• Extenciónes permitidas: <strong>jpg, png,
-                        svg</strong>
+                        svg, webp</strong>
                     </p>
                   </div>
                 </div>

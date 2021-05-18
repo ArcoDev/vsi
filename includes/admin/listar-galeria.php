@@ -47,8 +47,8 @@
                     }
                     while ($galeria = $resultado->fetch_assoc()) {?>
                 <tr>
-                  <td><?php echo $galeria['id'] ?></td>
-                  <td><?php echo $galeria['nombre'] ?></td>
+                  <td><?php echo $galeria['titulo'] ?></td>
+                  <td><?php echo $galeria['descripcion'] ?></td>
                   <td>
                     <a href="editar-galeria.php?id=<?php echo $galeria['id']?>"
                       class="btn btn-warning btn-flat margin" title="Editar">

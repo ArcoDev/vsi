@@ -7,7 +7,6 @@ $desc = $_POST['desc'];
 $id_registroEditar = $_POST["id_registro"];
 
 if($_POST['registro'] == 'nuevo') {
-    echo 'holaa';
     /*Comprobar si se esta mandado los datos de file y de post
     $respuesta = array(
         'post' => $_POST,
@@ -15,33 +14,30 @@ if($_POST['registro'] == 'nuevo') {
     );
     die(json_encode($respuesta));
     */
-    var_dump($_FILES['archivo']);
-    //die();
-    foreach ($_FILES['archivo']['tmp_name'] as $key => $tmp_name) {
-        
+   foreach ($_FILES['archivo']['tmp_name'] as $key => $tmp_name) {
+       
         if($_FILES['archivo']['name'][$key]) {
+            
             $filename = $_FILES['archivo']['name'][$key];
             $temporal = $_FILES['archivo']['tmp_name'][$key];
-            
-            $carpetaRaiz = "../../assets/galeria/";
-            $directorio = $carpetaRaiz;
-            
+
+            $directorio = "../../assets/galery/";
+
             if(!file_exists($directorio)) {
-                mkdir($directorio, 0777, true);
+                mkdir($directorio, 0755, true);
             }
-            
+            //directorio destino
             $dir = opendir($directorio);
             $ruta = $directorio.'/'.$filename;
-            
+
             if(move_uploaded_file($temporal, $ruta)) {
-                echo "EL archivo $filename se ha almacenado correctamnte";
+                echo 'Se cargo correctamnte';
             } else {
-                echo "Error";
+                echo 'error';
             }
-            
             closedir($dir);
         }
-    }
+   }
     /*$directorio = "../../assets/galeria/";
     if(!is_dir($directorio)) {
         mkdir($directorio, 0755, true);
