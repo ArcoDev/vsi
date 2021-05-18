@@ -31,30 +31,30 @@
             <table id="registros" class="table table-bordered table-striped">
               <thead>
                 <tr>
-                  <th>Identificador de categoria</th>
-                  <th>Nombre de la categoria</th>
+                  <th>Titulo</th>
+                  <th>Descripcion</th>
                   <th>Acciones</th>
                 </tr>
               </thead>
               <tbody>
                 <?php
                     try {
-                      $sql = "SELECT id_cat, nombre FROM categorias";
+                      $sql = "SELECT id, titulo, descripcion FROM galeria";
                       $resultado = $con->query($sql);
                     } catch (Exception $e) {
                       $error = $e->getMessage();
                       echo $error;
                     }
-                    while ($categoria = $resultado->fetch_assoc()) {?>
+                    while ($galeria = $resultado->fetch_assoc()) {?>
                 <tr>
-                  <td><?php echo $categoria['id_cat'] ?></td>
-                  <td><?php echo $categoria['nombre'] ?></td>
+                  <td><?php echo $galeria['id'] ?></td>
+                  <td><?php echo $galeria['nombre'] ?></td>
                   <td>
-                    <a href="editar-categorias.php?id=<?php echo $categoria['id_cat']?>"
+                    <a href="editar-galeria.php?id=<?php echo $galeria['id']?>"
                       class="btn btn-warning btn-flat margin" title="Editar">
                       <i class="fas fa-pencil-alt"></i>
                     </a>
-                    <a href="#" data-id="<?php echo $categoria['id_cat']?>" data-tipo="categorias"
+                    <a href="#" data-id="<?php echo $galeria['id_cat']?>" data-tipo="galeria"
                       class="btn btn-danger btn-flat margin borrar_registro" title="Eliminar">
                       <i class="fas fa-trash"></i>
                     </a>
@@ -64,8 +64,8 @@
               </tbody>
               <tfoot>
                 <tr>
-                  <th>Identificador de categoria</th>
-                  <th>Nombre de la categoria</th>
+                  <th>Titulo</th>
+                  <th>Descripcion</th>
                   <th>Acciones</th>
                 </tr>
               </tfoot>
