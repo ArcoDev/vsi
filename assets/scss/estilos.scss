@@ -86,11 +86,14 @@ section {
 }
 
 .contenedor1 {
-    margin: 0 5vw;
+    //margin: 0 5vw;
 }
 
 .contenedor2 {
-    margin: 20px 10vw;
+   // margin: 20px 5vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .fila {
@@ -353,8 +356,8 @@ main nav .correo {
 
 //nosotros
 .nosotros {
+    width: 90%;
     margin-bottom: 50px;
-
     h2 {
         font-size: 4rem;
         font-family: "Roboto-Light";
@@ -520,7 +523,7 @@ main nav .correo {
 
 //NUMEROS 
 .caja-numeros {
-    width: 130%;
+    width: 100%;
     height: 500px;
     background: olive;
     padding: 0;
@@ -528,7 +531,7 @@ main nav .correo {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: -10rem;
+   //margin-left: -10rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -537,7 +540,7 @@ main nav .correo {
         & {
             width: 100%;
             height: auto;
-            margin-left: -1rem;
+            //margin-left: -1rem;
             flex-wrap: wrap;
         }
     }
@@ -554,7 +557,7 @@ main nav .correo {
     &::before {
         content: '';
         position: absolute;
-        width: 130%;
+        width: 100%;
         height: 500px;
         background: rgb(42, 60, 150);
         background: linear-gradient(90deg, rgba(42, 60, 150, 0.8382703423166141) 0%, rgba(28, 137, 95, 0.8634804263502276) 100%);
@@ -653,13 +656,12 @@ main nav .correo {
 
 //Proyectos 
 .caja-proyectos {
-    width: 100%;
+    width: 90%;
     padding: 0;
     display: flex;
     gap: 10px;
     text-align: center;
     margin-top: 3rem;
-
     @media screen and(max-width: 767px) {
         & {
             gap: 5px;
@@ -728,7 +730,7 @@ main nav .correo {
 
 /*Imagenes proyectos*/
 .caja-img {
-    width: 100%;
+    width: 90%;
     transition: all 1s;
     display: none;
 
@@ -741,9 +743,10 @@ main nav .correo {
             cursor: pointer;
             position: absolute;
             margin-top: -6.5rem;
-            right: 11%;
+            right: 5%;
             color: #000;
             font-weight: bold;
+            font-size: 1.5rem;
 
             @media screen and(max-width: 767px) {
                 & {
@@ -790,7 +793,7 @@ main nav .correo {
 }
 
 @mixin desarrollos {
-    width: 100%;
+    width: 90%;
     height: 650px;
     background-image: url('../img/capital.jpg');
     background-position: center;
@@ -1114,7 +1117,7 @@ main .cuerpo .contacto .titulo-cuerpo h2 {
     margin-bottom: 30px;
 }
 
-main .cuerpo .contacto .titulo-cuerpo .fila .columna-2 .contenedor-2 {
+main .cuerpo .contacto .titulo-cuerpo .fila .columna-2 .ghor-2 {
     text-align: justify;
     padding: 30px;
 }
