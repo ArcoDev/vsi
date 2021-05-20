@@ -1,8 +1,8 @@
 window.addEventListener('DOMContentLoaded', function() {
-    const postal = document.getElementById('postal');
-    const palo = document.getElementById('palo');
-    const plaza = document.getElementById('plaza');
-    const noma = document.getElementById('noma');
+    const postal = document.getElementById('1');
+    const palo = document.getElementById('2');
+    const plaza = document.getElementById('3');
+    const noma = document.getElementById('4');
     const cajaImg = document.getElementById('caja-img');
     const cajaImg1 = document.getElementById('caja-img1');
     const cajaImg2 = document.getElementById('caja-img2');

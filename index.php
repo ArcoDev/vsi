@@ -237,7 +237,7 @@
                         $consulta = $con->query("SELECT * FROM proyectos");
                         while ($proyecto = mysqli_fetch_array($consulta)) {
                             echo '<div class="proyectos">
-                                    <img id="postal" src="./assets/proyectos/'.$proyecto["foto"].'" alt="Proyectos VSI">
+                                    <img id="'.$proyecto["id"].'" src="./assets/proyectos/'.$proyecto["foto"].'" alt="Proyectos VSI">
                                     <a href="'.$proyecto["enlace"].'">'.$proyecto["nombre"].'</a>
                                   </div>';
                         }
