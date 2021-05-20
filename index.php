@@ -1,3 +1,6 @@
+<?php
+    require "includes/conexion.php";
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -230,22 +233,15 @@
                     </div>
                 </section>
                 <section class="caja-proyectos">
-                    <div class="proyectos">
-                        <img id="postal" src="assets/img/proyecto-postal.jpg" alt="">
-                        <a href="http://postal.trazopublicidad.net/">Postal</a>
-                    </div>
-                    <div class="proyectos">
-                        <img id="palo" src="assets/img/proyecto-palo.jpg" alt="">
-                        <a href="https://www.villasi.com/paloblanco">Palo Blanco</a>
-                    </div>
-                    <div class="proyectos">
-                        <img id="plaza" src="assets/img/proyecto-saltillo.jpg" alt="">
-                        <a href="https://www.villasi.com/">Plaza Saltillo 400</a>
-                    </div>
-                    <div class="proyectos">
-                        <img id="noma" src="assets/img/proyecto-noma.jpg" alt="">
-                        <a href="https://www.villasi.com/">Noma</a>
-                    </div>
+                    <?php
+                        $consulta = $con->query("SELECT * FROM proyectos");
+                        while ($proyecto = mysqli_fetch_array($consulta)) {
+                            echo '<div class="proyectos">
+                                    <img id="postal" src="./assets/proyectos/'.$proyecto["foto"].'" alt="Proyectos VSI">
+                                    <a href="'.$proyecto["enlace"].'">'.$proyecto["nombre"].'</a>
+                                  </div>';
+                        }
+                    ?>
                 </section>
                 <!-- Grid Proyectos -->
                 <div id="caja-img" class="caja-img">

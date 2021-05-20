@@ -85,9 +85,7 @@ section {
     width: 20px;
 }
 
-.contenedor1 {
-    //margin: 0 5vw;
-}
+
 
 .contenedor2 {
    // margin: 20px 5vw;
@@ -302,11 +300,7 @@ main nav {
     display: flex;
     justify-content: space-between;
     padding: 15px 10vh;
-    //margin: 0 5vh;
-    //border: 2px solid red;
-    //border-bottom: 1.3px solid rgb(233, 230, 230);
-    box-shadow: 0 0 1.5px rgb(240, 240, 240);
-
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -656,12 +650,13 @@ main nav .correo {
 
 //Proyectos 
 .caja-proyectos {
-    width: 90%;
+    width: 95%;
     padding: 0;
     display: flex;
     gap: 10px;
     text-align: center;
     margin-top: 3rem;
+    flex-wrap: wrap;
     @media screen and(max-width: 767px) {
         & {
             gap: 5px;
@@ -677,7 +672,7 @@ main nav .correo {
     }
 
     .proyectos {
-        width: 25%;
+        width: 24.3%;
         display: flex;
         align-items: center;
         flex-direction: column;
