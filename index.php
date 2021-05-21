@@ -244,7 +244,20 @@
                     ?>
                 </section>
                 <!-- Grid Proyectos -->
-                <div id="caja-img" class="caja-img">
+                <?php
+                    $consulta = $con->query("SELECT * FROM galeria");
+                ?>
+                    <div id="caja-img" class="caja-img">
+                        <div class="info">
+                            <?php 
+                                if($galeria = $consulta->fetch_assoc()) { ?>
+                                    <h2><?php echo $galeria['titulo']; ?></h2>
+                                    <p><?php echo $galeria['descripcion']; ?></p>
+                                    <span id="<?php echo $galeria['id_proyecto']; ?>">X</span>
+                            <?php } ?>   
+                        </div>
+                    </div>
+                <!--<div id="caja-img" class="caja-img">
                     <div class="info">
                         <h2>Postal</h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius mollitia repellendus, quos eum
@@ -262,7 +275,7 @@
                         <img src="assets/img/galeria-postal/7.jpg" alt="Galería Postal">
                         <img src="assets/img/galeria-postal/8.jpg" alt="Galería Postal">
                     </div>
-                </div>
+                </div>-->
                 <div id="caja-img1" class="caja-img">
                     <div class="info">
                         <h2>Palo Blanco</h2>
@@ -272,17 +285,17 @@
                         <span id="cerrar1">X</span>
                     </div>
                     <div class="galeria">
-                        <img src="assets/img/galeria-palo/1.jpg" alt="Galería Palo Blaco">
-                        <img src="assets/img/galeria-palo/2.jpg" alt="Galería Palo Blaco">
-                        <img src="assets/img/galeria-palo/3.jpg" alt="Galería Palo Blaco">
-                        <img src="assets/img/galeria-palo/4.jpg" alt="Galería Palo Blaco">
-                        <img src="assets/img/galeria-palo/5.jpg" alt="Galería Palo Blaco">
-                        <img src="assets/img/galeria-palo/6.jpg" alt="Galería Palo Blaco">
-                        <img src="assets/img/galeria-palo/7.jpg" alt="Galería Palo Blaco">
-                        <img src="assets/img/galeria-palo/8.jpg" alt="Galería Palo Blaco">
-                        <img src="assets/img/galeria-palo/alberca.jpg" alt="Galería Palo Blaco">
-                        <img src="assets/img/galeria-palo/fachadas.jpg" alt="Galería Palo Blaco">
-                        <img src="assets/img/galeria-palo/terraza.jpg" alt="Galería Palo Blaco">
+                        <img src="assets/img/galeria-palo/galeria-palo (1).jpg" alt="Galería Palo Blaco">
+                        <img src="assets/img/galeria-palo/galeria-palo (2).jpg" alt="Galería Palo Blaco">
+                        <img src="assets/img/galeria-palo/galeria-palo (3).jpg" alt="Galería Palo Blaco">
+                        <img src="assets/img/galeria-palo/galeria-palo (4).jpg" alt="Galería Palo Blaco">
+                        <img src="assets/img/galeria-palo/galeria-palo (5).jpg" alt="Galería Palo Blaco">
+                        <img src="assets/img/galeria-palo/galeria-palo (6).jpg" alt="Galería Palo Blaco">
+                        <img src="assets/img/galeria-palo/galeria-palo (7).jpg" alt="Galería Palo Blaco">
+                        <img src="assets/img/galeria-palo/galeria-palo (8).jpg" alt="Galería Palo Blaco">
+                        <img src="assets/img/galeria-palo/galeria-palo (9).jpg" alt="Galería Palo Blaco">
+                        <img src="assets/img/galeria-palo/galeria-palo (10).jpg" alt="Galería Palo Blaco">
+                        <img src="assets/img/galeria-palo/galeria-palo (11).jpg" alt="Galería Palo Blaco">
                     </div>
                 </div>
                 <div id="caja-img2" class="caja-img">
@@ -294,8 +307,8 @@
                         <span id="cerrar2">X</span>
                     </div>
                     <div class="galeria">
-                        <img src="assets/img/galeria-saltillo/1.jpg" alt="Galería Saltillo 400">
-                        <img src="assets/img/galeria-saltillo/2.jpg" alt="Galería Saltillo 400">
+                        <img src="assets/img/galeria-saltillo/galeria-saltillo (1).jpg" alt="Galería Saltillo 400">
+                        <img src="assets/img/galeria-saltillo/galeria-saltillo (2).jpg" alt="Galería Saltillo 400">
                     </div>
                 </div>
                 <div id="caja-img3" class="caja-img">
@@ -307,10 +320,10 @@
                         <span id="cerrar3">X</span>
                     </div>
                     <div class="galeria">
-                        <img src="assets/img/galeria-noma/co-livin.jpg" alt="Galería Noma">
-                        <img src="assets/img/galeria-noma/co-work-queretaro.jpg" alt="Galería Noma">
-                        <img src="assets/img/galeria-noma/proyecto-noma.jpg" alt="Galería Noma">
-                        <img src="assets/img/galeria-noma/sala-depa.jpg" alt="Galería Noma">
+                        <img src="assets/img/galeria-noma/galeria-noma1.jpg" alt="Galería Noma">
+                        <img src="assets/img/galeria-noma/galeria-noma2.jpg" alt="Galería Noma">
+                        <img src="assets/img/galeria-noma/galeria-noma3.jpg" alt="Galería Noma">
+                        <img src="assets/img/galeria-noma/galeria-noma4.jpg" alt="Galería Noma">
                     </div>
                 </div>
 

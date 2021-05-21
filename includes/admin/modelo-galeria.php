@@ -4,7 +4,8 @@ error_reporting(E_ALL ^ E_NOTICE);
 include_once "functions/funciones.php";
 $titulo = $_POST['titulo'];
 $desc = $_POST['desc'];
-$id_registroEditar = $_POST["id_registro"];
+$id_registroEditar = $_POST['id_registro'];
+$proyecto_gal = $_POST['proyecto_gal'];
 
 if($_POST['registro'] == 'nuevo') {
     /*Comprobar si se esta mandado los datos de file y de post
@@ -15,13 +16,12 @@ if($_POST['registro'] == 'nuevo') {
     die(json_encode($respuesta));
     */
    foreach ($_FILES['archivo']['tmp_name'] as $key => $tmp_name) {
-       
         if($_FILES['archivo']['name'][$key]) {
             
             $filename = $_FILES['archivo']['name'][$key];
             $temporal = $_FILES['archivo']['tmp_name'][$key];
 
-            $directorio = "../../assets/galery/";
+            $directorio = "../../assets/galeria/";
 
             if(!file_exists($directorio)) {
                 mkdir($directorio, 0755, true);
@@ -38,14 +38,10 @@ if($_POST['registro'] == 'nuevo') {
             closedir($dir);
         }
    }
-    /*$directorio = "../../assets/galeria/";
-    if(!is_dir($directorio)) {
-        mkdir($directorio, 0755, true);
-    }*/
     try {
         include_once "functions/funciones.php";
-        $stmt = $con->prepare("INSERT INTO galeria (titulo, descripcion) VALUES (?, ?)");
-        $stmt->bind_param("ss", $titulo, $desc);
+        $stmt = $con->prepare("INSERT INTO galeria (titulo, descripcion, id_proyecto) VALUES (?, ?, ?)");
+        $stmt->bind_param("ssi", $titulo, $desc, $proyecto_gal);
         $stmt->execute();
         $id_insertado = $stmt->insert_id;
         if ($stmt->affected_rows){
@@ -66,7 +62,7 @@ if($_POST['registro'] == 'nuevo') {
     }
     die(json_encode($respuesta));
 }
-/*Actualizar Registro de proyecto 
+/*Actualizar Registro de la galeria */
 if($_POST['registro'] == 'actualizar') {
     
     $directorio = "../../assets/proyectos/";
@@ -111,7 +107,7 @@ if($_POST['registro'] == 'actualizar') {
     }
     die(json_encode($respuesta));
 }
-Eliminar Proyecto 
+/*Eliminar Proyecto */
 if($_POST['registro'] == 'eliminar') { 
     $id_borrar = $_POST['id'];
     try {
@@ -134,4 +130,4 @@ if($_POST['registro'] == 'eliminar') {
         );
     }
     die(json_encode($respuesta));
-}*/
+}

@@ -33,13 +33,17 @@
                 <tr>
                   <th>Titulo</th>
                   <th>Descripcion</th>
+                  <th>Proyecto perteneciente</th>
                   <th>Acciones</th>
                 </tr>
               </thead>
               <tbody>
                 <?php
                     try {
-                      $sql = "SELECT id, titulo, descripcion FROM galeria";
+                      $sql = "SELECT * 
+                              FROM proyectos proy
+                              INNER JOIN galeria gal 
+                              ON proy.id = gal.id_proyecto";
                       $resultado = $con->query($sql);
                     } catch (Exception $e) {
                       $error = $e->getMessage();
@@ -49,12 +53,13 @@
                 <tr>
                   <td><?php echo $galeria['titulo'] ?></td>
                   <td><?php echo $galeria['descripcion'] ?></td>
+                  <td><?php echo $galeria['nombre'] ?></td>
                   <td>
-                    <a href="editar-galeria.php?id=<?php echo $galeria['id']?>"
+                    <a href="editar-galeria.php?id=<?php echo $galeria['id_proyecto']?>"
                       class="btn btn-warning btn-flat margin" title="Editar">
                       <i class="fas fa-pencil-alt"></i>
                     </a>
-                    <a href="#" data-id="<?php echo $galeria['id_cat']?>" data-tipo="galeria"
+                    <a href="#" data-id="<?php echo $galeria['id_gal']?>" data-tipo="galeria"
                       class="btn btn-danger btn-flat margin borrar_registro" title="Eliminar">
                       <i class="fas fa-trash"></i>
                     </a>

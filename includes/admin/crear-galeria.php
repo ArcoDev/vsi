@@ -13,8 +13,7 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Categorias para los productos de Amora
-      <small>llena el formulario para la categoria</small>
+      Información de la galería de los proyectos de VSI
     </h1>
   </section>
 
@@ -29,7 +28,8 @@
           </div>
           <div class="box-body">
             <!-- form start -->
-            <form role="form" name="guardar-galeria" id="guardar-galeria" method="post" action="modelo-galeria.php" enctype="multipart/form-data">
+            <form role="form" name="guardar-galeria" id="guardar-galeria" method="post" action="modelo-galeria.php"
+              enctype="multipart/form-data">
               <div class="box-body">
                 <div class="form-group">
                   <label for="foto">Titulo del proyecto</label>
@@ -43,13 +43,20 @@
                 </div>
                 <!-- select -->
                 <div class="form-group">
-                <label for="precio">Proyecto</label>
-                  <select name="categoria" class="form-control">
-                  <option>Selecciona el proyecto al que pertenecera la galeria</option>
-                    <option value="anillos">Palo Blanco</option>
-                    <option value="brasaletes">Postal</option>
-                    <option value="collares">Noma</option>
-                    <option value="collares">Plaza Saltillo 400</option>
+                  <label for="precio">Proyecto</label>
+                  <?php
+                  try {
+                    $consulta = "SELECT * FROM proyectos";
+                    $resultado = $con->query($consulta);
+                  } catch (Exception $e) {
+                    $error = $e->getMessage();
+                    echo $error;
+                  }?>
+                  <select name="proyecto_gal" class="form-control">
+                    <option>Selecciona el proyecto al que pertenecera la galeria</option>
+                    <?php while($infoSelect = mysqli_fetch_array($resultado)) { 
+                      echo '<option value="'.$infoSelect['id'].'">'.$infoSelect['nombre'].'</option>';
+                     }?>
                   </select>
                 </div>
                 <div class="form-group">
