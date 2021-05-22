@@ -4,7 +4,6 @@ addEventListener('DOMContentLoaded', function() {
     const cont2 = document.getElementById('contador2');
     const cont3 = document.getElementById('contador3');
     const cont4 = document.getElementById('contador4');
-    
     window.onscroll = function () {
         const y = window.scrollY;
         console.log(y);

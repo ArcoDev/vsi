@@ -16,11 +16,7 @@
     <link rel="shortcut icon" href="assets/icons/favicon.PNG" type="image/x-icon">
     <link rel="stylesheet" href="assets/scss/estilos.css">
     <link rel="stylesheet" href="assets/scss/media_query.css">
-
     <title>VSI</title>
-
-
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178026606-2"></script>
     <script>
@@ -59,7 +55,7 @@
         fbq('track', 'PageView');
     </script>
     <noscript>
-        <img height="1" width="1" src="https://www.facebook.com/tr?id=358553948843919&ev=PageView
+        <img loading="lazy" height="1" width="1" src="https://www.facebook.com/tr?id=358553948843919&ev=PageView
 &noscript=1" />
     </noscript>
     <!-- End Facebook Pixel Code -->
@@ -71,22 +67,22 @@
     <header id="contenedor-slider" class="contenedor-slider">
         <div id="slider" class="slider">
             <div class="slider_section">
-                <img class="slider_img" src="assets/img/banner_1.jpg" alt="Banner 1">
+                <img loading="lazy" class="slider_img" src="assets/img/banner_1.jpg" alt="Banner 1">
                 <!--h1 class="slider_img"><b>CREAMOS ASOMBROSOS</b><br>PROYECTOS INMOBILIARIOS</h1-->
             </div>
             <div class="slider_section">
-                <img class="slider_img" src="assets/img/banner_2.jpg" alt="Banner 2">
+                <img loading="lazy" class="slider_img" src="assets/img/banner_2.jpg" alt="Banner 2">
                 <!--h2 class="slider_img">CREAMOS ASOMBROSOS<br>PROYECTOS INMOBILIARIOS</h2-->
             </div>
             <div class="slider_section">
-                <img class="slider_img" src="assets/img/banner_3.jpg" alt="Banner 3">
+                <img loading="lazy" class="slider_img" src="assets/img/banner_3.jpg" alt="Banner 3">
                 <!--h2 class="slider_img">CREAMOS ASOMBROSOS<br>PROYECTOS INMOBILIARIOS</h2-->
             </div>
         </div>
         <nav class="contenedor1">
             <div class="menu">
                 <button id="menu1">
-                    <img class="menu-icono" src="assets/icons/menu_blanco.png" alt="Menu">
+                    <img loading="lazy" class="menu-icono" src="assets/icons/menu_blanco.png" alt="Menu">
                     <span class="header-menu">MENÚ</span>
                 </button>
                 <ul class="enlaces">
@@ -109,7 +105,7 @@
             </div>
             <div class="idioma">
                 <button id="btn_idioma">
-                    <img class="redes-icono" src="assets/icons/idioma_icono.png" alt="Idioma">
+                    <img loading="lazy" class="redes-icono" src="assets/icons/idioma_icono.png" alt="Idioma">
                 </button>
                 <div class="es-en">
                     <button class="es idioma-activo" href="#">ESP</button> /
@@ -118,22 +114,22 @@
             </div>
         </nav>
         <div class="titulo">
-            <img src="assets/img/vsi_logo.png" alt="VSI">
+            <img loading="lazy" src="assets/img/vsi_logo.png" alt="VSI">
             <h1 class="header_titulo"><b>CREAMOS ASOMBROSOS</b><br>PROYECTOS INMOBILIARIOS</h1>
         </div>
         <div class="slider-controles">
             <button id="prev">
-                <img class="img-100" src="assets/icons/flecha_izq.png" alt="prev">
+                <img loading="lazy" class="img-100" src="assets/icons/flecha_izq.png" alt="prev">
             </button>
             <label><span id="no-img"></span>/3</label>
             <button id="sig">
-                <img class="img-100" src="assets/icons/flecha-der.png" alt="sig">
+                <img loading="lazy" class="img-100" src="assets/icons/flecha-der.png" alt="sig">
             </button>
         </div>
         <!--
         <div class="correo">
             <a href="mailto:contacto@vsidesarrollos.com">
-                <img class="redes-icono" src="assets/icons/mail_icono.png" alt="Correo">
+                <img loading = "lazy" class="redes-icono" src="assets/icons/mail_icono.png" alt="Correo">
                 <span class="header-correo">contacto@vsidesarrollos.com</span>
             </a>
         </div>
@@ -143,7 +139,7 @@
         <nav>
             <div class="menu">
                 <button id="menu2">
-                    <img class="menu-icono" src="assets/icons/menu_gris.png" alt="Menu">
+                    <img loading="lazy" class="menu-icono" src="assets/icons/menu_gris.png" alt="Menu">
                     MENÚ
                 </button>
                 <ul class="enlaces">
@@ -166,7 +162,7 @@
             </div>
             <div class="correo">
                 <a href="mailto:contacto@vsidesarrollos.com" class="correo">
-                    <img class="redes-icono" src="assets/icons/mail_icono_2.png" alt="Correo">
+                    <img loading="lazy" class="redes-icono" src="assets/icons/mail_icono_2.png" alt="Correo">
                     <span class="mail">contacto@vsidesarrollos.com</span>
                 </a>
             </div>
@@ -178,14 +174,14 @@
                     <h2>Sobre <span>Nosotros</span></h2>
                     <div class="info-nosotros">
                         <div class="img-nosotros">
-                            <img src="assets/img/nosotros.jpg" alt="Nosotros">
+                            <img loading="lazy" src="assets/img/nosotros.jpg" alt="Nosotros">
                             <div class="col-nosotros">
                                 <div class="villasi">
-                                    <img src="assets/img/villasi_logo.png" alt="">
+                                    <img loading="lazy" src="assets/img/villasi_logo.png" alt="">
                                     <a href="#">LEER MÁS</a>
                                 </div>
                                 <div class="pv">
-                                    <img src="assets/img/pauvillarreal_logo.png" alt="">
+                                    <img loading="lazy" src="assets/img/pauvillarreal_logo.png" alt="">
                                     <a href="#">LEER MÁS</a>
                                 </div>
                             </div>
@@ -212,22 +208,22 @@
                 <!--CAJA NUMEROS-->
                 <section class="caja-numeros">
                     <div class="col col-1">
-                        <img src="assets/img/experiencia.png" alt="">
+                        <img loading="lazy" src="assets/img/experiencia.png" alt="">
                         <h2 id="contador1">0</h2>
                         <p>Años de <br>expreiencia</p>
                     </div>
                     <div class="col col-2">
-                        <img src="assets/img/proyectos.png" alt="">
+                        <img loading="lazy" src="assets/img/proyectos.png" alt="">
                         <h2 id="contador2">0</h2>
                         <p>Proyectos <br>realizados</p>
                     </div>
                     <div class="col col-3">
-                        <img src="assets/img/clientes.png" alt="">
+                        <img loading="lazy" src="assets/img/clientes.png" alt="">
                         <h2 id="contador3">0</h2>
                         <p>Clientes y <br>colaboradores</p>
                     </div>
                     <div class="col col-4">
-                        <img src="assets/img/invertidos.png" alt="">
+                        <img loading="lazy" src="assets/img/invertidos.png" alt="">
                         <h2 id="contador4">0</h2>
                         <p>Invertidos y <br>gestionados</p>
                     </div>
@@ -237,7 +233,7 @@
                         $consulta = $con->query("SELECT * FROM proyectos");
                         while ($proyecto = mysqli_fetch_array($consulta)) {
                             echo '<div class="proyectos">
-                                    <img id="'.$proyecto["id"].'" src="./assets/proyectos/'.$proyecto["foto"].'" alt="Proyectos VSI">
+                                    <img loading = "lazy" id="'.$proyecto["id"].'" src="./assets/proyectos/'.$proyecto["foto"].'" alt="Proyectos VSI">
                                     <a href="'.$proyecto["enlace"].'">'.$proyecto["nombre"].'</a>
                                   </div>';
                         }
@@ -247,16 +243,16 @@
                 <?php
                     $consulta = $con->query("SELECT * FROM galeria");
                 ?>
-                    <div id="caja-img" class="caja-img">
-                        <div class="info">
-                            <?php 
+                <div id="caja-img" class="caja-img">
+                    <div class="info">
+                        <?php 
                                 if($galeria = $consulta->fetch_assoc()) { ?>
-                                    <h2><?php echo $galeria['titulo']; ?></h2>
-                                    <p><?php echo $galeria['descripcion']; ?></p>
-                                    <span id="<?php echo $galeria['id_proyecto']; ?>">X</span>
-                            <?php } ?>   
-                        </div>
+                        <h2><?php echo $galeria['titulo']; ?></h2>
+                        <p><?php echo $galeria['descripcion']; ?></p>
+                        <span id="1">X</span>
+                        <?php } ?>
                     </div>
+                </div>
                 <!--<div id="caja-img" class="caja-img">
                     <div class="info">
                         <h2>Postal</h2>
@@ -266,14 +262,14 @@
                         <span id="cerrar">X</span>
                     </div>
                     <div class="galeria">
-                        <img src="assets/img/galeria-postal/1.jpg" alt="Galería Postal">
-                        <img src="assets/img/galeria-postal/2.jpg" alt="Galería Postal">
-                        <img src="assets/img/galeria-postal/3.jpg" alt="Galería Postal">
-                        <img src="assets/img/galeria-postal/4.jpg" alt="Galería Postal">
-                        <img src="assets/img/galeria-postal/5.jpg" alt="Galería Postal">
-                        <img src="assets/img/galeria-postal/6.jpg" alt="Galería Postal">
-                        <img src="assets/img/galeria-postal/7.jpg" alt="Galería Postal">
-                        <img src="assets/img/galeria-postal/8.jpg" alt="Galería Postal">
+                        <img loading = "lazy" src="assets/img/galeria-postal/1.jpg" alt="Galería Postal">
+                        <img loading = "lazy" src="assets/img/galeria-postal/2.jpg" alt="Galería Postal">
+                        <img loading = "lazy" src="assets/img/galeria-postal/3.jpg" alt="Galería Postal">
+                        <img loading = "lazy" src="assets/img/galeria-postal/4.jpg" alt="Galería Postal">
+                        <img loading = "lazy" src="assets/img/galeria-postal/5.jpg" alt="Galería Postal">
+                        <img loading = "lazy" src="assets/img/galeria-postal/6.jpg" alt="Galería Postal">
+                        <img loading = "lazy" src="assets/img/galeria-postal/7.jpg" alt="Galería Postal">
+                        <img loading = "lazy" src="assets/img/galeria-postal/8.jpg" alt="Galería Postal">
                     </div>
                 </div>-->
                 <div id="caja-img1" class="caja-img">
@@ -285,17 +281,19 @@
                         <span id="cerrar1">X</span>
                     </div>
                     <div class="galeria">
-                        <img src="assets/img/galeria-palo/galeria-palo (1).jpg" alt="Galería Palo Blaco">
-                        <img src="assets/img/galeria-palo/galeria-palo (2).jpg" alt="Galería Palo Blaco">
-                        <img src="assets/img/galeria-palo/galeria-palo (3).jpg" alt="Galería Palo Blaco">
-                        <img src="assets/img/galeria-palo/galeria-palo (4).jpg" alt="Galería Palo Blaco">
-                        <img src="assets/img/galeria-palo/galeria-palo (5).jpg" alt="Galería Palo Blaco">
-                        <img src="assets/img/galeria-palo/galeria-palo (6).jpg" alt="Galería Palo Blaco">
-                        <img src="assets/img/galeria-palo/galeria-palo (7).jpg" alt="Galería Palo Blaco">
-                        <img src="assets/img/galeria-palo/galeria-palo (8).jpg" alt="Galería Palo Blaco">
-                        <img src="assets/img/galeria-palo/galeria-palo (9).jpg" alt="Galería Palo Blaco">
-                        <img src="assets/img/galeria-palo/galeria-palo (10).jpg" alt="Galería Palo Blaco">
-                        <img src="assets/img/galeria-palo/galeria-palo (11).jpg" alt="Galería Palo Blaco">
+                        <img loading="lazy" src="assets/img/galeria-palo/galeria-palo (1).jpg" alt="Galería Palo Blaco">
+                        <img loading="lazy" src="assets/img/galeria-palo/galeria-palo (2).jpg" alt="Galería Palo Blaco">
+                        <img loading="lazy" src="assets/img/galeria-palo/galeria-palo (3).jpg" alt="Galería Palo Blaco">
+                        <img loading="lazy" src="assets/img/galeria-palo/galeria-palo (4).jpg" alt="Galería Palo Blaco">
+                        <img loading="lazy" src="assets/img/galeria-palo/galeria-palo (5).jpg" alt="Galería Palo Blaco">
+                        <img loading="lazy" src="assets/img/galeria-palo/galeria-palo (6).jpg" alt="Galería Palo Blaco">
+                        <img loading="lazy" src="assets/img/galeria-palo/galeria-palo (7).jpg" alt="Galería Palo Blaco">
+                        <img loading="lazy" src="assets/img/galeria-palo/galeria-palo (8).jpg" alt="Galería Palo Blaco">
+                        <img loading="lazy" src="assets/img/galeria-palo/galeria-palo (9).jpg" alt="Galería Palo Blaco">
+                        <img loading="lazy" src="assets/img/galeria-palo/galeria-palo (10).jpg"
+                            alt="Galería Palo Blaco">
+                        <img loading="lazy" src="assets/img/galeria-palo/galeria-palo (11).jpg"
+                            alt="Galería Palo Blaco">
                     </div>
                 </div>
                 <div id="caja-img2" class="caja-img">
@@ -307,8 +305,10 @@
                         <span id="cerrar2">X</span>
                     </div>
                     <div class="galeria">
-                        <img src="assets/img/galeria-saltillo/galeria-saltillo (1).jpg" alt="Galería Saltillo 400">
-                        <img src="assets/img/galeria-saltillo/galeria-saltillo (2).jpg" alt="Galería Saltillo 400">
+                        <img loading="lazy" src="assets/img/galeria-saltillo/galeria-saltillo (1).jpg"
+                            alt="Galería Saltillo 400">
+                        <img loading="lazy" src="assets/img/galeria-saltillo/galeria-saltillo (2).jpg"
+                            alt="Galería Saltillo 400">
                     </div>
                 </div>
                 <div id="caja-img3" class="caja-img">
@@ -320,10 +320,10 @@
                         <span id="cerrar3">X</span>
                     </div>
                     <div class="galeria">
-                        <img src="assets/img/galeria-noma/galeria-noma1.jpg" alt="Galería Noma">
-                        <img src="assets/img/galeria-noma/galeria-noma2.jpg" alt="Galería Noma">
-                        <img src="assets/img/galeria-noma/galeria-noma3.jpg" alt="Galería Noma">
-                        <img src="assets/img/galeria-noma/galeria-noma4.jpg" alt="Galería Noma">
+                        <img loading="lazy" src="assets/img/galeria-noma/galeria-noma1.jpg" alt="Galería Noma">
+                        <img loading="lazy" src="assets/img/galeria-noma/galeria-noma2.jpg" alt="Galería Noma">
+                        <img loading="lazy" src="assets/img/galeria-noma/galeria-noma3.jpg" alt="Galería Noma">
+                        <img loading="lazy" src="assets/img/galeria-noma/galeria-noma4.jpg" alt="Galería Noma">
                     </div>
                 </div>
 
@@ -366,7 +366,7 @@
                 </section>
                 <!--<section id="nosotros" class="nosotros">
                     <div class="nosotros-col-1">
-                        <img class="img-logo" src="assets/img/icono_nosotros.png" alt="Nosotros">
+                        <img loading = "lazy" class="img-logo" src="assets/img/icono_nosotros.png" alt="Nosotros">
                         <h2 class="main_nosotros"><b>SOBRE</b> NOSOTROS</h2>
                     </div>
                     <div class="nosotros-col-2">
@@ -391,7 +391,7 @@
                 <div class="fila">
                     <div class="columna-2 div-vert">
                         <div class="img-cont">
-                            <img src="assets/img/villasi_logo.png" alt="Villasi">
+                            <img loading = "lazy" src="assets/img/villasi_logo.png" alt="Villasi">
                             <a class="btn" href="https://www.villasi.com/" target="_blank">
                                 <span class="main_nosotros_leer main_nosotros_leermas">
                                     LEER MÁS
@@ -401,7 +401,7 @@
                     </div>
                     <div class="columna-2">
                         <div class="img-cont">
-                            <img src="assets/img/pauvillarreal_logo.png" alt="Pauvillarreal">
+                            <img loading = "lazy" src="assets/img/pauvillarreal_logo.png" alt="Pauvillarreal">
                             <a class="btn" href="http://pauvillarrealarq.com/" target="_blank">
                                 <span class="main_nosotros_leer main_nosotros_leermas">
                                     LEER MÁS
@@ -412,7 +412,7 @@
                 </div>-->
                 <!-- <section id="desarrollo" class="desarrollo">
                     <div class="titulo-desarrollo">
-                        <img class="img-logo" src="assets/img/icono_desarrollo.png" alt="Desarrollo">
+                        <img loading = "lazy" class="img-logo" src="assets/img/icono_desarrollo.png" alt="Desarrollo">
                         <h2 class="main_desarrollo">DESARROLLADORA INMOBILIARIA</h2>
 
                         <p class="main_desarrollo_p1">
@@ -435,7 +435,7 @@
 
                         <div class="fila">
                             <div class="columna-2">
-                                <img class="img-100 img-des-1" src="assets/img/desarrollo_paloblanco.jpg"
+                                <img loading = "lazy" class="img-100 img-des-1" src="assets/img/desarrollo_paloblanco.jpg"
                                     alt="Desarrollo Paloblanco">
                                 <a class="btn leer_mas" href="https://www.villasi.com/paloblanco/" target="_blank">
                                     <span class="main_nosotros_leer">
@@ -445,7 +445,7 @@
                                h6>PALO BLANCO</h6
                             </div>
                             <div class="columna-2">
-                                <img class="img-100 img-des-2" src="assets/img/desarrollo_plaza.jpg"
+                                <img loading = "lazy" class="img-100 img-des-2" src="assets/img/desarrollo_plaza.jpg"
                                     alt="Desarrollo Plaza">
                                 <a class="btn leer_mas" href="https://www.villasi.com" target="_blank">
                                     <span class="main_nosotros_leer">
@@ -459,7 +459,7 @@
                 </section>
                 <section id="capital" class="capital">
                     <div class="titulo-capital">
-                        <img class="img-logo" src="assets/img/icono_capital.png" alt="Capital">
+                        <img loading = "lazy" class="img-logo" src="assets/img/icono_capital.png" alt="Capital">
                         <h2 class="main_capital">CAPITAL</h2>
 
                         <p class="main_capital_p1">
@@ -481,7 +481,7 @@
 
                         <div class="fila">
                             <div class="columna-3">
-                                <img src="assets/img/capital_noma.jpg" alt="Capital Noma" class="img-100 img-cap-1">
+                                <img loading = "lazy" src="assets/img/capital_noma.jpg" alt="Capital Noma" class="img-100 img-cap-1">
                                 <a class="btn leer_mas" href="https://www.orangemultifamily.mx/invierte.html"
                                     target="_blank">
                                     <span class="main_nosotros_leer">
@@ -491,7 +491,7 @@
                                h6>NOMA</h6
                             </div>
                             <div class="columna-3">
-                                <img src="assets/img/capital_postal.jpg" alt="Capital Postal" class="img-100 img-cap-2">
+                                <img loading = "lazy" src="assets/img/capital_postal.jpg" alt="Capital Postal" class="img-100 img-cap-2">
                                 <a class="btn leer_mas" href="http://postal.mx" target="_blank">
                                     <span class="main_nosotros_leer">
                                         POSTAL
@@ -500,7 +500,7 @@
                                 h6>POSTAL</h6
                             </div>
                             <div class="columna-3">
-                                <img src="assets/img/capital_paloblanco.jpg" alt="Capital Paloblanco"
+                                <img loading = "lazy" src="assets/img/capital_paloblanco.jpg" alt="Capital Paloblanco"
                                     class="img-100 img-cap-3">
                                 <a class="btn leer_mas" href="https://www.villasi.com/paloblanco/" target="_blank">
                                     <span class="main_nosotros_leer">
@@ -557,16 +557,19 @@
                                             loading="lazy"></iframe>
                                     </a>
                                     <a href="#" target="_blank">
-                                        <img src="assets/icons/ubicacion_icono.png" alt="Ubicación" class="redes-icono">
+                                        <img loading="lazy" src="assets/icons/ubicacion_icono.png" alt="Ubicación"
+                                            class="redes-icono">
                                         Calzada Saltillo 400, #685 sur, interior 16 colonia Ex Hacienda los Ángeles, CP.
                                         27260
                                     </a>
                                     <a href="tel:8712033381">
-                                        <img src="assets/icons/telefono_icono.png" alt="Teléfono" class="redes-icono">
+                                        <img loading="lazy" src="assets/icons/telefono_icono.png" alt="Teléfono"
+                                            class="redes-icono">
                                         +52 1 871 203 3381
                                     </a>
                                     <a href="mailto:contacto@vsidesarrollos.com">
-                                        <img src="assets/icons/mail_icono_2.png" alt="Correo" class="redes-icono">
+                                        <img loading="lazy" src="assets/icons/mail_icono_2.png" alt="Correo"
+                                            class="redes-icono">
                                         contacto@vsidesarrollos.com
                                     </a>
                                 </div>

@@ -8,9 +8,9 @@ window.addEventListener('DOMContentLoaded', function() {
     const cajaImg2 = document.getElementById('caja-img2');
     const cajaImg3 = document.getElementById('caja-img3');
     const cerrar = document.getElementById('1');
-    const cerrar1 = document.getElementById('2');
-    const cerrar2 = document.getElementById('3');
-    const cerrar3 = document.getElementById('4');
+    const cerrar1 = document.getElementById('cerrar1');
+    const cerrar2 = document.getElementById('cerrar2');
+    const cerrar3 = document.getElementById('cerrar3');
 
 
     postal.addEventListener('click', function() {
