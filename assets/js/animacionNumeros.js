@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     observerNum();
 });
 
-
+//API observer (observar cuando el div con la calse caja-numeros este visible y ejuctar la animacion de los numeros)
 function observerNum() {
     const observer = new IntersectionObserver(function (entrise) {
         if (entrise[0].isIntersecting) {
