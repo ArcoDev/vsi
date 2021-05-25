@@ -229,103 +229,41 @@
                     </div>
                 </section>
                 <section class="caja-proyectos">
-                    <?php
-                        $consulta = $con->query("SELECT * FROM proyectos");
-                        while ($proyecto = mysqli_fetch_array($consulta)) {
-                            echo '<div class="proyectos">
-                                    <img loading = "lazy" id="'.$proyecto["id"].'" src="./assets/proyectos/'.$proyecto["foto"].'" alt="Proyectos VSI">
-                                    <a href="'.$proyecto["enlace"].'">'.$proyecto["nombre"].'</a>
-                                  </div>';
-                        }
-                    ?>
-                </section>
-                <!-- Grid Proyectos -->
-                <?php
-                    $consulta = $con->query("SELECT * FROM galeria");
-                ?>
-                <div id="caja-img" class="caja-img">
-                    <div class="info">
-                        <?php 
-                                if($galeria = $consulta->fetch_assoc()) { ?>
-                        <h2><?php echo $galeria['titulo']; ?></h2>
-                        <p><?php echo $galeria['descripcion']; ?></p>
-                        <span id="1">X</span>
-                        <?php } ?>
+                    <div class="proyectos">
+                        <a href="#proyecto-1" data-proyecto = "1">proyecto 1</a>
+                        <a href="#proyecto-2" data-proyecto = "2">proyecto 2</a>
+                        <a href="#proyecto-3" data-proyecto = "3">proyecto 3</a>
+                        <a href="#proyecto-4" data-proyecto = "4">proyecto 4</a>
                     </div>
-                </div>
-                <!--<div id="caja-img" class="caja-img">
-                    <div class="info">
+                    <!--Galeria de proyectos -->
+                    <div id="proyecto-0"></div>
+                    <div id ="proyecto-1" class="info-proyecto">
                         <h2>Postal</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius mollitia repellendus, quos eum
-                            rem amet nesciunt beatae doloremque eaque quisquam, neque cum delectus. Praesentium quam sit
-                            earum error. Impedit, ipsum!</p>
-                        <span id="cerrar">X</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia explicabo iste omnis inventore repellendus labore maiores nobis necessitatibus fuga accusamus, saepe exercitationem.</p>
+                        <span id="cerrar-1">X</span>
+                        <div class="grid-proyectos">
+                            <img src="assets/img/galeria-postal/galeria-postal (1).jpg" alt="">
+                            <img src="assets/img/galeria-postal/galeria-postal (2).jpg" alt="">
+                            <img src="assets/img/galeria-postal/galeria-postal (3).jpg" alt="">
+                            <img src="assets/img/galeria-postal/galeria-postal (4).jpg" alt="">
+                            <img src="assets/img/galeria-postal/galeria-postal (5).jpg" alt="">
+                            <img src="assets/img/galeria-postal/galeria-postal (6).jpg" alt="">
+                            <img src="assets/img/galeria-postal/galeria-postal (7).jpg" alt="">
+                            <img src="assets/img/galeria-postal/galeria-postal (8).jpg" alt="">
+                        </div>
                     </div>
-                    <div class="galeria">
-                        <img loading = "lazy" src="assets/img/galeria-postal/1.jpg" alt="Galería Postal">
-                        <img loading = "lazy" src="assets/img/galeria-postal/2.jpg" alt="Galería Postal">
-                        <img loading = "lazy" src="assets/img/galeria-postal/3.jpg" alt="Galería Postal">
-                        <img loading = "lazy" src="assets/img/galeria-postal/4.jpg" alt="Galería Postal">
-                        <img loading = "lazy" src="assets/img/galeria-postal/5.jpg" alt="Galería Postal">
-                        <img loading = "lazy" src="assets/img/galeria-postal/6.jpg" alt="Galería Postal">
-                        <img loading = "lazy" src="assets/img/galeria-postal/7.jpg" alt="Galería Postal">
-                        <img loading = "lazy" src="assets/img/galeria-postal/8.jpg" alt="Galería Postal">
-                    </div>
-                </div>-->
-                <div id="caja-img1" class="caja-img">
-                    <div class="info">
-                        <h2>Palo Blanco</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius mollitia repellendus, quos eum
-                            rem amet nesciunt beatae doloremque eaque quisquam, neque cum delectus. Praesentium quam sit
-                            earum error. Impedit, ipsum!25</p>
-                        <span id="cerrar1">X</span>
-                    </div>
-                    <div class="galeria">
-                        <img loading="lazy" src="assets/img/galeria-palo/galeria-palo (1).jpg" alt="Galería Palo Blaco">
-                        <img loading="lazy" src="assets/img/galeria-palo/galeria-palo (2).jpg" alt="Galería Palo Blaco">
-                        <img loading="lazy" src="assets/img/galeria-palo/galeria-palo (3).jpg" alt="Galería Palo Blaco">
-                        <img loading="lazy" src="assets/img/galeria-palo/galeria-palo (4).jpg" alt="Galería Palo Blaco">
-                        <img loading="lazy" src="assets/img/galeria-palo/galeria-palo (5).jpg" alt="Galería Palo Blaco">
-                        <img loading="lazy" src="assets/img/galeria-palo/galeria-palo (6).jpg" alt="Galería Palo Blaco">
-                        <img loading="lazy" src="assets/img/galeria-palo/galeria-palo (7).jpg" alt="Galería Palo Blaco">
-                        <img loading="lazy" src="assets/img/galeria-palo/galeria-palo (8).jpg" alt="Galería Palo Blaco">
-                        <img loading="lazy" src="assets/img/galeria-palo/galeria-palo (9).jpg" alt="Galería Palo Blaco">
-                        <img loading="lazy" src="assets/img/galeria-palo/galeria-palo (10).jpg"
-                            alt="Galería Palo Blaco">
-                        <img loading="lazy" src="assets/img/galeria-palo/galeria-palo (11).jpg"
-                            alt="Galería Palo Blaco">
-                    </div>
-                </div>
-                <div id="caja-img2" class="caja-img">
-                    <div class="info">
-                        <h2>Plaza Saltilo 400</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius mollitia repellendus, quos eum
-                            rem amet nesciunt beatae doloremque eaque quisquam, neque cum delectus. Praesentium quam sit
-                            earum error. Impedit, ipsum!54545</p>
-                        <span id="cerrar2">X</span>
-                    </div>
-                    <div class="galeria">
-                        <img loading="lazy" src="assets/img/galeria-saltillo/galeria-saltillo (1).jpg"
-                            alt="Galería Saltillo 400">
-                        <img loading="lazy" src="assets/img/galeria-saltillo/galeria-saltillo (2).jpg"
-                            alt="Galería Saltillo 400">
-                    </div>
-                </div>
-                <div id="caja-img3" class="caja-img">
-                    <div class="info">
+                    <div id ="proyecto-2" class="info-proyecto">
                         <h2>Noma</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius mollitia repellendus, quos eum
-                            rem amet nesciunt beatae doloremque eaque quisquam, neque cum delectus. Praesentium quam sit
-                            earum error. Impedit, ipsum!</p>
-                        <span id="cerrar3">X</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia explicabo iste omnis inventore repellendus labore maiores nobis necessitatibus fuga accusamus, saepe exercitationem.</p>
+                        <span id="cerrar-2">X</span>
+                        <div class="grid-proyectos">
+                            <img src="assets/img/galeria-noma/galeria-noma1.jpg" alt="">
+                            <img src="assets/img/galeria-noma/galeria-noma2.jpg" alt="">
+                            <img src="assets/img/galeria-noma/galeria-noma3.jpg" alt="">
+                            <img src="assets/img/galeria-noma/galeria-noma4.jpg" alt="">
+                        </div>
                     </div>
-                    <div class="galeria">
-                        <img loading="lazy" src="assets/img/galeria-noma/galeria-noma1.jpg" alt="Galería Noma">
-                        <img loading="lazy" src="assets/img/galeria-noma/galeria-noma2.jpg" alt="Galería Noma">
-                        <img loading="lazy" src="assets/img/galeria-noma/galeria-noma3.jpg" alt="Galería Noma">
-                        <img loading="lazy" src="assets/img/galeria-noma/galeria-noma4.jpg" alt="Galería Noma">
-                    </div>
-                </div>
+                </section>
 
                 <!-- DESARROLLOS -->
                 <section class="desarrollosInm">
@@ -588,7 +526,8 @@
     <script src='https://www.google.com/recaptcha/api.js?hl=es' async defer></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/animacionNumeros.js"></script>
-    <script src="assets/js/proyectos.js"></script>
+    <!--<script src="assets/js/proyectos.js"></script>-->
+    <script src="assets/js/proyectos2.js"></script>
 
 </body>
 

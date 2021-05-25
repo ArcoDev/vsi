@@ -608,6 +608,8 @@ main nav .correo {
   width: 95%;
   padding: 0;
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
   text-align: center;
   margin-top: 3rem;
@@ -629,12 +631,12 @@ main nav .correo {
 }
 
 .caja-proyectos .proyectos {
-  width: 24.3%;
+  width: 100%;
   display: flex;
   align-items: center;
-  flex-direction: column;
   gap: 20px;
   padding: 1rem 0;
+  border: 1px solid red;
 }
 
 @media screen and (max-width: 767px) {
@@ -679,70 +681,109 @@ main nav .correo {
   transform: translate3d(1, 0, 0);
 }
 
-/*Imagenes proyectos*/
-.caja-img {
-  width: 90%;
-  transition: all 1s;
+.info-proyecto {
+  border: 1px solid black;
+  padding-top: 4rem;
+  padding-left: 1.7rem;
   display: none;
 }
 
-.caja-img .info {
-  width: 100%;
-  padding: 1rem 0;
-  text-align: center;
+.info-proyecto h2 {
+  font-size: 2rem;
 }
 
-.caja-img .info span {
-  cursor: pointer;
+.info-proyecto span {
   position: absolute;
-  margin-top: -6.5rem;
-  right: 5%;
-  color: #000;
+  right: 4%;
+  margin-top: -7.5rem;
+  color: gray;
   font-weight: bold;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 767px) {
-  .caja-img .info span {
-    margin-top: -12rem;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .caja-img .info span {
-    margin-top: -8rem;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .caja-img .info p {
-    font-size: .9rem;
-  }
-}
-
-.caja-img .galeria {
+.info-proyecto .grid-proyectos {
   width: 100%;
   display: flex;
+  gap: .5rem;
   flex-wrap: wrap;
-  gap: 5px;
 }
 
-.caja-img .galeria img {
-  width: 33%;
+.info-proyecto .grid-proyectos img {
+  width: 32%;
 }
 
-@media screen and (max-width: 767px) {
-  .caja-img .galeria img {
-    width: 100%;
-  }
+.mostrar-info {
+  display: block !important;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .caja-img .galeria img {
-    width: 48%;
-  }
+.ocular-infoProy {
+  display: none;
 }
 
+/*Imagenes proyectos
+.caja-img {
+    width: 90%;
+    transition: all 1s;
+    display: none;
+
+    .info {
+        width: 100%;
+        padding: 1rem 0;
+        text-align: center;
+
+        span {
+            cursor: pointer;
+            position: absolute;
+            margin-top: -6.5rem;
+            right: 5%;
+            color: #000;
+            font-weight: bold;
+            font-size: 1.5rem;
+
+            @media screen and(max-width: 767px) {
+                & {
+                    margin-top: -12rem;
+                }
+            }
+
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                & {
+                    margin-top: -8rem;
+                }
+            }
+        }
+
+        @media screen and(max-width: 767px) {
+            p {
+                font-size: .9rem;
+            }
+        }
+    }
+
+    .galeria {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+
+        img {
+            width: 33%;
+
+            @media screen and(max-width: 767px) {
+                & {
+                    width: 100%;
+                }
+            }
+
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                & {
+                    width: 48%;
+                }
+            }
+        }
+    }
+}*/
 .desarrollosInm {
   width: 90%;
   height: 650px;

@@ -653,6 +653,8 @@ main nav .correo {
     width: 95%;
     padding: 0;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
     text-align: center;
     margin-top: 3rem;
@@ -671,14 +673,15 @@ main nav .correo {
         }
     }
 
-    .proyectos {
-        width: 24.3%;
+    .proyectos{
+        width: 100%;
+        //width: 24.3%;
         display: flex;
         align-items: center;
-        flex-direction: column;
+        //flex-direction: column;
         gap: 20px;
         padding: 1rem 0;
-
+        border: 1px solid red;
         @media screen and(max-width: 767px) {
             & {
                 width: 100%;
@@ -722,8 +725,42 @@ main nav .correo {
         }
     }
 }
-
-/*Imagenes proyectos*/
+.info-proyecto {
+    border: 1px solid black;
+    padding-top: 4rem;
+    padding-left: 1.7rem;
+    display: none;
+    h2 {
+        font-size: 2rem;
+    }
+    span {
+        position: absolute;
+        right: 4%;
+        margin-top: -7.5rem;
+        color: gray;
+        font-weight: bold;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .grid-proyectos {
+        width: 100%;
+        display: flex;
+        gap: .5rem;
+        flex-wrap: wrap;
+        img {
+            width: 32%;
+        }
+    }
+}
+//Mostrar la info de los proyectos y la galeria de img
+.mostrar-info {
+    display: block!important;
+}
+//ocultar informacion de los proyectos con el span
+.ocular-infoProy {
+    display: none;
+}
+/*Imagenes proyectos
 .caja-img {
     width: 90%;
     transition: all 1s;
@@ -785,7 +822,7 @@ main nav .correo {
             }
         }
     }
-}
+}*/
 
 @mixin desarrollos {
     width: 90%;
