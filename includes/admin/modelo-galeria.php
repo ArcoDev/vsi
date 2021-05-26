@@ -7,6 +7,7 @@ $desc = $_POST['desc'];
 $id_registroEditar = $_POST['id_registro'];
 $proyecto_gal = $_POST['proyecto_gal'];
 
+
 if($_POST['registro'] == 'nuevo') {
     /*Comprobar si se esta mandado los datos de file y de post
     $respuesta = array(
@@ -19,9 +20,12 @@ if($_POST['registro'] == 'nuevo') {
         if($_FILES['archivo']['name'][$key]) {
             
             $filename = $_FILES['archivo']['name'][$key];
+            /*foreach ($prueba as $key => $filename) {
+                # code...
+            }*/
             $temporal = $_FILES['archivo']['tmp_name'][$key];
 
-            $directorio = "../../assets/galeria/$titulo";
+            $directorio = "../../assets/galerias/$titulo";
 
             if(!file_exists($directorio)) {
                 mkdir($directorio, 0755, true);
@@ -37,7 +41,12 @@ if($_POST['registro'] == 'nuevo') {
             }
             closedir($dir);
         }
+        echo '<prev>';
+            var_dump($_FILES);      
+            //die();
+        echo '</prev>';
    }
+
     try {
         include_once "functions/funciones.php";
         $stmt = $con->prepare("INSERT INTO galeria (titulo, descripcion, imagenes, id_proyecto) VALUES (?, ?, ?, ?)");

@@ -7,14 +7,18 @@
   include_once "templates/navegacionLateral.php"; 
 
 ?>
-
+<style>
+  .galeria-vistaPrevia {
+    margin: 5px;
+  }
+</style>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Lista de categorias
-      <small>registrados en la base de datos de amora</small>
+      Lista de la Información de la galeria
+      <small>registrada en la base de datos de VSI</small>
     </h1>
   </section>
 
@@ -33,6 +37,7 @@
                 <tr>
                   <th>Titulo</th>
                   <th>Descripcion</th>
+                  <th>Imagenes galeria</th>
                   <th>Proyecto perteneciente</th>
                   <th>Acciones</th>
                 </tr>
@@ -53,6 +58,10 @@
                 <tr>
                   <td><?php echo $galeria['titulo'] ?></td>
                   <td><?php echo $galeria['descripcion'] ?></td>
+                  <td>
+                    <img class="galeria-vistaPrevia" loading="lazy" src="../../assets/galeria/Postal/<?php echo $galeria['imagenes'] ?>" alt="Galeria Vista previa" width="100" height="100">
+                    
+                  </td>
                   <td><?php echo $galeria['nombre'] ?></td>
                   <td>
                     <a href="editar-galeria.php?id=<?php echo $galeria['id_proyecto']?>"
