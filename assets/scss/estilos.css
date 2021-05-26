@@ -631,12 +631,12 @@ main nav .correo {
 }
 
 .caja-proyectos .proyectos {
-  width: 100%;
+  width: 24.3%;
   display: flex;
   align-items: center;
-  gap: 20px;
+  flex-direction: column;
+  gap: 10px;
   padding: 1rem 0;
-  border: 1px solid red;
 }
 
 @media screen and (max-width: 767px) {
@@ -663,7 +663,7 @@ main nav .correo {
   transform: scale(1.04);
 }
 
-.caja-proyectos .proyectos a {
+.caja-proyectos .proyectos .enlace {
   width: 60%;
   padding: 10px;
   text-align: center;
@@ -675,7 +675,7 @@ main nav .correo {
   font-weight: bold;
 }
 
-.caja-proyectos .proyectos a:hover {
+.caja-proyectos .proyectos .enlace:hover {
   background: gray;
   color: #fff;
   transform: translate3d(1, 0, 0);
@@ -695,7 +695,7 @@ main nav .correo {
 .info-proyecto span {
   position: absolute;
   right: 4%;
-  margin-top: -7.5rem;
+  margin-top: -6.5rem;
   color: gray;
   font-weight: bold;
   font-size: 1.5rem;

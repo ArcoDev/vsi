@@ -674,14 +674,12 @@ main nav .correo {
     }
 
     .proyectos{
-        width: 100%;
-        //width: 24.3%;
+        width: 24.3%;
         display: flex;
         align-items: center;
-        //flex-direction: column;
-        gap: 20px;
+        flex-direction: column;
+        gap: 10px;
         padding: 1rem 0;
-        border: 1px solid red;
         @media screen and(max-width: 767px) {
             & {
                 width: 100%;
@@ -706,7 +704,7 @@ main nav .correo {
             }
         }
 
-        a {
+        .enlace {
             width: 60%;
             padding: 10px;
             text-align: center;
@@ -736,7 +734,7 @@ main nav .correo {
     span {
         position: absolute;
         right: 4%;
-        margin-top: -7.5rem;
+        margin-top: -6.5rem;
         color: gray;
         font-weight: bold;
         font-size: 1.5rem;

@@ -14,7 +14,7 @@ function mostrarInfoProyecto() {
 }
 
 function cambiarInfoProyecto() {
-    const proyectos = document.querySelectorAll('.proyectos a');
+    const proyectos = document.querySelectorAll('.proyectos img');
     proyectos.forEach(proy => {
         proy.addEventListener('click', e => {
             e.preventDefault();

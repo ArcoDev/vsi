@@ -229,13 +229,21 @@
                     </div>
                 </section>
                 <section class="caja-proyectos">
-                    <div class="proyectos">
-                        <a href="#proyecto-1" data-proyecto = "1">proyecto 1</a>
-                        <a href="#proyecto-2" data-proyecto = "2">proyecto 2</a>
-                        <a href="#proyecto-3" data-proyecto = "3">proyecto 3</a>
-                        <a href="#proyecto-4" data-proyecto = "4">proyecto 4</a>
-                    </div>
-                    <!--Galeria de proyectos -->
+                    <?php
+                        $consulta = $con->query("SELECT * FROM proyectos");
+                        while($proyecto = mysqli_fetch_array($consulta)) {
+                            echo '<div class="proyectos">
+                                    <a href="#proyecto-'.$proyecto['id'].'">
+                                        <img 
+                                            loading = "lazy"
+                                            src="./assets/proyectos/'.$proyecto["foto"].'"
+                                            data-proyecto ="'.$proyecto['id'].'" 
+                                            alt = "Proyectos VSI">
+                                    </a>
+                                    <a class="enlace" href="'.$proyecto['enlace'].'">'.$proyecto['nombre'].'</a>
+                                </div>';
+                        }
+                    ?>
                     <div id="proyecto-0"></div>
                     <div id ="proyecto-1" class="info-proyecto">
                         <h2>Postal</h2>
@@ -302,154 +310,6 @@
                         </p>
                     </div>
                 </section>
-                <!--<section id="nosotros" class="nosotros">
-                    <div class="nosotros-col-1">
-                        <img loading = "lazy" class="img-logo" src="assets/img/icono_nosotros.png" alt="Nosotros">
-                        <h2 class="main_nosotros"><b>SOBRE</b> NOSOTROS</h2>
-                    </div>
-                    <div class="nosotros-col-2">
-                        <p class="main_nosotros_p1">
-                            VSI es una plataforma financiera y comercial, de inteligencia y consultoría, que junto a su
-                            unidad operativa de negocio, VillaSi Construcciones, se encargan del desarrollo de proyectos
-                            inmobiliarios de alto impacto para sus clientes y socios.
-                        </p>
-                        <p class="main_nosotros_p2">
-
-                            Después de años de trabajo en México, VSI está entrando en el mercado de Estados Unidos con
-                            altas expectativas, y con la experiencia de VillaSi, tiene la garantía de tener una
-                            operación y resultados óptimos. La atención está puesta particularmente en
-                            los proyectos residenciales y comerciales tanto en Texas como en México.
-                        </p>
-                        <p class="main_nosotros_p3">
-                            El Grupo VSI incluye un despacho de arquitectura, una constructora, gerencia de obra y por
-                            otra parte, el desarrollo inmobiliario y la plataforma financiera en VSI.
-                        </p>
-                    </div>
-                </section>
-                <div class="fila">
-                    <div class="columna-2 div-vert">
-                        <div class="img-cont">
-                            <img loading = "lazy" src="assets/img/villasi_logo.png" alt="Villasi">
-                            <a class="btn" href="https://www.villasi.com/" target="_blank">
-                                <span class="main_nosotros_leer main_nosotros_leermas">
-                                    LEER MÁS
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="columna-2">
-                        <div class="img-cont">
-                            <img loading = "lazy" src="assets/img/pauvillarreal_logo.png" alt="Pauvillarreal">
-                            <a class="btn" href="http://pauvillarrealarq.com/" target="_blank">
-                                <span class="main_nosotros_leer main_nosotros_leermas">
-                                    LEER MÁS
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>-->
-                <!-- <section id="desarrollo" class="desarrollo">
-                    <div class="titulo-desarrollo">
-                        <img loading = "lazy" class="img-logo" src="assets/img/icono_desarrollo.png" alt="Desarrollo">
-                        <h2 class="main_desarrollo">DESARROLLADORA INMOBILIARIA</h2>
-
-                        <p class="main_desarrollo_p1">
-
-                            VSI Desarrollos/VSI Development es la desarrolladora inmobiliaria de Grupo VSI, encargada
-                            del desarrollo de proyectos inmobiliarios con el fin de implementarlos en México y Estados
-                            Unidos, ofreciendo soluciones inmobiliarias de vanguardia, inteligentes,
-                            socialmente involucradas, y de importante impacto económico.
-                        </p>
-                        <p class="main_desarrollo_p2">
-                            Actualmente contamos con grandes desarrollos inmobiliarios en Querétaro, Torreón, San Miguel
-                            de Allende y al rededor. Para lograr esto, nuestro equipo está formado por arquitectos,
-                            ingenieros, expertos financieros, y asesores comerciales para cubrir todas
-                            las áreas y garantizar el éxito para los involucrados.
-                        </p>
-                        <p class="main_desarrollo_p3">
-                            Nos encargamos de: <br> Administración Comercial, Planeación Financiera, Estrategias de
-                            Comunicación, Plan de Administración, Cartera de Ventas Y más.
-                        </p>
-
-                        <div class="fila">
-                            <div class="columna-2">
-                                <img loading = "lazy" class="img-100 img-des-1" src="assets/img/desarrollo_paloblanco.jpg"
-                                    alt="Desarrollo Paloblanco">
-                                <a class="btn leer_mas" href="https://www.villasi.com/paloblanco/" target="_blank">
-                                    <span class="main_nosotros_leer">
-                                        PALO BLANCO
-                                    </span>
-                                </a>
-                               h6>PALO BLANCO</h6
-                            </div>
-                            <div class="columna-2">
-                                <img loading = "lazy" class="img-100 img-des-2" src="assets/img/desarrollo_plaza.jpg"
-                                    alt="Desarrollo Plaza">
-                                <a class="btn leer_mas" href="https://www.villasi.com" target="_blank">
-                                    <span class="main_nosotros_leer">
-                                        PLAZA SALTILLO 400
-                                    </span>
-                                </a>
-                                h6>PLAZA SALTILLO 400</h6
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="capital" class="capital">
-                    <div class="titulo-capital">
-                        <img loading = "lazy" class="img-logo" src="assets/img/icono_capital.png" alt="Capital">
-                        <h2 class="main_capital">CAPITAL</h2>
-
-                        <p class="main_capital_p1">
-
-
-                            VSI Capital es la plataforma para inversión en los proyectos inmobiliarios de VSI
-                            Desarrollos.
-
-
-
-
-                        </p>
-                        <p class="main_capital_p2">
-
-                            Se invita a inversionistas para participar con nosotros en los proyectos bajo diversas
-                            estructuras, ofreciendo rendimientos agresivos, tanto en pesos como en dólares.
-
-                        </p>
-
-                        <div class="fila">
-                            <div class="columna-3">
-                                <img loading = "lazy" src="assets/img/capital_noma.jpg" alt="Capital Noma" class="img-100 img-cap-1">
-                                <a class="btn leer_mas" href="https://www.orangemultifamily.mx/invierte.html"
-                                    target="_blank">
-                                    <span class="main_nosotros_leer">
-                                        NOMA
-                                    </span>
-                                </a>
-                               h6>NOMA</h6
-                            </div>
-                            <div class="columna-3">
-                                <img loading = "lazy" src="assets/img/capital_postal.jpg" alt="Capital Postal" class="img-100 img-cap-2">
-                                <a class="btn leer_mas" href="http://postal.mx" target="_blank">
-                                    <span class="main_nosotros_leer">
-                                        POSTAL
-                                    </span>
-                                </a>
-                                h6>POSTAL</h6
-                            </div>
-                            <div class="columna-3">
-                                <img loading = "lazy" src="assets/img/capital_paloblanco.jpg" alt="Capital Paloblanco"
-                                    class="img-100 img-cap-3">
-                                <a class="btn leer_mas" href="https://www.villasi.com/paloblanco/" target="_blank">
-                                    <span class="main_nosotros_leer">
-                                        PALO BLANCO
-                                    </span>
-                                </a>
-                                h6>PALO BLANCO</h6>
-                            </div>
-                        </div>
-                    </div>
-                </section> -->
                 <section id="contacto" class="contacto">
                     <div class="titulo-cuerpo">
                         <h2 class="main_contacto"><b>PONTE EN</b> CONTACTO</h2>
