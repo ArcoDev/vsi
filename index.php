@@ -250,14 +250,14 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia explicabo iste omnis inventore repellendus labore maiores nobis necessitatibus fuga accusamus, saepe exercitationem.</p>
                         <span id="cerrar-1">X</span>
                         <div class="grid-proyectos">
-                            <img src="assets/img/galeria-postal/galeria-postal (1).jpg" alt="">
-                            <img src="assets/img/galeria-postal/galeria-postal (2).jpg" alt="">
-                            <img src="assets/img/galeria-postal/galeria-postal (3).jpg" alt="">
-                            <img src="assets/img/galeria-postal/galeria-postal (4).jpg" alt="">
-                            <img src="assets/img/galeria-postal/galeria-postal (5).jpg" alt="">
-                            <img src="assets/img/galeria-postal/galeria-postal (6).jpg" alt="">
-                            <img src="assets/img/galeria-postal/galeria-postal (7).jpg" alt="">
-                            <img src="assets/img/galeria-postal/galeria-postal (8).jpg" alt="">
+                            <img loading= "lazy" src="assets/galeria/Postal/1.jpg" alt="">
+                            <img loading= "lazy" src="assets/galeria/Postal/2.jpg" alt="">
+                            <img loading= "lazy" src="assets/galeria/Postal/3.jpg" alt="">
+                            <img loading= "lazy" src="assets/galeria/Postal/4.jpg" alt="">
+                            <img loading= "lazy" src="assets/galeria/Postal/5.jpg" alt="">
+                            <img loading= "lazy" src="assets/galeria/Postal/6.jpg" alt="">
+                            <img loading= "lazy" src="assets/galeria/Postal/7.jpg" alt="">
+                            <img loading= "lazy" src="assets/galeria/Postal/8.jpg" alt="">
                         </div>
                     </div>
                     <div id ="proyecto-2" class="info-proyecto">
@@ -265,10 +265,6 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia explicabo iste omnis inventore repellendus labore maiores nobis necessitatibus fuga accusamus, saepe exercitationem.</p>
                         <span id="cerrar-2">X</span>
                         <div class="grid-proyectos">
-                            <img src="assets/img/galeria-noma/galeria-noma1.jpg" alt="">
-                            <img src="assets/img/galeria-noma/galeria-noma2.jpg" alt="">
-                            <img src="assets/img/galeria-noma/galeria-noma3.jpg" alt="">
-                            <img src="assets/img/galeria-noma/galeria-noma4.jpg" alt="">
                         </div>
                     </div>
                 </section>

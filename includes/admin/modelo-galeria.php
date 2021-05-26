@@ -21,7 +21,7 @@ if($_POST['registro'] == 'nuevo') {
             $filename = $_FILES['archivo']['name'][$key];
             $temporal = $_FILES['archivo']['tmp_name'][$key];
 
-            $directorio = "../../assets/galeria/";
+            $directorio = "../../assets/galeria/$titulo";
 
             if(!file_exists($directorio)) {
                 mkdir($directorio, 0755, true);
@@ -40,8 +40,8 @@ if($_POST['registro'] == 'nuevo') {
    }
     try {
         include_once "functions/funciones.php";
-        $stmt = $con->prepare("INSERT INTO galeria (titulo, descripcion, id_proyecto) VALUES (?, ?, ?)");
-        $stmt->bind_param("ssi", $titulo, $desc, $proyecto_gal);
+        $stmt = $con->prepare("INSERT INTO galeria (titulo, descripcion, imagenes, id_proyecto) VALUES (?, ?, ?, ?)");
+        $stmt->bind_param("sssi", $titulo, $desc, $filename, $proyecto_gal);
         $stmt->execute();
         $id_insertado = $stmt->insert_id;
         if ($stmt->affected_rows){
