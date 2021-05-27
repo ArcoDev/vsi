@@ -19,6 +19,7 @@ $(document).ready(function () {
             },
             success: function (data) {
                 //console.log(data);
+                console.log('exito');
                 var resultado = data;
                 if (resultado.respuesta === 'exito') {
                     swal(
@@ -27,7 +28,7 @@ $(document).ready(function () {
                         'success'
                     );
                     $('#loader').hide();
-                    $('#guardar-proyecto-archivo')[0].reset();
+                    $('#guardar-galeria')[0].reset();
                 } else {
                     swal(
                         'Ooops!',

@@ -250,14 +250,14 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia explicabo iste omnis inventore repellendus labore maiores nobis necessitatibus fuga accusamus, saepe exercitationem.</p>
                         <span id="cerrar-1">X</span>
                         <div class="grid-proyectos">
-                            <img loading= "lazy" src="assets/galeria/Postal/1.jpg" alt="">
-                            <img loading= "lazy" src="assets/galeria/Postal/2.jpg" alt="">
-                            <img loading= "lazy" src="assets/galeria/Postal/3.jpg" alt="">
-                            <img loading= "lazy" src="assets/galeria/Postal/4.jpg" alt="">
-                            <img loading= "lazy" src="assets/galeria/Postal/5.jpg" alt="">
-                            <img loading= "lazy" src="assets/galeria/Postal/6.jpg" alt="">
-                            <img loading= "lazy" src="assets/galeria/Postal/7.jpg" alt="">
-                            <img loading= "lazy" src="assets/galeria/Postal/8.jpg" alt="">
+                            <img loading= "lazy" src="assets/galerias/Postal/1.jpg" alt="Galeria de proyectos de vsi">
+                            <img loading= "lazy" src="assets/galerias/Postal/2.jpg" alt="Galeria de proyectos de vsi">
+                            <img loading= "lazy" src="assets/galerias/Postal/3.jpg" alt="Galeria de proyectos de vsi">
+                            <img loading= "lazy" src="assets/galerias/Postal/4.jpg" alt="Galeria de proyectos de vsi">
+                            <img loading= "lazy" src="assets/galerias/Postal/5.jpg" alt="Galeria de proyectos de vsi">
+                            <img loading= "lazy" src="assets/galerias/Postal/6.jpg" alt="Galeria de proyectos de vsi">
+                            <img loading= "lazy" src="assets/galerias/Postal/7.jpg" alt="Galeria de proyectos de vsi">
+                            <img loading= "lazy" src="assets/galerias/Postal/8.jpg" alt="Galeria de proyectos de vsi">
                         </div>
                     </div>
                     <div id ="proyecto-2" class="info-proyecto">
@@ -268,6 +268,7 @@
                         </div>
                     </div>
                 </section>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam qui nulla incidunt consequatur excepturi totam quibusdam corporis provident vero nobis.</p>
 
                 <!-- DESARROLLOS -->
                 <section class="desarrollosInm">

@@ -35,16 +35,17 @@ if($_POST['registro'] == 'nuevo') {
             $ruta = $directorio.'/'.$filename;
 
             if(move_uploaded_file($temporal, $ruta)) {
-                echo 'Se cargo correctamnte';
+                $cargaCorrecta = 'Se cargo correctamente';
             } else {
-                echo 'error';
+                $cargaCorrecta = 'error';
+
             }
             closedir($dir);
         }
-        echo '<prev>';
+       /* echo '<prev>';
             var_dump($_FILES);      
             //die();
-        echo '</prev>';
+        echo '</prev>'; */
    }
 
     try {
@@ -57,7 +58,7 @@ if($_POST['registro'] == 'nuevo') {
             $respuesta=array(
                 'respuesta'=>'exito',
                 'id_proyecto'=>$id_insertado,
-                //'resultado_imagen' => $imagen_resultado
+                 'resultado_imagen' => $cargaCorrecta
             );
         }else{
             $respuesta=array(
@@ -71,7 +72,7 @@ if($_POST['registro'] == 'nuevo') {
     }
     die(json_encode($respuesta));
 }
-/*Actualizar Registro de la galeria */
+/*Actualizar Registro de la galeria 
 if($_POST['registro'] == 'actualizar') {
     
     $directorio = "../../assets/proyectos/";
@@ -115,8 +116,8 @@ if($_POST['registro'] == 'actualizar') {
         );
     }
     die(json_encode($respuesta));
-}
-/*Eliminar Proyecto */
+}*/
+/*Eliminar Proyecto 
 if($_POST['registro'] == 'eliminar') { 
     $id_borrar = $_POST['id'];
     try {
@@ -139,4 +140,4 @@ if($_POST['registro'] == 'eliminar') {
         );
     }
     die(json_encode($respuesta));
-}
+}*/
