@@ -238,38 +238,71 @@
                                             loading = "lazy"
                                             src="./assets/proyectos/'.$proyecto["foto"].'"
                                             data-proyecto ="'.$proyecto['id'].'" 
-                                            alt = "Proyectos VSI">
+                                            alt = "Proyectos VSI"
+                                            title= "'.$proyecto['nombre'].'">
                                     </a>
                                     <a class="enlace" href="'.$proyecto['enlace'].'">'.$proyecto['nombre'].'</a>
                                 </div>';
                         }
                     ?>
                     <div id="proyecto-0"></div>
-                    <div id ="proyecto-1" class="info-proyecto">
-                        <h2>Postal</h2>
+                    <?php
+                        $consulta = $con->query("SELECT * 
+                                                 FROM proyectos proy
+                                                 INNER JOIN galeria gal
+                                                 ON proy.id = gal.id_proyecto");
+                        
+                        while($galeria = mysqli_fetch_array($consulta)) {
+                            echo '<div id ="proyecto-'.$galeria['id_proyecto'].'" class="info-proyecto">
+                                    <h2>'.$galeria['titulo'].'</h2>
+                                    <p>'.$galeria['descripcion'].'</p>
+                                    <span id="cerrar-'.$galeria['id_proyecto'].'">X</span>
+                                    <div class="grid-proyectos">';?>
+                                        <?php
+                                           echo 'hola';
+                                        ?>
+                                    <?php echo '</div>'; ?>
+                       <?php } ?> 
+
+                    <!--
+                    <div id ="proyecto-2" class="info-proyecto">
+                        <h2>Palo Blanco</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia explicabo iste omnis inventore repellendus labore maiores nobis necessitatibus fuga accusamus, saepe exercitationem.</p>
-                        <span id="cerrar-1">X</span>
                         <div class="grid-proyectos">
-                            <img loading= "lazy" src="assets/galerias/Postal/1.jpg" alt="Galeria de proyectos de vsi">
-                            <img loading= "lazy" src="assets/galerias/Postal/2.jpg" alt="Galeria de proyectos de vsi">
-                            <img loading= "lazy" src="assets/galerias/Postal/3.jpg" alt="Galeria de proyectos de vsi">
-                            <img loading= "lazy" src="assets/galerias/Postal/4.jpg" alt="Galeria de proyectos de vsi">
-                            <img loading= "lazy" src="assets/galerias/Postal/5.jpg" alt="Galeria de proyectos de vsi">
-                            <img loading= "lazy" src="assets/galerias/Postal/6.jpg" alt="Galeria de proyectos de vsi">
-                            <img loading= "lazy" src="assets/galerias/Postal/7.jpg" alt="Galeria de proyectos de vsi">
-                            <img loading= "lazy" src="assets/galerias/Postal/8.jpg" alt="Galeria de proyectos de vsi">
+                            <img loading= "lazy" src="assets/galerias/Palo Blanco/1.jpg" alt="Galeria de proyectos de vsi">
+                            <img loading= "lazy" src="assets/galerias/Palo Blanco/2.jpg" alt="Galeria de proyectos de vsi">
+                            <img loading= "lazy" src="assets/galerias/Palo Blanco/3.jpg" alt="Galeria de proyectos de vsi">
+                            <img loading= "lazy" src="assets/galerias/Palo Blanco/4.jpg" alt="Galeria de proyectos de vsi">
+                            <img loading= "lazy" src="assets/galerias/Palo Blanco/5.jpg" alt="Galeria de proyectos de vsi">
+                            <img loading= "lazy" src="assets/galerias/Palo Blanco/6.jpg" alt="Galeria de proyectos de vsi">
+                            <img loading= "lazy" src="assets/galerias/Palo Blanco/7.jpg" alt="Galeria de proyectos de vsi">
+                            <img loading= "lazy" src="assets/galerias/Palo Blanco/8.jpg" alt="Galeria de proyectos de vsi">
+                            <img loading= "lazy" src="assets/galerias/Palo Blanco/alberca.jpg" alt="Galeria de proyectos de vsi">
+                            <img loading= "lazy" src="assets/galerias/Palo Blanco/fachadas.jpg" alt="Galeria de proyectos de vsi">
+                            <img loading= "lazy" src="assets/galerias/Palo Blanco/terraza.jpg" alt="Galeria de proyectos de vsi">
                         </div>
                     </div>
-                    <div id ="proyecto-2" class="info-proyecto">
+                    <div id ="proyecto-3" class="info-proyecto">
+                        <h2>Plaza Saltillo 400</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia explicabo iste omnis inventore repellendus labore maiores nobis necessitatibus fuga accusamus, saepe exercitationem.</p>
+                        <span id="cerrar-3">X</span>
+                        <div class="grid-proyectos">
+                            <img loading= "lazy" src="assets/galerias/Plaza Saltillo 400/1.jpg" alt="Galeria de proyectos de vsi">
+                            <img loading= "lazy" src="assets/galerias/Plaza Saltillo 400/2.jpg" alt="Galeria de proyectos de vsi">
+                        </div>
+                    </div>
+                    <div id ="proyecto-4" class="info-proyecto">
                         <h2>Noma</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia explicabo iste omnis inventore repellendus labore maiores nobis necessitatibus fuga accusamus, saepe exercitationem.</p>
-                        <span id="cerrar-2">X</span>
+                        <span id="cerrar-4">X</span>
                         <div class="grid-proyectos">
+                            <img loading= "lazy" src="assets/galerias/Noma/co-livin.jpg" alt="Galeria de proyectos de vsi">
+                            <img loading= "lazy" src="assets/galerias/Noma/co-work-queretaro.jpg" alt="Galeria de proyectos de vsi">
+                            <img loading= "lazy" src="assets/galerias/Noma/sala-depa.jpg" alt="Galeria de proyectos de vsi">
                         </div>
                     </div>
+                    -->
                 </section>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam qui nulla incidunt consequatur excepturi totam quibusdam corporis provident vero nobis.</p>
-
                 <!-- DESARROLLOS -->
                 <section class="desarrollosInm">
                     <div class="txt-info">

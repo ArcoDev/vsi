@@ -102,8 +102,10 @@ section {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .fila {
-    width: 400px;
     margin-left: -1rem;
+  }
+  .fila iframe {
+    width: 80%;
   }
 }
 
@@ -682,24 +684,41 @@ main nav .correo {
 }
 
 .info-proyecto {
-  border: 1px solid black;
   padding-top: 4rem;
   padding-left: 1.7rem;
   display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .info-proyecto {
+    padding-left: 0;
+  }
 }
 
 .info-proyecto h2 {
   font-size: 2rem;
 }
 
+.info-proyecto p {
+  width: 80%;
+  margin: 3rem auto;
+}
+
 .info-proyecto span {
   position: absolute;
   right: 4%;
-  margin-top: -6.5rem;
+  margin-top: -12rem;
   color: gray;
   font-weight: bold;
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .info-proyecto span {
+    right: 5%;
+    margin-top: -17rem;
+  }
 }
 
 .info-proyecto .grid-proyectos {
@@ -711,6 +730,12 @@ main nav .correo {
 
 .info-proyecto .grid-proyectos img {
   width: 32%;
+}
+
+@media screen and (max-width: 767px) {
+  .info-proyecto .grid-proyectos img {
+    width: 100%;
+  }
 }
 
 .mostrar-info {
