@@ -719,7 +719,7 @@ main nav .correo {
             transition: all .5s ease-in;
             font-size: 1rem;
             font-weight: bold;
-
+            
             &:hover {
                 background: gray;
                 color: #fff;
@@ -730,10 +730,11 @@ main nav .correo {
 }
 
 .info-proyecto {
+    width: 100%;
     padding-top: 4rem;
     padding-left: 1.7rem;
     display: none;
-
+    border: 1px solid gray;
     @media screen and(max-width: 767px) {
         & {
             padding-left: 0;
@@ -771,7 +772,6 @@ main nav .correo {
         display: flex;
         gap: .5rem;
         flex-wrap: wrap;
-
         img {
             width: 32%;
 
@@ -779,6 +779,12 @@ main nav .correo {
                 & {
                     width: 100%;
                 }
+            }
+            &:nth-child(1) {
+                display:none;
+            }
+            &:nth-child(2) {
+                display:none;
             }
         }
     }

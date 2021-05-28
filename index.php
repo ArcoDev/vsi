@@ -251,23 +251,30 @@
                                                  FROM proyectos proy
                                                  INNER JOIN galeria gal
                                                  ON proy.id = gal.id_proyecto");
-                        
+                            
                         while($galeria = mysqli_fetch_array($consulta)) {
+                            $nom_carpeta = $galeria['titulo'];
+                            $directory = "assets/galerias/$nom_carpeta/";
+                            $dirint = dir($directory);      
+                            //$dirint->close();
                             echo '<div id ="proyecto-'.$galeria['id_proyecto'].'" class="info-proyecto">
                                     <h2>'.$galeria['titulo'].'</h2>
                                     <p>'.$galeria['descripcion'].'</p>
                                     <span id="cerrar-'.$galeria['id_proyecto'].'">X</span>
-                                    <div class="grid-proyectos">';?>
-                                        <?php
-                                           echo 'hola';
-                                        ?>
-                                    <?php echo '</div>'; ?>
-                       <?php } ?> 
-
+                                    <div class="grid-proyectos">';
+                                        while (($archivo = $dirint->read()) != false) {
+                                            $image = $directory.$archivo;
+                                             echo '<img src = "'.$image.'">';
+                                    }
+                                   echo '</div>
+                                </div>';
+                        } 
+                    ?>
                     <!--
                     <div id ="proyecto-2" class="info-proyecto">
                         <h2>Palo Blanco</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia explicabo iste omnis inventore repellendus labore maiores nobis necessitatibus fuga accusamus, saepe exercitationem.</p>
+                        <span id="cerrar-3">X</span>
                         <div class="grid-proyectos">
                             <img loading= "lazy" src="assets/galerias/Palo Blanco/1.jpg" alt="Galeria de proyectos de vsi">
                             <img loading= "lazy" src="assets/galerias/Palo Blanco/2.jpg" alt="Galeria de proyectos de vsi">

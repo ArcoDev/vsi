@@ -684,9 +684,11 @@ main nav .correo {
 }
 
 .info-proyecto {
+  width: 100%;
   padding-top: 4rem;
   padding-left: 1.7rem;
   display: none;
+  border: 1px solid gray;
 }
 
 @media screen and (max-width: 767px) {
@@ -736,6 +738,14 @@ main nav .correo {
   .info-proyecto .grid-proyectos img {
     width: 100%;
   }
+}
+
+.info-proyecto .grid-proyectos img:nth-child(1) {
+  display: none;
+}
+
+.info-proyecto .grid-proyectos img:nth-child(2) {
+  display: none;
 }
 
 .mostrar-info {
