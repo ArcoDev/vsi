@@ -688,7 +688,6 @@ main nav .correo {
   padding-top: 4rem;
   padding-left: 1.7rem;
   display: none;
-  border: 1px solid gray;
 }
 
 @media screen and (max-width: 767px) {
