@@ -18,8 +18,6 @@ $(document).ready(function () {
                 $('#loader').show();
             },
             success: function (data) {
-                //console.log(data);
-                console.log('exito');
                 var resultado = data;
                 if (resultado.respuesta === 'exito') {
                     swal(
@@ -46,6 +44,37 @@ $(document).ready(function () {
             }
         });
     });
+    /* Borrar imagen de la galeria de proyectos */
+    $('.eliminar-img').on('click', function (e) {
+        e.preventDefault();
+
+        var datos = {'eliminar_img': $(this).val(), 'registro': 'eliminaImg'};
+        $.ajax({
+            type: 'POST',
+            data: datos,
+            url: 'modelo-galeria.php',
+            dataType: 'json',
+            success: function (data) {
+                var resultado = data;
+                if (resultado.respuesta === 'prueba') {
+                    swal(
+                        'El proyecto!',
+                        'Se agrego correctamente.',
+                        'success'
+                    );
+                    setTimeout(function () {
+                        location.reload();
+                    }, 2000)
+                } else {
+                    swal(
+                        'Ooops!',
+                        'No se puede cargar el producto',
+                        'error'
+                    );
+                }
+            }
+        });
+    });
     /* Eliminar registro */
     $('.borrar_registro').on('click', function (e) {
         e.preventDefault();
@@ -62,9 +91,7 @@ $(document).ready(function () {
             cancelButtonText: 'Cancelar'
 
         }).then(function (result) {
-            //console.log(result);
             if (result.value) {
-                //console.log("ID:" + id);
 
                 $.ajax({
                     type: 'post',
@@ -75,9 +102,7 @@ $(document).ready(function () {
 
                     url: 'modelo-' + galeria + '.php',
                     success: function (data) {
-                        //  console.log(data);
                         var resultado = JSON.parse(data);
-                        console.log(resultado);
                         if (resultado.respuesta == 'exito') {
                             swal(
                                 'Eliminado!',

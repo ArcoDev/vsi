@@ -35,7 +35,7 @@
     display: none;
 }
 
-.gal-contenedor{
+.modal-body{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -43,15 +43,21 @@
 }
 .accion-img {
     width: 30%;
+    height:auto;
+    display: block;
 } 
-img {
+.img_gal {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.gal-contenedor .accion-img:nth-child(1) {
+.modal-body .accion-img:nth-child(1) {
     display: none;
 }
-.gal-contenedor .accion-img:nth-child(2) {
+.modal-body .accion-img:nth-child(2) {
     display: none;
+}
+.eliminar-img {
+   margin-top: -30rem;
+   margin-left: 12.7rem;
 }

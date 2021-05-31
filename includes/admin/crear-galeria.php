@@ -61,7 +61,7 @@
                 </div>
                 <div class="form-group">
                   <label for="imagen-proyecto">Imagenes</label>
-                  <input type="file" id="archivo[]" name="archivo_imagen[]" multiple="" accept="image/*">
+                  <input type="file" id="archivo[]" name="archivo[]" multiple="" accept="image/*">
                   <div
                     style="display: flex; flex-wrap: wrap; justify-content: space-between: text-align: center; margin-top: 10px;">
                     <p style="width: 50%;" class="help-block">• Medida recomendada de la imagen: <strong>1500 x

@@ -171,6 +171,7 @@ section {
   display: block;
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .contenedor-slider .slider .slider_section .slider_texto {

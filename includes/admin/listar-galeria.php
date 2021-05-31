@@ -96,8 +96,13 @@
 </div>
 <!-- /.content-wrapper -->
 <?php
+    //variables
     $sql = $con->query("SELECT * FROM galeria");
     while($galeria_modal = mysqli_fetch_array($sql)) {
+      $nom_carpeta = $galeria_modal['titulo'];
+      $directorio = "../../assets/galerias/$nom_carpeta/";
+      $directorio_fin = dir($directorio);
+      $incrementaID = 0;
       echo  '<div class="modal fade" id="galeria-'.$galeria_modal['id_proyecto'].'" tabindex="-1" role="dialog"     aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                   <div class="modal-content">
@@ -105,11 +110,28 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
-                      <h2 class="modal-title" id="exampleModalLongTitle">Galería del proyecto de '.$galeria_modal['titulo'].'</h2>
-                      <p>Click Sobre la imagen para eliminarla del proyecto</p>
+                      <h2 class="modal-title" id="exampleModalLongTitle">Galería proyecto '.$galeria_modal['titulo'].'</h2>
+                      <p>Click sobre la imagen si deseas eliminarla del proyecto</p>
                     </div>
                     <div class="modal-body">';
-                      echo 'Hola mundo';
+                       while(($archivo = $directorio_fin->read()) != false) {
+                         $nombre_img = $directorio.$archivo;
+                         $incrementaID ++;
+                         echo '<div class="accion-img" href="">
+                         <img id="'.$incrementaID.'" class="img_gal" src="'.$nombre_img.'" alt="Galeria de imagenes">
+                         <form action="modelo-galeria.php" method="POST" name="eliminar-img" class="borrar">
+                         <input type="hidden" name="registro" value="eliminaImg">
+                              <button type="submit"
+                                      name="elimina_img" 
+                                      class="btn btn-danger btn-flat margin eliminar-img borrar_img" 
+                                      value = "'.$nombre_img.'"
+                                      >
+                              <i class="fas fa-trash-alt"></i>
+                              </button>
+                         
+                                 </form>
+                               </div>';
+                       }
                     echo '</div>
                   </div>
                 </div>

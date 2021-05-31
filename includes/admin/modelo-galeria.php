@@ -16,13 +16,11 @@ if($_POST['registro'] == 'nuevo') {
     );
     die(json_encode($respuesta));
     */
-   foreach ($_FILES['archivo']['tmp_name'] as $key => $tmp_name) {
+    foreach ($_FILES['archivo']['tmp_name'] as $key => $tmp_name) {
+       
         if($_FILES['archivo']['name'][$key]) {
             
             $filename = $_FILES['archivo']['name'][$key];
-            /*foreach ($prueba as $key => $filename) {
-                # code...
-            }*/
             $temporal = $_FILES['archivo']['tmp_name'][$key];
 
             $directorio = "../../assets/galerias/$titulo";
@@ -35,17 +33,12 @@ if($_POST['registro'] == 'nuevo') {
             $ruta = $directorio.'/'.$filename;
 
             if(move_uploaded_file($temporal, $ruta)) {
-                $cargaCorrecta = 'Se cargo correctamente';
+                echo 'Se cargo correctamnte';
             } else {
-                $cargaCorrecta = 'error';
-
+                echo 'error';
             }
             closedir($dir);
         }
-       /* echo '<prev>';
-            var_dump($_FILES);      
-            //die();
-        echo '</prev>'; */
    }
 
     try {
@@ -72,6 +65,23 @@ if($_POST['registro'] == 'nuevo') {
     }
     die(json_encode($respuesta));
 }
+
+/* ELiminar Imagenes de la galeria de proyectos */
+if($_POST['registro'] == 'eliminaImg') { 
+
+    
+    
+    $id_img = $_POST['eliminar_img'];
+    $respuesta=array(
+      'respuesta'=>'prueba'
+    );
+    if($id_img) {
+      unlink($id_img);
+    }
+die(json_encode($respuesta));
+
+}
+
 /*Actualizar Registro de la galeria 
 if($_POST['registro'] == 'actualizar') {
     

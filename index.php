@@ -64,25 +64,32 @@
 </head>
 
 <body>
-    <header id="contenedor-slider" class="contenedor-slider">
+<header id="contenedor-slider" class="contenedor-slider">
         <div id="slider" class="slider">
             <div class="slider_section">
-                <img loading="lazy" class="slider_img" src="assets/img/banner_1.jpg" alt="Banner 1">
+                <img class="slider_img" src="assets/img/banner_1.jpg" alt="Banner 1">
                 <!--h1 class="slider_img"><b>CREAMOS ASOMBROSOS</b><br>PROYECTOS INMOBILIARIOS</h1-->
             </div>
             <div class="slider_section">
-                <img loading="lazy" class="slider_img" src="assets/img/banner_2.jpg" alt="Banner 2">
+                <img class="slider_img" src="assets/img/banner_2.jpg" alt="Banner 2">
                 <!--h2 class="slider_img">CREAMOS ASOMBROSOS<br>PROYECTOS INMOBILIARIOS</h2-->
             </div>
             <div class="slider_section">
-                <img loading="lazy" class="slider_img" src="assets/img/banner_3.jpg" alt="Banner 3">
+                <img class="slider_img" src="assets/img/banner_3.jpg" alt="Banner 3">
                 <!--h2 class="slider_img">CREAMOS ASOMBROSOS<br>PROYECTOS INMOBILIARIOS</h2-->
             </div>
+
+          <div class="slider_section">
+                <img class="slider_img" src="assets/img/banner_4.jpg" alt="Banner 3">
+                <!--h2 class="slider_img">CREAMOS ASOMBROSOS<br>PROYECTOS INMOBILIARIOS</h2-->
+            </div>
+
+
         </div>
         <nav class="contenedor1">
             <div class="menu">
                 <button id="menu1">
-                    <img loading="lazy" class="menu-icono" src="assets/icons/menu_blanco.png" alt="Menu">
+                    <img class="menu-icono" src="assets/icons/menu_blanco.png" alt="Menu">
                     <span class="header-menu">MENÚ</span>
                 </button>
                 <ul class="enlaces">
@@ -105,7 +112,7 @@
             </div>
             <div class="idioma">
                 <button id="btn_idioma">
-                    <img loading="lazy" class="redes-icono" src="assets/icons/idioma_icono.png" alt="Idioma">
+                    <img class="redes-icono" src="assets/icons/idioma_icono.png" alt="Idioma">
                 </button>
                 <div class="es-en">
                     <button class="es idioma-activo" href="#">ESP</button> /
@@ -114,32 +121,24 @@
             </div>
         </nav>
         <div class="titulo">
-            <img loading="lazy" src="assets/img/vsi_logo.png" alt="VSI">
+            <img src="assets/img/vsi_logo.png" alt="VSI">
             <h1 class="header_titulo"><b>CREAMOS ASOMBROSOS</b><br>PROYECTOS INMOBILIARIOS</h1>
         </div>
         <div class="slider-controles">
             <button id="prev">
-                <img loading="lazy" class="img-100" src="assets/icons/flecha_izq.png" alt="prev">
+                <img class="img-100" src="assets/icons/flecha_izq.png" alt="prev">
             </button>
             <label><span id="no-img"></span>/3</label>
             <button id="sig">
-                <img loading="lazy" class="img-100" src="assets/icons/flecha-der.png" alt="sig">
+                <img class="img-100" src="assets/icons/flecha-der.png" alt="sig">
             </button>
         </div>
-        <!--
-        <div class="correo">
-            <a href="mailto:contacto@vsidesarrollos.com">
-                <img loading = "lazy" class="redes-icono" src="assets/icons/mail_icono.png" alt="Correo">
-                <span class="header-correo">contacto@vsidesarrollos.com</span>
-            </a>
-        </div>
-    -->
     </header>
     <main>
         <nav>
             <div class="menu">
                 <button id="menu2">
-                    <img loading="lazy" class="menu-icono" src="assets/icons/menu_gris.png" alt="Menu">
+                    <img class="menu-icono" src="assets/icons/menu_gris.png" alt="Menu">
                     MENÚ
                 </button>
                 <ul class="enlaces">
@@ -162,7 +161,7 @@
             </div>
             <div class="correo">
                 <a href="mailto:contacto@vsidesarrollos.com" class="correo">
-                    <img loading="lazy" class="redes-icono" src="assets/icons/mail_icono_2.png" alt="Correo">
+                    <img class="redes-icono" src="assets/icons/mail_icono_2.png" alt="Correo">
                     <span class="mail">contacto@vsidesarrollos.com</span>
                 </a>
             </div>
@@ -201,7 +200,7 @@
                                 El Grupo VSI incluye un despacho de arquitectura, una constructora, gerencia de obra y
                                 por otra parte, el desarrollo inmobiliario y la plataforma financiera en VSI.
                             </p>
-                            <a href="https://www.villasi.com/" target="_blank">Conócenos más...</a>
+                            <a href="vsi.pdf" target="_blank">Conócenos más...</a>
                         </div>
                     </div>
                 </section>
@@ -270,46 +269,6 @@
                                 </div>';
                         } 
                     ?>
-                    <!--
-                    <div id ="proyecto-2" class="info-proyecto">
-                    Vsi-2021$
-                        <h2>Palo Blanco</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia explicabo iste omnis inventore repellendus labore maiores nobis necessitatibus fuga accusamus, saepe exercitationem.</p>
-                        <span id="cerrar-3">X</span>
-                        <div class="grid-proyectos">
-                            <img loading= "lazy" src="assets/galerias/Palo Blanco/1.jpg" alt="Galeria de proyectos de vsi">
-                            <img loading= "lazy" src="assets/galerias/Palo Blanco/2.jpg" alt="Galeria de proyectos de vsi">
-                            <img loading= "lazy" src="assets/galerias/Palo Blanco/3.jpg" alt="Galeria de proyectos de vsi">
-                            <img loading= "lazy" src="assets/galerias/Palo Blanco/4.jpg" alt="Galeria de proyectos de vsi">
-                            <img loading= "lazy" src="assets/galerias/Palo Blanco/5.jpg" alt="Galeria de proyectos de vsi">
-                            <img loading= "lazy" src="assets/galerias/Palo Blanco/6.jpg" alt="Galeria de proyectos de vsi">
-                            <img loading= "lazy" src="assets/galerias/Palo Blanco/7.jpg" alt="Galeria de proyectos de vsi">
-                            <img loading= "lazy" src="assets/galerias/Palo Blanco/8.jpg" alt="Galeria de proyectos de vsi">
-                            <img loading= "lazy" src="assets/galerias/Palo Blanco/alberca.jpg" alt="Galeria de proyectos de vsi">
-                            <img loading= "lazy" src="assets/galerias/Palo Blanco/fachadas.jpg" alt="Galeria de proyectos de vsi">
-                            <img loading= "lazy" src="assets/galerias/Palo Blanco/terraza.jpg" alt="Galeria de proyectos de vsi">
-                        </div>
-                    </div>
-                    <div id ="proyecto-3" class="info-proyecto">
-                        <h2>Plaza Saltillo 400</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia explicabo iste omnis inventore repellendus labore maiores nobis necessitatibus fuga accusamus, saepe exercitationem.</p>
-                        <span id="cerrar-3">X</span>
-                        <div class="grid-proyectos">
-                            <img loading= "lazy" src="assets/galerias/Plaza Saltillo 400/1.jpg" alt="Galeria de proyectos de vsi">
-                            <img loading= "lazy" src="assets/galerias/Plaza Saltillo 400/2.jpg" alt="Galeria de proyectos de vsi">
-                        </div>
-                    </div>
-                    <div id ="proyecto-4" class="info-proyecto">
-                        <h2>Noma</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia explicabo iste omnis inventore repellendus labore maiores nobis necessitatibus fuga accusamus, saepe exercitationem.</p>
-                        <span id="cerrar-4">X</span>
-                        <div class="grid-proyectos">
-                            <img loading= "lazy" src="assets/galerias/Noma/co-livin.jpg" alt="Galeria de proyectos de vsi">
-                            <img loading= "lazy" src="assets/galerias/Noma/co-work-queretaro.jpg" alt="Galeria de proyectos de vsi">
-                            <img loading= "lazy" src="assets/galerias/Noma/sala-depa.jpg" alt="Galeria de proyectos de vsi">
-                        </div>
-                    </div>
-                    -->
                 </section>
                 <!-- DESARROLLOS -->
                 <section class="desarrollosInm">
