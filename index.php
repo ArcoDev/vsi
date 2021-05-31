@@ -178,11 +178,11 @@
                             <div class="col-nosotros">
                                 <div class="villasi">
                                     <img loading="lazy" src="assets/img/villasi_logo.png" alt="">
-                                    <a href="#">LEER MÁS</a>
+                                    <a href="https://www.villasi.com/" target="_blank">LEER MÁS</a>
                                 </div>
                                 <div class="pv">
                                     <img loading="lazy" src="assets/img/pauvillarreal_logo.png" alt="">
-                                    <a href="#">LEER MÁS</a>
+                                    <a href="http://pauvillarrealarq.com/" target="_blank">LEER MÁS</a>
                                 </div>
                             </div>
                         </div>
@@ -201,7 +201,7 @@
                                 El Grupo VSI incluye un despacho de arquitectura, una constructora, gerencia de obra y
                                 por otra parte, el desarrollo inmobiliario y la plataforma financiera en VSI.
                             </p>
-                            <a href="#">Conócenos más...</a>
+                            <a href="https://www.villasi.com/" target="_blank">Conócenos más...</a>
                         </div>
                     </div>
                 </section>
@@ -241,7 +241,7 @@
                                             alt = "Proyectos VSI"
                                             title= "'.$proyecto['nombre'].'">
                                     </a>
-                                    <a class="enlace" href="'.$proyecto['enlace'].'">'.$proyecto['nombre'].'</a>
+                                    <a class="enlace" href="'.$proyecto['enlace'].'" target="_blank">'.$proyecto['nombre'].'</a>
                                 </div>';
                         }
                     ?>
@@ -255,16 +255,16 @@
                         while($galeria = mysqli_fetch_array($consulta)) {
                             $nom_carpeta = $galeria['titulo'];
                             $directory = "assets/galerias/$nom_carpeta/";
-                            $dirint = dir($directory);      
+                            $directorio_fin = dir($directory);      
                             //$dirint->close();
                             echo '<div id ="proyecto-'.$galeria['id_proyecto'].'" class="info-proyecto">
                                     <h2>'.$galeria['titulo'].'</h2>
                                     <p>'.$galeria['descripcion'].'</p>
                                     <span id="cerrar-'.$galeria['id_proyecto'].'">X</span>
                                     <div class="grid-proyectos">';
-                                        while (($archivo = $dirint->read()) != false) {
-                                            $image = $directory.$archivo;
-                                             echo '<img src = "'.$image.'">';
+                                        while (($archivo = $directorio_fin->read()) != false) {
+                                            $imagenes = $directory.$archivo;
+                                             echo '<img src = "'.$imagenes.'">';
                                     }
                                    echo '</div>
                                 </div>';
@@ -272,6 +272,7 @@
                     ?>
                     <!--
                     <div id ="proyecto-2" class="info-proyecto">
+                    Vsi-2021$
                         <h2>Palo Blanco</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia explicabo iste omnis inventore repellendus labore maiores nobis necessitatibus fuga accusamus, saepe exercitationem.</p>
                         <span id="cerrar-3">X</span>

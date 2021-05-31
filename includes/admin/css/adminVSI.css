@@ -34,3 +34,24 @@
 .login-page .main-footer {
     display: none;
 }
+
+.gal-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-left: 3rem;
+}
+.accion-img {
+    width: 30%;
+} 
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gal-contenedor .accion-img:nth-child(1) {
+    display: none;
+}
+.gal-contenedor .accion-img:nth-child(2) {
+    display: none;
+}

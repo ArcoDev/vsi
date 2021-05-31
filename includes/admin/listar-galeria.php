@@ -37,7 +37,6 @@
                 <tr>
                   <th>Titulo</th>
                   <th>Descripcion</th>
-                  <th>Imagenes galeria</th>
                   <th>Proyecto perteneciente</th>
                   <th>Acciones</th>
                 </tr>
@@ -58,12 +57,12 @@
                 <tr>
                   <td><?php echo $galeria['titulo'] ?></td>
                   <td><?php echo $galeria['descripcion'] ?></td>
-                  <td>
-                    <img class="galeria-vistaPrevia" loading="lazy" src="../../assets/galeria/Postal/<?php echo $galeria['imagenes'] ?>" alt="Galeria Vista previa" width="100" height="100">
-                    
-                  </td>
                   <td><?php echo $galeria['nombre'] ?></td>
                   <td>
+                    <a data-toggle="modal" data-target="#galeria-proyectos" class="btn btn-success btn-flat margin"
+                      title="Ver imagenes de la galería">
+                      <i class="fas fa-eye"></i>
+                    </a>
                     <a href="editar-galeria.php?id=<?php echo $galeria['id_proyecto']?>"
                       class="btn btn-warning btn-flat margin" title="Editar">
                       <i class="fas fa-pencil-alt"></i>
@@ -96,7 +95,44 @@
   <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
-
+<div class="modal fade" id="galeria-proyectos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h1 class="modal-title" id="exampleModalLabel">Galeria</h1>
+        <p>Click Sobre la imagen para eliminarla del proyecto</p>
+      </div>
+      <div class="modal-body">
+        <div class="gal-contenedor">
+          <?php
+              $consulta = $con->query("SELECT * FROM galeria");
+              while($galeria = mysqli_fetch_array($consulta)) {
+                $nombre_archivo = $galeria['titulo'];
+                //var_dump($nombre_archivo);
+              }
+               // $nom_carpeta = $galeria['titulo'];
+                $directorio = "../../assets/galerias/$nombre_archivo/";
+                $directorio_fin = dir($directorio);
+                while(($archivo = $directorio_fin->read()) != false) {
+                  $imagenes = $directorio.$archivo;
+                  echo '<a class="accion-img" href="">
+                           <img src="'.$imagenes.'" alt="Galeria de imagenes">
+                        </a>';
+                }
+                 $directorio_fin->close();
+          ?>
+          <!--<a class="accion-img" href="">
+            <img src="../../assets/proyectos/proyecto-noma.jpg" alt="">
+          </a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <?php
 /* AGregado los tempaltes de la plantilla */
   include_once "templates/footer.php";

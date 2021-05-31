@@ -24,7 +24,7 @@
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="css/skins/_all-skins.min.css">
   <!-- Estilos personales-->
-  <link rel="stylesheet" href="css/adminAmora.css">
+  <link rel="stylesheet" href="css/adminVsi.css">
 
 
   <!-- Google Font -->

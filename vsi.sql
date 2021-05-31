@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 27-05-2021 a las 18:56:40
+-- Tiempo de generación: 31-05-2021 a las 16:35:31
 -- Versión del servidor: 10.4.18-MariaDB
 -- Versión de PHP: 7.3.28
 
@@ -40,7 +40,7 @@ CREATE TABLE `galeria` (
 --
 
 INSERT INTO `galeria` (`id_gal`, `titulo`, `descripcion`, `imagenes`, `id_proyecto`) VALUES
-(1, 'Postal', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam qui nulla incidunt consequatur exce', '8.jpg', 1),
+(1, 'Postal', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam qui nulla incidunt consequatur exce', '5.jpg', 1),
 (2, 'Palo Blanco', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam qui nulla incidunt consequatur exce', 'terraza.jpg', 2),
 (3, 'Plaza Saltillo 400', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam qui nulla incidunt consequatur exce', '2.jpg', 3),
 (4, 'Noma', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam qui nulla incidunt consequatur exce', 'sala-depa.jpg', 4);
@@ -66,7 +66,7 @@ INSERT INTO `proyectos` (`id`, `nombre`, `foto`, `enlace`) VALUES
 (1, 'Postal', 'proyecto-postal.jpg', 'http://postal.trazopublicidad.net/'),
 (2, 'Palo Blanco', 'proyecto-palo.jpg', 'https://www.villasi.com/paloblanco'),
 (3, 'Plaza Saltillo 400', 'proyecto-saltillo.jpg', 'https://www.villasi.com/'),
-(4, 'Noma ', 'proyecto-noma.jpg', 'https://www.villasi.com/');
+(4, 'Noma ', '3.jpg', 'https://www.villasi.com/');
 
 -- --------------------------------------------------------
 
@@ -123,13 +123,13 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `galeria`
 --
 ALTER TABLE `galeria`
-  MODIFY `id_gal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_gal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `proyectos`
 --
 ALTER TABLE `proyectos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
