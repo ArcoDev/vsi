@@ -64,8 +64,8 @@
                   <input type="file" id="archivo[]" name="archivo[]" multiple="" accept="image/*">
                   <div
                     style="display: flex; flex-wrap: wrap; justify-content: space-between: text-align: center; margin-top: 10px;">
-                    <p style="width: 50%;" class="help-block">• Medida recomendada de la imagen: <strong>1500 x
-                        1500</strong> </p>
+                    <p style="width: 50%;" class="help-block">• Medida recomendada de la imagen: <strong>762 x
+                        608</strong> </p>
                     <p style="width: 50%;" class="help-block">• Peso ideal de la imagen, menos de <strong>1
                         MB</strong>
                     </p>

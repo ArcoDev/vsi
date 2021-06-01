@@ -25,21 +25,21 @@ if($_POST['registro'] == 'nuevo') {
 
             $directorio = "../../assets/galerias/$titulo";
 
-            if(!file_exists($directorio)) {
-                mkdir($directorio, 0755, true);
-            }
-            //directorio destino
-            $dir = opendir($directorio);
-            $ruta = $directorio.'/'.$filename;
-
         }
+        if(!file_exists($directorio)) {
+            mkdir($directorio, 0755, true);
+        }
+        //directorio destino
+        $dir = opendir($directorio);
+        $ruta = $directorio.'/'.$filename;
+    
+        if(move_uploaded_file($temporal, $ruta)) {
+            $cargaCorrecta = 'Se cargo correctamnte';
+        } else {
+            $cargaCorrecta = 'Error';
+        }
+        closedir($dir);
     }
-    if(move_uploaded_file($temporal, $ruta)) {
-        $cargaCorrecta = 'Se cargo correctamente';
-    } else {
-        echo 'error';
-    }
-    closedir($dir);
 
     try {
         include_once "functions/funciones.php";
@@ -68,9 +68,6 @@ if($_POST['registro'] == 'nuevo') {
 
 /* ELiminar Imagenes de la galeria de proyectos */
 if($_POST['registro'] == 'eliminaImg') { 
-
-    
-    
     $id_img = $_POST['eliminar_img'];
     $respuesta=array(
       'respuesta'=>'correcto'
@@ -78,35 +75,14 @@ if($_POST['registro'] == 'eliminaImg') {
     if($id_img) {
       unlink($id_img);
     }
-die(json_encode($respuesta));
-
+    die(json_encode($respuesta));
 }
 
-/*Actualizar Registro de la galeria 
+/*Actualizar Registro de la galeria */
 if($_POST['registro'] == 'actualizar') {
-    
-    $directorio = "../../assets/proyectos/";
-    if(!is_dir($directorio)) {
-        mkdir($directorio, 0755, true);
-    }
-    if(move_uploaded_file($_FILES['archivo_imagen']['tmp_name'], $directorio . $_FILES['archivo_imagen']['name'])) {
-        $imagen_url = $_FILES['archivo_imagen']['name'];
-        $imagen_resultado = "Se cargo correctamente";
-    } else {
-        $respuesta = array(
-            'respuesta' => error_get_last()
-        );
-    }
     try {
-        if($_FILES['archivo_imagen']['size'] > 0) {
-            //con imagen
-            $stmt = $con->prepare("UPDATE proyectos SET nombre = ?, foto = ?, enlace = ? WHERE id = ?");
-            $stmt->bind_param("sssi", $nombre, $imagen_url, $enlace, $id_registroEditar);
-        } else {
-            //sin imagen
-            $stmt = $con->prepare("UPDATE proyectos SET nombre = ?, enlace = ? WHERE id = ?");
-            $stmt->bind_param("ssi", $nombre, $enlace, $id_registroEditar);
-        }
+        $stmt = $con->prepare("UPDATE galeria SET titulo = ?, descripcion = ?, id_proyecto = ? WHERE id_gal = ?");
+         $stmt->bind_param("ssii", $titulo, $desc, $proyecto_gal, $id_registroEditar);
         $estado = $stmt->execute();
         if($estado == true) {
             $respuesta = array(
@@ -126,12 +102,24 @@ if($_POST['registro'] == 'actualizar') {
         );
     }
     die(json_encode($respuesta));
-}*/
-/*Eliminar Proyecto 
+}     
+
+/*Eliminar Proyecto */
 if($_POST['registro'] == 'eliminar') { 
     $id_borrar = $_POST['id'];
     try {
-        $stmt = $con->prepare("DELETE FROM proyectos WHERE id = ?");
+        /*$files = glob("../../assets/galerias/$titulo");
+        foreach($files as $file) {
+            if(is_file($file)) {
+                unlink($file);
+            }
+        }*/
+        $carpeta = "../../assets/galerias/".$titulo;
+        foreach(glob($carpeta."/*.*") as $archivos_carpeta) {
+            unlink($archivos_carpeta);
+        }
+        rmdir($carpeta);
+        $stmt = $con->prepare("DELETE FROM galeria WHERE id_gal = ?");
         $stmt->bind_param('i', $id_borrar);
         $stmt->execute();
         if($stmt->affected_rows) {
@@ -150,4 +138,4 @@ if($_POST['registro'] == 'eliminar') {
         );
     }
     die(json_encode($respuesta));
-}*/
+}

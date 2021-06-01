@@ -67,7 +67,8 @@
                       class="btn btn-warning btn-flat margin" title="Editar">
                       <i class="fas fa-pencil-alt"></i>
                     </a>
-                    <a href="#" data-id="<?php echo $galeria['id_gal']?>" data-tipo="galeria"
+                    <a href="#" data-id="<?php echo $galeria['id_gal']?>" data-tipo="galeria" 
+                                data-titulo="<?php echo $galeria['titulo'] ?>"
                       class="btn btn-danger btn-flat margin borrar_registro" title="Eliminar">
                       <i class="fas fa-trash"></i>
                     </a>

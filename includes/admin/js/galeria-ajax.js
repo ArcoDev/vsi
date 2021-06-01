@@ -21,7 +21,7 @@ $(document).ready(function () {
                 var resultado = data;
                 if (resultado.respuesta === 'exito') {
                     swal(
-                        'El proyecto!',
+                        'La galeria!',
                         'Se agrego correctamente.',
                         'success'
                     );
@@ -92,12 +92,13 @@ $(document).ready(function () {
             }
         });
     });
-    
+
     /* Eliminar registro */
     $('.borrar_registro').on('click', function (e) {
         e.preventDefault();
         var id = $(this).attr('data-id');
         var galeria = $(this).attr('data-tipo');
+        var titulo = $(this).attr('data-titulo');
         swal({
             title: 'Estas seguro?',
             text: "Esta acción no se puede revertir!",
@@ -114,6 +115,7 @@ $(document).ready(function () {
                 $.ajax({
                     type: 'post',
                     data: {
+                        'titulo': titulo,
                         'id': id,
                         'registro': 'eliminar'
                     },
@@ -123,8 +125,8 @@ $(document).ready(function () {
                         var resultado = JSON.parse(data);
                         if (resultado.respuesta == 'exito') {
                             swal(
-                                'Eliminado!',
-                                'Registro eliminado',
+                                'Galería eliminada!',
+                                'Correctamente',
                                 'success'
                             );
                             jQuery("[data-id='" + resultado.id_eliminado + "'").parents('tr').remove();
