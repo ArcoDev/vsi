@@ -48,33 +48,51 @@ $(document).ready(function () {
     $('.eliminar-img').on('click', function (e) {
         e.preventDefault();
 
-        var datos = {'eliminar_img': $(this).val(), 'registro': 'eliminaImg'};
-        $.ajax({
-            type: 'POST',
-            data: datos,
-            url: 'modelo-galeria.php',
-            dataType: 'json',
-            success: function (data) {
-                var resultado = data;
-                if (resultado.respuesta === 'prueba') {
-                    swal(
-                        'El proyecto!',
-                        'Se agrego correctamente.',
-                        'success'
-                    );
-                    setTimeout(function () {
-                        location.reload();
-                    }, 2000)
-                } else {
-                    swal(
-                        'Ooops!',
-                        'No se puede cargar el producto',
-                        'error'
-                    );
-                }
+        var datos = {
+            'eliminar_img': $(this).val(),
+            'registro': 'eliminaImg'
+        };
+        swal({
+            title: 'Estas seguro?',
+            text: "Esta acción no se puede revertir!",
+            type: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Si! Eliminar',
+            cancelButtonText: 'Cancelar'
+
+        }).then(function (result) {
+            if (result.value) {
+                $.ajax({
+                    type: 'POST',
+                    data: datos,
+                    url: 'modelo-galeria.php',
+                    dataType: 'json',
+                    success: function (data) {
+                        var resultado = data;
+                        if (resultado.respuesta === 'correcto') {
+                            swal(
+                                'La imagen!',
+                                'Se elimino correctamente.',
+                                'success'
+                            );
+                            setTimeout(function () {
+                                location.reload();
+                            }, 2000)
+                        } else {
+                            swal(
+                                'Ooops!',
+                                'No se pudo eliminar',
+                                'error'
+                            );
+                        }
+                    }
+                });
             }
         });
     });
+    
     /* Eliminar registro */
     $('.borrar_registro').on('click', function (e) {
         e.preventDefault();

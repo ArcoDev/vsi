@@ -32,14 +32,14 @@ if($_POST['registro'] == 'nuevo') {
             $dir = opendir($directorio);
             $ruta = $directorio.'/'.$filename;
 
-            if(move_uploaded_file($temporal, $ruta)) {
-                echo 'Se cargo correctamnte';
-            } else {
-                echo 'error';
-            }
-            closedir($dir);
         }
-   }
+    }
+    if(move_uploaded_file($temporal, $ruta)) {
+        $cargaCorrecta = 'Se cargo correctamente';
+    } else {
+        echo 'error';
+    }
+    closedir($dir);
 
     try {
         include_once "functions/funciones.php";
@@ -73,7 +73,7 @@ if($_POST['registro'] == 'eliminaImg') {
     
     $id_img = $_POST['eliminar_img'];
     $respuesta=array(
-      'respuesta'=>'prueba'
+      'respuesta'=>'correcto'
     );
     if($id_img) {
       unlink($id_img);
