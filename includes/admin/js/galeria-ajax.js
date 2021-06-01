@@ -36,7 +36,7 @@ $(document).ready(function () {
                 }
                 if (resultado.respuesta === 'actualizar') {
                     swal(
-                        'El Proyecto!',
+                        'La galería!',
                         'Se edito correctamente.',
                         'success'
                     );

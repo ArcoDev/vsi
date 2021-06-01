@@ -108,12 +108,7 @@ if($_POST['registro'] == 'actualizar') {
 if($_POST['registro'] == 'eliminar') { 
     $id_borrar = $_POST['id'];
     try {
-        /*$files = glob("../../assets/galerias/$titulo");
-        foreach($files as $file) {
-            if(is_file($file)) {
-                unlink($file);
-            }
-        }*/
+        /* Eliminar carpeta e informacion de la BD, mediante el id de la galeria */
         $carpeta = "../../assets/galerias/".$titulo;
         foreach(glob($carpeta."/*.*") as $archivos_carpeta) {
             unlink($archivos_carpeta);
