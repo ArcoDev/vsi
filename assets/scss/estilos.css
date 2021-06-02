@@ -567,9 +567,8 @@ main nav .correo {
 
 .caja-numeros .col h2 {
   width: 100%;
-  background: #fff;
   font-size: 4rem;
-  color: #155f3f;
+  color: #fff;
   text-align: center;
   padding: 2rem 0;
   transition: all 1s;
@@ -756,75 +755,12 @@ main nav .correo {
   display: none;
 }
 
-/*Imagenes proyectos
-.caja-img {
-    width: 90%;
-    transition: all 1s;
-    display: none;
-
-    .info {
-        width: 100%;
-        padding: 1rem 0;
-        text-align: center;
-
-        span {
-            cursor: pointer;
-            position: absolute;
-            margin-top: -6.5rem;
-            right: 5%;
-            color: #000;
-            font-weight: bold;
-            font-size: 1.5rem;
-
-            @media screen and(max-width: 767px) {
-                & {
-                    margin-top: -12rem;
-                }
-            }
-
-            @media screen and (min-width: 768px) and (max-width: 1024px) {
-                & {
-                    margin-top: -8rem;
-                }
-            }
-        }
-
-        @media screen and(max-width: 767px) {
-            p {
-                font-size: .9rem;
-            }
-        }
-    }
-
-    .galeria {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 5px;
-
-        img {
-            width: 33%;
-
-            @media screen and(max-width: 767px) {
-                & {
-                    width: 100%;
-                }
-            }
-
-            @media screen and (min-width: 768px) and (max-width: 1024px) {
-                & {
-                    width: 48%;
-                }
-            }
-        }
-    }
-}*/
 .desarrollosInm {
   width: 91%;
   height: 650px;
   background-image: url("../img/capital.jpg");
   background-size: contain;
-  background-position: right;
+  background-position: 450px;
   background-repeat: no-repeat;
   padding: 0;
   margin-top: 2rem;
@@ -833,6 +769,15 @@ main nav .correo {
 @media screen and (max-width: 767px) {
   .desarrollosInm {
     height: 650px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .desarrollosInm {
+    background-size: cover;
+    background-position: center;
   }
 }
 
@@ -840,7 +785,7 @@ main nav .correo {
   width: 90%;
   height: 650px;
   background: #1d7a52;
-  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 63% 100%, 0% 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -859,7 +804,7 @@ main nav .correo {
 .desarrollosInm .txt-info h2 {
   color: #fff;
   font-size: 3rem;
-  padding-left: 5rem;
+  padding-left: 2.5rem;
   font-family: 'Roboto-Light';
   text-transform: uppercase;
 }
@@ -886,7 +831,7 @@ main nav .correo {
 .desarrollosInm .txt-info p {
   color: #fff;
   text-align: justify;
-  width: 70%;
+  width: 60%;
   font-size: 1.3rem;
   padding-left: 5rem;
 }
@@ -942,18 +887,27 @@ main nav .correo {
   height: 650px;
   background-image: url("../img/capital.jpg");
   background-size: contain;
-  background-position: right;
+  background-position: 450px;
   background-repeat: no-repeat;
   padding: 0;
   margin-top: 2rem;
-  height: 430px;
+  height: 500px;
   background-image: url("../img/inmobiliaria.jpg");
-  background-position: left;
+  background-position: -160px;
 }
 
 @media screen and (max-width: 767px) {
   .desarrollosCap {
     height: 650px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .desarrollosCap {
+    background-size: cover;
+    background-position: center;
   }
 }
 
@@ -961,7 +915,7 @@ main nav .correo {
   width: 90%;
   height: 650px;
   background: #1d7a52;
-  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 63% 100%, 0% 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -980,7 +934,7 @@ main nav .correo {
 .desarrollosCap .txt-info h2 {
   color: #fff;
   font-size: 3rem;
-  padding-left: 5rem;
+  padding-left: 2.5rem;
   font-family: 'Roboto-Light';
   text-transform: uppercase;
 }
@@ -1007,7 +961,7 @@ main nav .correo {
 .desarrollosCap .txt-info p {
   color: #fff;
   text-align: justify;
-  width: 70%;
+  width: 60%;
   font-size: 1.3rem;
   padding-left: 5rem;
 }
@@ -1066,9 +1020,9 @@ main nav .correo {
 
 .desarrollosCap .txt-info {
   width: 100%;
-  height: 431px;
+  height: 500px;
   background: gray;
-  clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 30% 100%, 0 0, 0 0);
+  clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 50% 100%, 0 0, 0 0);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -1099,6 +1053,7 @@ main nav .correo {
 .desarrollosCap .txt-info p {
   padding-left: 0;
   padding-right: 2rem;
+  width: 50%;
 }
 
 @media screen and (max-width: 767px) {

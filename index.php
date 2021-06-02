@@ -16,7 +16,7 @@
     <link rel="shortcut icon" href="assets/icons/favicon.PNG" type="image/x-icon">
     <link rel="stylesheet" href="assets/scss/estilos.css">
     <link rel="stylesheet" href="assets/scss/media_query.css">
-    <title>VSI</title>
+    <title>VSI DESARROLLOS</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178026606-2"></script>
     <script>
@@ -64,27 +64,21 @@
 </head>
 
 <body>
-<header id="contenedor-slider" class="contenedor-slider">
+    <header id="contenedor-slider" class="contenedor-slider">
         <div id="slider" class="slider">
             <div class="slider_section">
-                <img class="slider_img" src="assets/img/banner_1.jpg" alt="Banner 1">
-                <!--h1 class="slider_img"><b>CREAMOS ASOMBROSOS</b><br>PROYECTOS INMOBILIARIOS</h1-->
+                <img class="slider_img" src="assets/img/01.jpg" alt="Banner 1">
             </div>
             <div class="slider_section">
-                <img class="slider_img" src="assets/img/banner_2.jpg" alt="Banner 2">
-                <!--h2 class="slider_img">CREAMOS ASOMBROSOS<br>PROYECTOS INMOBILIARIOS</h2-->
+                <img class="slider_img" src="assets/img/02.jpg" alt="Banner 1">
             </div>
             <div class="slider_section">
-                <img class="slider_img" src="assets/img/banner_3.jpg" alt="Banner 3">
-                <!--h2 class="slider_img">CREAMOS ASOMBROSOS<br>PROYECTOS INMOBILIARIOS</h2-->
+                <img class="slider_img" src="assets/img/03.jpg" alt="Banner 1">
+
             </div>
-
-          <div class="slider_section">
-                <img class="slider_img" src="assets/img/banner_4.jpg" alt="Banner 3">
-                <!--h2 class="slider_img">CREAMOS ASOMBROSOS<br>PROYECTOS INMOBILIARIOS</h2-->
+            <div class="slider_section">
+                <img class="slider_img" src="assets/img/04.jpg" alt="Banner 1">
             </div>
-
-
         </div>
         <nav class="contenedor1">
             <div class="menu">
@@ -100,10 +94,10 @@
                         <a href="#nosotros"><span class="menu_nosotros">NOSOTROS</span></a>
                     </li>
                     <li>
-                        <a href="#desarrollo"><span class="menu_desarrollo">DESARROLLO</span></a>
+                        <a href="#proyectos"><span class="menu_desarrollo">PROYECTOS</span></a>
                     </li>
                     <li>
-                        <a href="#capital"><span class="menu_capital">CAPITAL</span></a>
+                        <a href="#desarrollos"><span class="menu_capital">DESARROLLOS</span></a>
                     </li>
                     <li>
                         <a href="#contacto"><span class="menu_contacto">CONTACTO</span></a>
@@ -149,10 +143,10 @@
                         <a href="#nosotros"><span class="menu_nosotros">NOSOTROS</span></a>
                     </li>
                     <li>
-                        <a href="#desarrollo"><span class="menu_desarrollo">DESARROLLO</span></a>
+                        <a href="#Proyectos"><span class="menu_desarrollo">PROYECTOS</span></a>
                     </li>
                     <li>
-                        <a href="#capital"><span class="menu_capital">CAPITAL</span></a>
+                        <a href="#desarrollos"><span class="menu_capital">DESARROLLOS</span></a>
                     </li>
                     <li>
                         <a href="#contacto"><span class="menu_contacto">CONTACTO</span></a>
@@ -168,31 +162,30 @@
         </nav>
         <div class="cuerpo">
             <div class="contenedor2">
-                <!-- NOSOTROS -->
-                <section class="nosotros">
-                    <h2>Sobre <span>Nosotros</span></h2>
+                <section id="nosotros" class="nosotros">
+                    <h2 class="main_nosotros">Sobre <span>Nosotros</span></h2>
                     <div class="info-nosotros">
                         <div class="img-nosotros">
                             <img loading="lazy" src="assets/img/nosotros.jpg" alt="Nosotros">
                             <div class="col-nosotros">
                                 <div class="villasi">
                                     <img loading="lazy" src="assets/img/villasi_logo.png" alt="">
-                                    <a href="https://www.villasi.com/" target="_blank">LEER MÁS</a>
+                                    <a class="main_nosotros_leermas" href="https://www.villasi.com/" target="_blank">LEER MÁS</a>
                                 </div>
                                 <div class="pv">
                                     <img loading="lazy" src="assets/img/pauvillarreal_logo.png" alt="">
-                                    <a href="http://pauvillarrealarq.com/" target="_blank">LEER MÁS</a>
+                                    <a class="main_nosotros_leermas" href="http://pauvillarrealarq.com/" target="_blank">LEER MÁS</a>
                                 </div>
                             </div>
                         </div>
                         <div class="texto-nosotros">
-                            <p>
+                            <p class="main_nosotros_p1">
                                 VSI Desarrollos es una plataforma financiera y comercial, de inteligencia y consultoría,
                                 que junto a su unidad operativa de negocio, VILLASI Construcciones, se encargan del
                                 desarrollo de proyectos inmobiliarios de alto impacto para sus clientes y socios.
 
                             </p>
-                            <p>
+                            <p class="main_nosotros_p2">
                                 Después de años de trabajo en México, VSI está entrando en el mercado de Estados Unidos
                                 con altas expectativas, y con la experiencia de VillaSi, tiene la garantía de tener una
                                 operación y resultados óptimos. La atención está puesta particularmente en los proyectos
@@ -200,7 +193,10 @@
                                 El Grupo VSI incluye un despacho de arquitectura, una constructora, gerencia de obra y
                                 por otra parte, el desarrollo inmobiliario y la plataforma financiera en VSI.
                             </p>
-                            <a href="vsi.pdf" target="_blank">Conócenos más...</a>
+                            <p class="main_nosotros_p3">
+                            El Grupo VSI incluye un despacho de arquitectura, una constructora, gerencia de obra y por otra parte, el desarrollo inmobiliario y la plataforma financiera en VSI.
+                            </p>
+                            <a class="main_nosotros_conocemas" href="vsi.pdf" target="_blank">Conócenos más...</a>
                         </div>
                     </div>
                 </section>
@@ -209,25 +205,25 @@
                     <div class="col col-1">
                         <img loading="lazy" src="assets/img/experiencia.png" alt="">
                         <h2 id="contador1">0</h2>
-                        <p>Años de <br>expreiencia</p>
+                        <p class="main_años">Años de <br>experiencia</p>
                     </div>
                     <div class="col col-2">
                         <img loading="lazy" src="assets/img/proyectos.png" alt="">
                         <h2 id="contador2">0</h2>
-                        <p>Proyectos <br>realizados</p>
+                        <p class="main_proyectos">Proyectos <br>realizados</p>
                     </div>
                     <div class="col col-3">
                         <img loading="lazy" src="assets/img/clientes.png" alt="">
                         <h2 id="contador3">0</h2>
-                        <p>Clientes y <br>colaboradores</p>
+                        <p class="main_clientes">Clientes y <br>colaboradores</p>
                     </div>
                     <div class="col col-4">
                         <img loading="lazy" src="assets/img/invertidos.png" alt="">
                         <h2 id="contador4">0</h2>
-                        <p>Invertidos y <br>gestionados</p>
+                        <p class="main_inversion">Invertidos y <br>gestionados</p>
                     </div>
                 </section>
-                <section class="caja-proyectos">
+                <section id="proyectos" class="caja-proyectos">
                     <?php
                         $consulta = $con->query("SELECT * FROM proyectos");
                         while($proyecto = mysqli_fetch_array($consulta)) {
@@ -271,10 +267,10 @@
                     ?>
                 </section>
                 <!-- DESARROLLOS -->
-                <section class="desarrollosInm">
+                <section id="desarrollos" class="desarrollosInm">
                     <div class="txt-info">
-                        <h2>Desarrolladora <br><span>Inmobiliaria</span></h2>
-                        <p>
+                        <h2 class="main_desarrollo">Desarrolladora <br><span>Inmobiliaria</span></h2>
+                        <p class="main_desarrollo_p1"">
                             VSI Desarrollos/VSI Development es la desarrolladora inmobiliaria de Grupo VSI, encargada
                             del desarrollo de proyectos inmobiliarios con el fin de implementarlos en México y Estados
                             Unidos, ofreciendo soluciones inmobiliarias de vanguardia, inteligentes, socialmente
@@ -284,8 +280,8 @@
                             ingenieros, expertos financieros, y asesores comerciales para cubrir todas las áreas y
                             garantizar el éxito para los involucrados.
                         </p>
-                        <b>Nuestros Servicios:</b>
-                        <ul>
+                        <b class="main_b">Nuestros Servicios:</b>
+                        <ul class="main_lista">
                             <li>● Administración Comercial</li>
                             <li>● Planeación Financiera</li>
                             <li>● Estrategias de Comunicación</li>
@@ -297,8 +293,8 @@
                 </section>
                 <section class="desarrollosCap">
                     <div class="txt-info">
-                        <h2>VSI <br><span>Capital</span></h2>
-                        <p>
+                        <h2 class="main_capital">VSI <br><span>Capital</span></h2>
+                        <p class="main_capital_p1">
                             VSI Capital es la plataforma para inversión en los proyectos inmobiliarios de VSI
                             Desarrollos. Se invita a inversionistas para participar con nosotros en los proyectos bajo
                             diversas
@@ -383,8 +379,7 @@
     <script src='https://www.google.com/recaptcha/api.js?hl=es' async defer></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/animacionNumeros.js"></script>
-    <!--<script src="assets/js/proyectos.js"></script>-->
-    <script src="assets/js/proyectos2.js"></script>
+    <script src="assets/js/proyectos.js"></script>
 
 </body>
 

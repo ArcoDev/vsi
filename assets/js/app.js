@@ -151,8 +151,8 @@ $(document).ready(function() {
         //MENU
         $(".menu_inicio").html("INICIO");
         $(".menu_nosotros").html("NOSOTROS");
-        $(".menu_desarrollo").html("DESARROLLO");
-        $(".menu_capital").html("CAPITAL");
+        $(".menu_desarrollo").html("PROYECTOS");
+        $(".menu_capital").html("DESARROLLOS");
         $(".menu_contacto").html("CONTACTO");
 
         //MENU
@@ -162,22 +162,22 @@ $(document).ready(function() {
         //NOSOTROS
         $(".main_nosotros").html("<b>SOBRE</b> NOSOTROS");
         $(".main_nosotros_p1").html("VSI es una plataforma financiera y comercial, de inteligencia y consultoría, que junto a su unidad operativa de negocio, VillaSi Construcciones, se encargan del desarrollo de proyectos inmobiliarios de alto impacto para sus clientes y socios.");
-        $(".main_nosotros_p2").html("Después de años de trabajo en México, VSI está entrando en el mercado de Estados Unidos con altas expectativas, y con la experiencia de VillaSi, tiene la garantía de tener una operación y resultados óptimos. La atención está puesta particularmente en los proyectos residenciales y comerciales tanto en Texas como en México.");
+        $(".main_nosotros_p2").html("Después de años de trabajo en México, VSI está entrando en el mercado de Estados Unidos con altas expectativas, y con la experiencia de VillaSi, tiene la garantía de tener una operación y resultados óptimos. La atención está puesta particularmente en los proyectos residenciales y comerciales tanto en Texas como en México. El Grupo VSI incluye un despacho de arquitectura, una constructora, gerencia de obra y por otra parte, el desarrollo inmobiliario y la plataforma financiera en VSI.");
         $(".main_nosotros_p3").html("El Grupo VSI incluye un despacho de arquitectura, una constructora, gerencia de obra y por otra parte, el desarrollo inmobiliario y la plataforma financiera en VSI.");
         $(".main_nosotros_leermas").html("LEER MÁS");
+        $(".main_nosotros_conocemas").html("Conócenos más...");
+        $(".main_años").html("<p>Años de <br>experiencia</p>");
+        $(".main_proyectos").html("<p>Proyectos <br>realizados</p>");
+        $(".main_clientes").html("<p>Clientes y <br>colaboradores</p>");
+        $(".main_inversion").html("<p>Invertidos y <br>gestionados</p>");
         //NOSOTROS
         //DESARROLLO
-        $(".main_desarrollo").html("DESARROLLADORA INMOBILIARIA");
-        $(".main_desarrollo_p1").html("VSI Desarrollos/VSI Development es la desarrolladora inmobiliaria de Grupo VSI, encargada del desarrollo de proyectos inmobiliarios con el fin de implementarlos en México y Estados Unidos, ofreciendo soluciones inmobiliarias de vanguardia, inteligentes, socialmente involucradas, y de importante impacto económico.");
-        $(".main_desarrollo_p2").html("Actualmente contamos con grandes desarrollos inmobiliarios en Querétaro, Torreón, San Miguel de Allende y al rededor. Para lograr esto, nuestro equipo está formado por arquitectos, ingenieros, expertos financieros, y asesores comerciales para cubrir todas las áreas y garantizar el éxito para los involucrados.");
-        $(".main_desarrollo_p3").html("Nos encargamos de: <br> Administración Comercial, Planeación Financiera, Estrategias de Comunicación, Plan de Administración, Cartera de Ventas Y más.");
-
-        //DESARROLLO
+        $(".main_desarrollo").html("<h2>Desarrolladora <br><span>Inmobiliaria</span></h2>");
+        $(".main_desarrollo_p1").html("VSI Desarrollos/VSI Development es la desarrolladora inmobiliaria de Grupo VSI, encargada del desarrollo de proyectos inmobiliarios con el fin de implementarlos en México y Estados Unidos, ofreciendo soluciones inmobiliarias de vanguardia, inteligentes, socialmente involucradas, y de importante impacto económico. Actualmente contamos con grandes desarrollos inmobiliarios en Querétaro, Torreón, San Miguel de Allende y al rededor. Para lograr esto, nuestro equipo está formado por arquitectos, ingenieros, expertos financieros, y asesores comerciales para cubrir todas las áreas y garantizar el éxito para los involucrados.");
+        $(".main_b").html("Nuestros Servicios:");
+        $('main_lista').html("<li>● Administración Comercial</li><li>● Planeación Financiera</li><li>● Estrategias de Comunicación</li><li>● Plan de Administración</li><li>● Carteras de Centas</li><li>● Y MÁS</li>");
         //CAPITAL
-        $(".main_capital").html("CAPITAL");
-        $(".main_capital_p1").html("VSI Capital es la plataforma para inversión en los proyectos inmobiliarios de VSI Desarrollos.");
-        $(".main_capital_p2").html("Se invita a inversionistas para participar con nosotros en los proyectos bajo diversas estructuras, ofreciendo rendimientos agresivos, tanto en pesos como en dólares.");
-        //CAPITAL
+        $(".main_capital_p1").html("VSI Capital es la plataforma para inversión en los proyectos inmobiliarios de VSI Desarrollos. Se invita a inversionistas para participar con nosotros en los proyectos bajo diversas estructuras, ofreciendo rendimientos agresivos, tanto en pesos como en dólares.");
         //CONTACTO
         $(".main_contacto").html("<b>PONTE EN</b> CONTACTO");
         $(".main_contacto_nombre").html("Nombre Completo *");
@@ -215,16 +215,22 @@ $(document).ready(function() {
         $(".main_nosotros_p2").html("After years of work in Mexico, VSI is entering the United States market with high expectations, and with VillaSi's experience, it is guaranteed to have optimal operation and results. The focus is particularly on residential and commercial projects in both Texas and Mexico.");
         $(".main_nosotros_p3").html("The VSI Group includes an architecture firm, a construction company, construction management and on the other hand, the real estate development and financial platform in VSI.");
         $(".main_nosotros_leermas").html("READ MORE");
+        $(".main_nosotros_conocemas").html("Know mores...");
+        $(".main_años").html("<p>Year of <br>experience</p>");
+        $(".main_proyectos").html("<p>Fulfilled  <br>projects</p>");
+        $(".main_clientes").html("<p>Clients and <br>collaborators</p>");
+        $(".main_inversion").html("<p>Invested and <br>managed</p>");
         //NOSOTROS
         //DESARROLLO
         $(".main_desarrollo").html("REAL ESTATE DEVELOPER");
-        $(".main_desarrollo_p1").html("VSI Desarrollos / VSI Development is the real estate developer of Grupo VSI, in charge of the development of real estate projects in order to implement them in Mexico and the United States, offering cutting-edge, intelligent, socially involved real estate solutions with significant economic impact.");
+        $(".main_desarrollo_p1").html("VSI Development / VSI Development is the real estate developer of Grupo VSI, in charge of the development of real estate projects in order to implement them in Mexico and the United States United, offering cutting-edge real estate solutions, smart, socially involved, and of significant economic impact. We currently have large real estate developments in Querétaro, Torreón, San Miguel Allende and around. To achieve this, our team is made up of architects, engineers, financial experts, and business advisers to cover all areas and ensure success for those involved.");
         $(".main_desarrollo_p2").html("We currently have large real estate developments in Querétaro, Torreón, San Miguel de Allende and the surrounding area. To achieve this, our team is made up of architects, engineers, financial experts, and business consultants to cover all areas and ensure success for those involved.");
         $(".main_desarrollo_p3").html("We take care of: <br> Business Administration, Financial Planning, Communication Strategies, Management Plan, Sales Portfolio And more.");
+        $(".main_b").html("Our services:");
+        $('.main_lista').html("<li>● Commercial administration</li><li>● Financial planning</li><li>● Communication strategies</li><li>● Administration Plan</li><li>● Centas Wallets</li><li>● AND MORE</li>")
         //DESARROLLO
         //CAPITAL
-        $(".main_capital").html("CAPITAL");
-        $(".main_capital_p1").html("VSI Capital is the financial platform designed for VSI desarrollos projects");
+        $(".main_capital_p1").html("VSI Capital is the platform for investment in the real estate projects of VSI Desarrollos. Investors are invited to participate with us in projects under various structures, offering aggressive returns, both in pesos and dollars.");
         $(".main_capital_p2").html("We invite investors and partners to participate with us under different structures, offering aggressive returns, whether in Dollars or in Pesos.");
         //CAPITAL
         //CONTACTO

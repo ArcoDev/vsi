@@ -1,54 +1,47 @@
-window.addEventListener('DOMContentLoaded', function() {
-    const postal = document.getElementById('1');
-    const palo = document.getElementById('2');
-    const plaza = document.getElementById('3');
-    const noma = document.getElementById('4');
-    const cajaImg = document.getElementById('caja-img');
-    const cajaImg1 = document.getElementById('caja-img1');
-    const cajaImg2 = document.getElementById('caja-img2');
-    const cajaImg3 = document.getElementById('caja-img3');
-    const cerrar = document.getElementById('1');
-    const cerrar1 = document.getElementById('cerrar1');
-    const cerrar2 = document.getElementById('cerrar2');
-    const cerrar3 = document.getElementById('cerrar3');
+//Variables Globales
+let proyectoVal = 0;
+let cerrarProyecto = 1;
 
-
-    postal.addEventListener('click', function() {
-        cajaImg.style.display = 'block';
-        cajaImg1.style.display = 'none';
-        cajaImg2.style.display = 'none';
-        cajaImg3.style.display = 'none';
-
-    });
-    palo.addEventListener('click', function() {
-        cajaImg1.style.display = 'block';
-        cajaImg.style.display = 'none';
-        cajaImg2.style.display = 'none';
-        cajaImg3.style.display = 'none';
-    });
-    plaza.addEventListener('click', function() {
-        cajaImg2.style.display = 'block';
-        cajaImg.style.display = 'none';
-        cajaImg1.style.display = 'none';
-        cajaImg3.style.display = 'none';
-    });
-    noma.addEventListener('click', function() {
-        cajaImg3.style.display = 'block';
-        cajaImg.style.display = 'none';
-        cajaImg1.style.display = 'none';
-        cajaImg2.style.display = 'none';
-    });
-    
-    cerrar.addEventListener('click', function() {
-        cajaImg.style.display = 'none';
-    });
-    cerrar1.addEventListener('click', function() {
-        cajaImg1.style.display = 'none';
-    });
-    cerrar2.addEventListener('click', function() {
-        cajaImg2.style.display = 'none';
-    });
-    cerrar3.addEventListener('click', function() {
-        cajaImg3.style.display = 'none';
-    })
+window.addEventListener('DOMContentLoaded', function () {
+    mostrarInfoProyecto();
+    cerrarInfoProyecto();
+    cambiarInfoProyecto();
 });
+
+function mostrarInfoProyecto() {
+    const seccionActual = document.querySelector(`#proyecto-${proyectoVal}`);
+    seccionActual.classList.add('mostrar-info');
+}
+
+function cambiarInfoProyecto() {
+    const proyectos = document.querySelectorAll('.proyectos img');
+    proyectos.forEach(proy => {
+        proy.addEventListener('click', e => {
+            e.preventDefault();
+            proyectoVal = parseInt(e.target.dataset.proyecto);
+
+            //Ocultar seccion que contenga mostrar-info
+            document.querySelector('.mostrar-info').classList.remove('mostrar-info');
+
+            //Agrega mostrar-info, al proyecto seleccionado
+            const seccion = document.querySelector(`#proyecto-${proyectoVal}`);
+            seccion.classList.add('mostrar-info');
+
+        });
+    });
+}
+
+function cerrarInfoProyecto() {
+    const cerrar = document.querySelectorAll('.info-proyecto span');
+    cerrar.forEach(spanCerrar => {
+        spanCerrar.addEventListener('click', e => {
+            //Removerla la clase 
+            document.querySelector('.mostrar-info').classList.remove('mostrar-info');
+            //inicializar el contador a 0
+            proyectoVal = 0;
+            //volver agregar la mostrar-info
+            const seccion = document.querySelector(`#proyecto-${proyectoVal}`);
+            seccion.classList.add('mostrar-info');
+        });
+    });
+}
