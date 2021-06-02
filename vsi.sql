@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-06-2021 a las 20:54:52
+-- Tiempo de generación: 02-06-2021 a las 16:28:20
 -- Versión del servidor: 10.4.18-MariaDB
 -- Versión de PHP: 7.3.28
 
@@ -40,10 +40,10 @@ CREATE TABLE `galeria` (
 --
 
 INSERT INTO `galeria` (`id_gal`, `titulo`, `descripcion`, `imagenes`, `id_proyecto`) VALUES
-(1, 'Noma', 'qwertyuio 12345678 sdfghj fghjkasd', 'sala-depa.jpg', 4),
-(2, 'Postal', 'qwertyuio asdfghjk zxcvbnm 12356789 ', '8.jpg', 1),
-(3, 'Palo Blanco', 'qwertyuio asdfghjk zxcvbnm 12356789 ', 'terraza.jpg', 2),
-(4, 'Plaza Saltillo 400', 'qwertyuio asdfghjk zxcvbnm 12356789 ', '2.jpg', 3);
+(2, 'Postal', 'Exclusiva torre de 82 departamentos en Querétaro con tipologías de 2 y 3 recámaras y 24 niveles de a', '8.jpg', 1),
+(3, 'Palo Blanco', 'Exclusiva residencial, ubicada en la nueva etapa de Viñedos Torreón. Cerrada con vigilancia, accesos', 'terraza.jpg', 2),
+(4, 'Plaza Saltillo 400', 'Plaza comercial de dos pisos para oficinas y\r\ntiendas. Remodelamos la plaza para darle una imagen má', '2.jpg', 3),
+(9, 'Noma', 'Exclusiva torre de departamentos en renta, enfocado a fomentar la comunidad y convivencia, unidades ', 'sala-depa.jpg', 4);
 
 -- --------------------------------------------------------
 
@@ -124,13 +124,13 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `galeria`
 --
 ALTER TABLE `galeria`
-  MODIFY `id_gal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_gal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `proyectos`
 --
 ALTER TABLE `proyectos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`

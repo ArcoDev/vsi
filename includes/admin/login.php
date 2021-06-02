@@ -35,7 +35,7 @@
     </div>
 
     <?php
-/* AGregado los tempaltes de la plantilla */
+/* Agregando los tempaltes de la plantilla */
   include_once "templates/footer.php";
 
 ?>

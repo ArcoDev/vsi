@@ -62,6 +62,10 @@
                 <div class="form-group">
                   <label for="imagen-proyecto">Imagenes</label>
                   <input type="file" id="archivo[]" name="archivo[]" multiple="" accept="image/*">
+                  <div id="loader" class="form-group" style="display: none;">
+                  <img src="../../assets/img/preloader.gif" alt="Cargando" style="margin: 10px 0 10px 20px;">
+                  <p>Espere un momento porfavor, se estan cargandon las imagenes...</p>
+                </div>
                   <div
                     style="display: flex; flex-wrap: wrap; justify-content: space-between: text-align: center; margin-top: 10px;">
                     <p style="width: 50%;" class="help-block">• Medida recomendada de la imagen: <strong>762 x
