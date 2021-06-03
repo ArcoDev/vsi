@@ -201,8 +201,8 @@ $(document).ready(function() {
         //MENU
         $(".menu_inicio").html("HOME");
         $(".menu_nosotros").html("ABOUT US");
-        $(".menu_desarrollo").html("DEVELOPMENT");
-        $(".menu_capital").html("CAPITAL");
+        $(".menu_desarrollo").html("PROJECTS");
+        $(".menu_capital").html("DEVELOPMENT");
         $(".menu_contacto").html("CONTACT");
 
         //MENU
