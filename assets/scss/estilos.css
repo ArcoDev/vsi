@@ -441,8 +441,13 @@ main nav .correo {
 .nosotros .info-nosotros .texto-nosotros p {
   font-size: 1.3rem;
   color: gray;
-  font-family: "Roboto-black";
   text-align: justify;
+  font-family: "Roboto-black";
+}
+
+.nosotros .info-nosotros .texto-nosotros p span {
+  color: #000;
+  font-family: "Roboto-black";
 }
 
 @media (max-width: 767px) {

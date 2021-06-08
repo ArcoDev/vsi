@@ -475,8 +475,14 @@ main nav .correo {
             p {
                 font-size: 1.3rem;
                 color: gray;
-                font-family: "Roboto-black";
                 text-align: justify;
+                font-family: "Roboto-black";
+
+                span {
+                    color: #000;
+                    font-family: "Roboto-black";
+
+                }
 
                 @media(max-width: 767px) {
                     & {
@@ -719,7 +725,7 @@ main nav .correo {
             transition: all .5s ease-in;
             font-size: 1rem;
             font-weight: bold;
-            
+
             &:hover {
                 background: gray;
                 color: #fff;
@@ -734,6 +740,7 @@ main nav .correo {
     padding-top: 4rem;
     padding-left: 1.7rem;
     display: none;
+
     //border: 1px solid gray;
     @media screen and(max-width: 767px) {
         & {
@@ -772,6 +779,7 @@ main nav .correo {
         display: flex;
         gap: .5rem;
         flex-wrap: wrap;
+
         img {
             width: 32%;
 
@@ -780,11 +788,13 @@ main nav .correo {
                     width: 100%;
                 }
             }
+
             &:nth-child(1) {
-                display:none;
+                display: none;
             }
+
             &:nth-child(2) {
-                display:none;
+                display: none;
             }
         }
     }
@@ -818,6 +828,7 @@ main nav .correo {
             background-position: center;
         }
     }
+
     @media screen and (min-width: 768px) and (max-width: 1024px) {
         & {
             background-size: cover;
@@ -939,7 +950,7 @@ main nav .correo {
     height: 500px;
     background-image: url('../img/inmobiliaria.jpg');
     background-position: -160px;
-    
+
     @media screen and(max-width: 767px) {
         & {
             height: 335px;
@@ -969,6 +980,7 @@ main nav .correo {
             padding-left: 0;
             padding-right: 3rem;
             text-align: right;
+
             @media screen and(max-width: 767px) {
                 & {
                     text-align: center;
@@ -976,11 +988,12 @@ main nav .correo {
                 }
             }
         }
-        
+
         p {
             padding-left: 0;
             padding-right: 2rem;
             width: 50%;
+
             @media screen and(max-width: 767px) {
                 & {
                     padding: 0;

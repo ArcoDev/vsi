@@ -56,7 +56,7 @@ function animaNumeros() {
         cantidad4 += 1;
         cont4.textContent = pesos + cantidad4 + texto;
 
-        if (cantidad4 === 200) {
+        if (cantidad4 === 700) {
             clearInterval(tiempo4)
         }
     }, 30);

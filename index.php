@@ -193,9 +193,6 @@
                                 El Grupo VSI incluye un despacho de arquitectura, una constructora, gerencia de obra y
                                 por otra parte, el desarrollo inmobiliario y la plataforma financiera en VSI.
                             </p>
-                            <p class="main_nosotros_p3">
-                            El Grupo VSI incluye un despacho de arquitectura, una constructora, gerencia de obra y por otra parte, el desarrollo inmobiliario y la plataforma financiera en VSI.
-                            </p>
                             <a class="main_nosotros_conocemas" href="vsi.pdf" target="_blank">Conócenos más...</a>
                         </div>
                     </div>
@@ -282,11 +279,11 @@
                         </p>
                         <b class="main_b">Nuestros Servicios:</b>
                         <ul class="main_lista">
-                            <li>● Administración Comercial</li>
+                            <li>● Estrategia Comercial</li>
                             <li>● Planeación Financiera</li>
                             <li>● Estrategias de Comunicación</li>
                             <li>● Plan de Administración</li>
-                            <li>● Carteras de Centas</li>
+                            <li>● Carteras de Ventas</li>
                             <li>● Y MÁS</li>
                         </ul>
                     </div>
